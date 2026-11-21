@@ -1,0 +1,14 @@
+# Competitive research
+
+Retrieved 2026-11-21 UTC. Cadence reflects documented behavior or a direct observation, where available.
+
+| Source | Data and interface | Reuse and cadence | Decision and gap |
+|---|---|---|---|
+| [Awesome AI Agents](https://github.com/slavakurilyak/awesome-ai-agents) | Curated links, categories and maintainer references in Markdown | MIT repository; push-driven, latest observed push 2026-10-04 | Import repository identities via raw Markdown. Directory membership does not establish the linked project's license or capabilities. |
+| [Official MCP Registry](https://modelcontextprotocol.io/registry/registry-aggregators) | Cursor-paginated JSON REST and OpenAPI YAML; publisher versions, package/remote metadata | Registry code Apache-2.0; documented downstream aggregation, no blanket license inferred for publisher prose; publisher-driven; roughly hourly polling suggested | Store factual identifiers and source links. Protocol declarations are evidence of publication; compatibility and operation remain unknown. |
+| [Skills.sh](https://www.skills.sh/docs) | Skill descriptions, repository links, install telemetry and published API docs | CLI is open source; separate bulk directory license and update SLA unconfirmed; skill permissions depend on upstream project | Link to licensed upstream projects. Popularity and directory audits have different meanings from requirement fit. |
+| [Smithery](https://www.smithery.ai/future) | Post-transition public curated MCP listings and vendor URLs | Prior API, SDK and proxy shut down per October 31 notice; no current bulk license or SLA established | Browse for research only. Focus on cross-category task fit. |
+| [Glama](https://glama.ai/mcp/reference) | REST/JSON API, paginated servers/connectors, listing links, auth and transports | API Data License requires page-level plus per-listing attribution, with separate commercial waiver; ongoing discovery and curation, no SLA verified | Viable future connector with compatible attribution across human and agent output. |
+| [GitHub](https://docs.github.com/en/rest/search/search) | REST/JSON repository search and metadata | GitHub terms plus each repository’s license; continuously indexed, rate-limited | Import factual metadata via official endpoints. Stars convey popularity, not suitability. |
+| [Hacker News](https://github.com/HackerNews/API) | Firebase REST/JSON items, top and new story IDs | Live records; API repository license does not license third-party submissions | Use links as optional leads. Editorial selection and voting are weak technical signals. |
+| [Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers) | Public GitHub Markdown directory with transport/platform labels | Repository license differs from linked servers; push-driven | Consider links after license review. Labels and manual classification can drift. |

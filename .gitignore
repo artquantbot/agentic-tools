@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.cloudflare/
+.cache/
+.env
+.env.*
+!.env.example
+playwright-report/
+test-results/
+.DS_Store
