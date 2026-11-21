@@ -1,0 +1,8 @@
+import { defineConfig } from "vite";
+import { cloudflare } from "@cloudflare/vite-plugin";
+
+export default defineConfig({
+  plugins: [cloudflare()],
+  server: { port: 4173, strictPort: true },
+  preview: { port: 4173, strictPort: true }
+});
