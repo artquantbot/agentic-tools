@@ -1,0 +1,5595 @@
+{
+  "generatedAt": "2026-11-21T18:53:05.942Z",
+  "tools": [
+    {
+      "id": "gh-1134543109",
+      "name": "Skills CLI",
+      "canonicalUrl": "https://github.com/vercel-labs/skills",
+      "github": "https://github.com/vercel-labs/skills",
+      "website": "https://skills.sh/",
+      "description": "Discover and manage agent skills from upstream repositories.",
+      "categories": [
+        "skills"
+      ],
+      "capabilities": [
+        "skill discovery",
+        "skill management"
+      ],
+      "os": null,
+      "languages": [
+        "TypeScript"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-17T00:58:04Z",
+      "stars": 40328,
+      "securityAdvisories": null,
+      "setup": "https://www.skills.sh/docs/cli",
+      "tradeoff": "Review source and license for each skill separately.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/vercel-labs/skills",
+          "verifiedAt": "2026-11-21T18:52:41.138Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://www.skills.sh/docs/cli",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.138Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-1163183284",
+      "name": "agent-teams-ai",
+      "canonicalUrl": "https://github.com/777genius/agent-teams-ai",
+      "github": "https://github.com/777genius/agent-teams-ai",
+      "website": "https://agentteams.live/",
+      "description": null,
+      "categories": [
+        "emerging"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": [
+        "TypeScript"
+      ],
+      "license": "AGPL-3.0",
+      "openSource": true,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-21T18:41:59Z",
+      "stars": 2523,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/777genius/agent-teams-ai",
+          "verifiedAt": "2026-11-21T18:53:18.773Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:18.773Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "gh-1165277268",
+      "name": "Agent-Reach",
+      "canonicalUrl": "https://github.com/Panniantong/Agent-Reach",
+      "github": "https://github.com/Panniantong/Agent-Reach",
+      "website": null,
+      "description": null,
+      "categories": [
+        "emerging"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": [
+        "Python"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-08T02:17:48Z",
+      "stars": 113736,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/Panniantong/Agent-Reach",
+          "verifiedAt": "2026-11-21T18:53:18.309Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:18.309Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "gh-1173630767",
+      "name": "agent-skills",
+      "canonicalUrl": "https://github.com/gfernandf/agent-skills",
+      "github": "https://github.com/gfernandf/agent-skills",
+      "website": "https://gfernandf.github.io/agent-skills/",
+      "description": null,
+      "categories": [
+        "emerging"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": [
+        "Python"
+      ],
+      "license": "Apache-2.0",
+      "openSource": true,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-09-08T10:21:25Z",
+      "stars": 88,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/gfernandf/agent-skills",
+          "verifiedAt": "2026-11-21T18:53:18.310Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:18.310Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "gh-1196395757",
+      "name": "agent-express",
+      "canonicalUrl": "https://github.com/agent-express-ai/agent-express",
+      "github": "https://github.com/agent-express-ai/agent-express",
+      "website": "https://agent-express.ai/",
+      "description": null,
+      "categories": [
+        "emerging"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": [
+        "TypeScript"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-05-07T18:26:24Z",
+      "stars": 8,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/agent-express-ai/agent-express",
+          "verifiedAt": "2026-11-21T18:53:17.849Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:17.849Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "gh-1196864144",
+      "name": "agent-007",
+      "canonicalUrl": "https://github.com/bill10/agent-007",
+      "github": "https://github.com/bill10/agent-007",
+      "website": null,
+      "description": null,
+      "categories": [
+        "emerging"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": [
+        "JavaScript"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-11T05:52:21Z",
+      "stars": 6,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/bill10/agent-007",
+          "verifiedAt": "2026-11-21T18:53:17.406Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:17.406Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "gh-1198984771",
+      "name": "agent-trust-stack-mcp",
+      "canonicalUrl": "https://github.com/alexfleetcommander/agent-trust-stack-mcp",
+      "github": "https://github.com/alexfleetcommander/agent-trust-stack-mcp",
+      "website": "https://vibeagentmaking.com/",
+      "description": null,
+      "categories": [
+        "emerging"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": [
+        "Python"
+      ],
+      "license": "Apache-2.0",
+      "openSource": true,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-04-25T00:05:04Z",
+      "stars": 3,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/alexfleetcommander/agent-trust-stack-mcp",
+          "verifiedAt": "2026-11-21T18:53:18.773Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:18.773Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "gh-1222617074",
+      "name": "agent-stack",
+      "canonicalUrl": "https://github.com/MukundaKatta/agent-stack",
+      "github": "https://github.com/MukundaKatta/agent-stack",
+      "website": "https://doi.org/10.5281/zenodo.20074702",
+      "description": null,
+      "categories": [
+        "emerging"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": [
+        "HTML"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-06-13T14:02:42Z",
+      "stars": 6,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/MukundaKatta/agent-stack",
+          "verifiedAt": "2026-11-21T18:53:18.310Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:18.310Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "gh-1232322871",
+      "name": "agent-qa",
+      "canonicalUrl": "https://github.com/vostride/agent-qa",
+      "github": "https://github.com/vostride/agent-qa",
+      "website": "https://vostride.com/",
+      "description": null,
+      "categories": [
+        "emerging"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": [
+        "TypeScript"
+      ],
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-20T23:03:57Z",
+      "stars": 819,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/vostride/agent-qa",
+          "verifiedAt": "2026-11-21T18:53:18.310Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:18.310Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "gh-1245469148",
+      "name": "agent-platform",
+      "canonicalUrl": "https://github.com/Ace-li521/agent-platform",
+      "github": "https://github.com/Ace-li521/agent-platform",
+      "website": null,
+      "description": null,
+      "categories": [
+        "emerging"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": [
+        "Python"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-05-21T08:52:51Z",
+      "stars": 2,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/Ace-li521/agent-platform",
+          "verifiedAt": "2026-11-21T18:53:17.849Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:17.849Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "gh-1401225877",
+      "name": "agent-argue-cards",
+      "canonicalUrl": "https://github.com/empac666/agent-argue-cards",
+      "github": "https://github.com/empac666/agent-argue-cards",
+      "website": "https://empac666.github.io/agent-argue-cards/",
+      "description": null,
+      "categories": [
+        "emerging"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": [
+        "JavaScript"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-20T01:29:25Z",
+      "stars": 0,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/empac666/agent-argue-cards",
+          "verifiedAt": "2026-11-21T18:53:17.848Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:17.848Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "gh-155220641",
+      "name": "Transformers",
+      "canonicalUrl": "https://github.com/huggingface/transformers",
+      "github": "https://github.com/huggingface/transformers",
+      "website": "https://huggingface.co/transformers",
+      "description": "Run or train supported text, image, audio and multimodal models.",
+      "categories": [
+        "models",
+        "inference"
+      ],
+      "capabilities": [
+        "local llm",
+        "model inference",
+        "model training"
+      ],
+      "os": null,
+      "languages": [
+        "Python"
+      ],
+      "license": "Apache-2.0",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": true,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-21T17:34:01Z",
+      "stars": 169351,
+      "securityAdvisories": null,
+      "setup": "https://huggingface.co/docs/transformers/",
+      "tradeoff": "Weights, runtime and acceleration support vary by model.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/huggingface/transformers",
+          "verifiedAt": "2026-11-21T18:52:28.630Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://huggingface.co/docs/transformers/",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages",
+            "noPaidApi"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:28.630Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-193215554",
+      "name": "n8n",
+      "canonicalUrl": "https://github.com/n8n-io/n8n",
+      "github": "https://github.com/n8n-io/n8n",
+      "website": "https://n8n.io/",
+      "description": "Connect services and run workflows with visual nodes.",
+      "categories": [
+        "workflow"
+      ],
+      "capabilities": [
+        "workflow automation",
+        "integrations",
+        "visual workflows"
+      ],
+      "os": null,
+      "languages": [
+        "TypeScript"
+      ],
+      "license": null,
+      "openSource": null,
+      "hosting": "hybrid",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-21T18:52:14Z",
+      "stars": 211620,
+      "securityAdvisories": null,
+      "setup": "https://docs.n8n.io/",
+      "tradeoff": "Review the Sustainable Use License before commercial redistribution.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/n8n-io/n8n",
+          "verifiedAt": "2026-11-21T18:52:40.298Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://docs.n8n.io/",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:40.298Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-221981891",
+      "name": "Playwright",
+      "canonicalUrl": "https://github.com/microsoft/playwright",
+      "github": "https://github.com/microsoft/playwright",
+      "website": "https://playwright.dev/",
+      "description": "Control Chromium, Firefox and WebKit for browser automation and testing.",
+      "categories": [
+        "browser"
+      ],
+      "capabilities": [
+        "web testing",
+        "chromium",
+        "firefox",
+        "webkit",
+        "browser automation"
+      ],
+      "os": [
+        "macOS",
+        "Linux",
+        "Windows"
+      ],
+      "languages": [
+        "Python",
+        "TypeScript",
+        "JavaScript",
+        "Java",
+        "C#"
+      ],
+      "license": "Apache-2.0",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": true,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-21T04:36:33Z",
+      "stars": 100731,
+      "securityAdvisories": null,
+      "setup": "https://playwright.dev/python/docs/intro",
+      "tradeoff": "Browser binaries and system dependencies must match the target platform.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/microsoft/playwright",
+          "verifiedAt": "2026-11-21T18:53:16.350Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://playwright.dev/python/docs/intro",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages",
+            "os",
+            "noPaidApi"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:16.350Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-268163609",
+      "name": "Qdrant",
+      "canonicalUrl": "https://github.com/qdrant/qdrant",
+      "github": "https://github.com/qdrant/qdrant",
+      "website": "https://qdrant.tech/",
+      "description": "Search vectors and filter results with metadata conditions.",
+      "categories": [
+        "vector",
+        "rag"
+      ],
+      "capabilities": [
+        "vector search",
+        "similarity search",
+        "hybrid retrieval"
+      ],
+      "os": null,
+      "languages": [
+        "Rust"
+      ],
+      "license": "Apache-2.0",
+      "openSource": true,
+      "hosting": "hybrid",
+      "noPaidApi": true,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-20T21:47:16Z",
+      "stars": 35657,
+      "securityAdvisories": null,
+      "setup": "https://qdrant.tech/documentation/",
+      "tradeoff": "Self-hosting requires capacity for vector indexes and replication if needed.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/qdrant/qdrant",
+          "verifiedAt": "2026-11-21T18:52:38.146Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://qdrant.tech/documentation/",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages",
+            "noPaidApi"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:38.146Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-323591830",
+      "name": "Hugging Face Hub client",
+      "canonicalUrl": "https://github.com/huggingface/huggingface_hub",
+      "github": "https://github.com/huggingface/huggingface_hub",
+      "website": "https://huggingface.co/docs/huggingface_hub",
+      "description": "Find and transfer Hub models, datasets and Spaces from Python.",
+      "categories": [
+        "models",
+        "infrastructure"
+      ],
+      "capabilities": [
+        "model downloads",
+        "model registry",
+        "datasets"
+      ],
+      "os": null,
+      "languages": [
+        "Python"
+      ],
+      "license": "Apache-2.0",
+      "openSource": true,
+      "hosting": "hybrid",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-21T03:01:46Z",
+      "stars": 4060,
+      "securityAdvisories": null,
+      "setup": "https://huggingface.co/docs/huggingface_hub/",
+      "tradeoff": "Artifact access and use depend on each publisher's terms.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/huggingface/huggingface_hub",
+          "verifiedAt": "2026-11-21T18:52:28.630Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://huggingface.co/docs/huggingface_hub/",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:28.630Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-357241735",
+      "name": "SearXNG",
+      "canonicalUrl": "https://github.com/searxng/searxng",
+      "github": "https://github.com/searxng/searxng",
+      "website": "https://docs.searxng.org/",
+      "description": "Combine results from configured search sources in a self-hosted service.",
+      "categories": [
+        "search"
+      ],
+      "capabilities": [
+        "metasearch",
+        "web search",
+        "self-hosted search"
+      ],
+      "os": null,
+      "languages": [
+        "Python"
+      ],
+      "license": "AGPL-3.0",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-21T10:13:40Z",
+      "stars": 39762,
+      "securityAdvisories": null,
+      "setup": "https://docs.searxng.org/",
+      "tradeoff": "Source availability and terms depend on the configured engines.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/searxng/searxng",
+          "verifiedAt": "2026-11-21T18:52:39.221Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://docs.searxng.org/",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:39.221Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-541269386",
+      "name": "whisper.cpp",
+      "canonicalUrl": "https://github.com/ggml-org/whisper.cpp",
+      "github": "https://github.com/ggml-org/whisper.cpp",
+      "website": null,
+      "description": "Run Whisper speech recognition models locally.",
+      "categories": [
+        "voice"
+      ],
+      "capabilities": [
+        "speech recognition",
+        "transcription",
+        "offline audio"
+      ],
+      "os": [
+        "macOS",
+        "Linux",
+        "Windows"
+      ],
+      "languages": [
+        "C++"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": true,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-20T15:48:52Z",
+      "stars": 55402,
+      "securityAdvisories": null,
+      "setup": "https://github.com/ggml-org/whisper.cpp",
+      "tradeoff": "Transcription accuracy depends on model, audio and language.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/ggml-org/whisper.cpp",
+          "verifiedAt": "2026-11-21T18:52:39.761Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/ggml-org/whisper.cpp",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages",
+            "os",
+            "noPaidApi"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:39.761Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-546206616",
+      "name": "Chroma",
+      "canonicalUrl": "https://github.com/chroma-core/chroma",
+      "github": "https://github.com/chroma-core/chroma",
+      "website": "https://www.trychroma.com/",
+      "description": "Store embeddings and retrieve records by vector similarity.",
+      "categories": [
+        "vector",
+        "rag"
+      ],
+      "capabilities": [
+        "vector search",
+        "embeddings",
+        "retrieval"
+      ],
+      "os": null,
+      "languages": [
+        "Python",
+        "TypeScript"
+      ],
+      "license": "Apache-2.0",
+      "openSource": true,
+      "hosting": "hybrid",
+      "noPaidApi": true,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-20T21:09:35Z",
+      "stars": 29725,
+      "securityAdvisories": null,
+      "setup": "https://docs.trychroma.com/",
+      "tradeoff": "Embedding provider costs depend on configuration.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/chroma-core/chroma",
+          "verifiedAt": "2026-11-21T18:52:38.145Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://docs.trychroma.com/",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages",
+            "noPaidApi"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:38.145Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-552661142",
+      "name": "LangChain",
+      "canonicalUrl": "https://github.com/langchain-ai/langchain",
+      "github": "https://github.com/langchain-ai/langchain",
+      "website": "https://docs.langchain.com/langchain/",
+      "description": "Build agents with integrations for models, tools and retrieval systems.",
+      "categories": [
+        "frameworks",
+        "rag"
+      ],
+      "capabilities": [
+        "model integration",
+        "tool calling",
+        "agents",
+        "retrieval"
+      ],
+      "os": null,
+      "languages": [
+        "Python"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-21T14:58:46Z",
+      "stars": 150004,
+      "securityAdvisories": null,
+      "setup": "https://docs.langchain.com/oss/python/langchain/overview",
+      "tradeoff": "Model and retrieval costs depend on the integrations selected.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/langchain-ai/langchain",
+          "verifiedAt": "2026-11-21T18:53:07.107Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://docs.langchain.com/oss/python/langchain/overview",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:07.107Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-560704231",
+      "name": "LlamaIndex",
+      "canonicalUrl": "https://github.com/run-llama/llama_index",
+      "github": "https://github.com/run-llama/llama_index",
+      "website": "https://developers.llamaindex.ai/",
+      "description": "Connect data sources, build indexes and retrieve context for model applications.",
+      "categories": [
+        "rag"
+      ],
+      "capabilities": [
+        "document indexing",
+        "retrieval",
+        "rag pipelines"
+      ],
+      "os": null,
+      "languages": [
+        "Python"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-20T00:46:38Z",
+      "stars": 52975,
+      "securityAdvisories": null,
+      "setup": "https://docs.llamaindex.ai/",
+      "tradeoff": "Storage and model requirements vary by pipeline.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/run-llama/llama_index",
+          "verifiedAt": "2026-11-21T18:52:38.145Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://docs.llamaindex.ai/",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:05.953Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-594609262",
+      "name": "Guardrails AI",
+      "canonicalUrl": "https://github.com/guardrails-ai/guardrails",
+      "github": "https://github.com/guardrails-ai/guardrails",
+      "website": "https://www.guardrailsai.com/docs",
+      "description": "Validate model outputs using configurable validators.",
+      "categories": [
+        "security"
+      ],
+      "capabilities": [
+        "output validation",
+        "structured outputs",
+        "guardrails"
+      ],
+      "os": null,
+      "languages": [
+        "Python"
+      ],
+      "license": "Apache-2.0",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-18T03:35:21Z",
+      "stars": 7635,
+      "securityAdvisories": null,
+      "setup": "https://www.guardrailsai.com/docs",
+      "tradeoff": "Validator coverage and behavior depend on the chosen checks.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/guardrails-ai/guardrails",
+          "verifiedAt": "2026-11-21T18:52:38.722Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://www.guardrailsai.com/docs",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:05.953Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-609539715",
+      "name": "E2B",
+      "canonicalUrl": "https://github.com/e2b-dev/E2B",
+      "github": "https://github.com/e2b-dev/E2B",
+      "website": "https://docs.e2b.dev/?utm_source=github&utm_medium=referral&utm_campaign=repo_website&utm_content=e2b",
+      "description": "Create managed sandboxes through an SDK for isolated code execution.",
+      "categories": [
+        "sandbox"
+      ],
+      "capabilities": [
+        "isolated code execution",
+        "cloud sandbox"
+      ],
+      "os": null,
+      "languages": [
+        "Python",
+        "TypeScript"
+      ],
+      "license": "Apache-2.0",
+      "openSource": true,
+      "hosting": "cloud",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-21T00:09:18Z",
+      "stars": 14960,
+      "securityAdvisories": null,
+      "setup": "https://docs.e2b.dev/",
+      "tradeoff": "Managed execution requires an account and appropriate quotas.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/e2b-dev/E2B",
+          "verifiedAt": "2026-11-21T18:52:38.723Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://docs.e2b.dev/",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:05.953Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-612354784",
+      "name": "llama.cpp",
+      "canonicalUrl": "https://github.com/ggml-org/llama.cpp",
+      "github": "https://github.com/ggml-org/llama.cpp",
+      "website": "https://llama.app/",
+      "description": "Run GGUF models with a native inference engine and optional local HTTP server.",
+      "categories": [
+        "inference"
+      ],
+      "capabilities": [
+        "local llm",
+        "apple silicon",
+        "gguf",
+        "offline inference",
+        "cpu inference"
+      ],
+      "os": [
+        "macOS",
+        "Linux",
+        "Windows"
+      ],
+      "languages": [
+        "C++"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": true,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-21T18:07:54Z",
+      "stars": 135951,
+      "securityAdvisories": null,
+      "setup": "https://github.com/ggml-org/llama.cpp",
+      "tradeoff": "Model conversion and acceleration settings depend on the model and device.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/ggml-org/llama.cpp",
+          "verifiedAt": "2026-11-21T18:53:16.917Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/ggml-org/llama.cpp",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages",
+            "os",
+            "noPaidApi"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:16.917Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-633927609",
+      "name": "Promptfoo",
+      "canonicalUrl": "https://github.com/promptfoo/promptfoo",
+      "github": "https://github.com/promptfoo/promptfoo",
+      "website": "https://promptfoo.dev/",
+      "description": "Define evaluation cases and compare model or prompt configurations.",
+      "categories": [
+        "evaluation",
+        "security"
+      ],
+      "capabilities": [
+        "llm evaluation",
+        "prompt testing",
+        "regression testing"
+      ],
+      "os": null,
+      "languages": [
+        "TypeScript"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-21T18:50:58Z",
+      "stars": 27522,
+      "securityAdvisories": null,
+      "setup": "https://www.promptfoo.dev/docs/",
+      "tradeoff": "Evaluation calls can incur charges at configured model providers.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/promptfoo/promptfoo",
+          "verifiedAt": "2026-11-21T18:52:38.721Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://www.promptfoo.dev/docs/",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:38.721Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-642497346",
+      "name": "Langfuse",
+      "canonicalUrl": "https://github.com/langfuse/langfuse",
+      "github": "https://github.com/langfuse/langfuse",
+      "website": "https://langfuse.com/",
+      "description": "Track model requests and evaluate application behavior.",
+      "categories": [
+        "observability",
+        "evaluation"
+      ],
+      "capabilities": [
+        "tracing",
+        "llm observability",
+        "prompt management"
+      ],
+      "os": null,
+      "languages": [
+        "TypeScript"
+      ],
+      "license": null,
+      "openSource": null,
+      "hosting": "hybrid",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-21T10:26:23Z",
+      "stars": 37704,
+      "securityAdvisories": null,
+      "setup": "https://langfuse.com/docs",
+      "tradeoff": "Self-hosting includes persistent services and operational upkeep.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/langfuse/langfuse",
+          "verifiedAt": "2026-11-21T18:52:38.722Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://langfuse.com/docs",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:05.953Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-656099147",
+      "name": "Mem0",
+      "canonicalUrl": "https://github.com/mem0ai/mem0",
+      "github": "https://github.com/mem0ai/mem0",
+      "website": "https://mem0.ai/",
+      "description": "Retain and retrieve contextual information across agent sessions.",
+      "categories": [
+        "memory"
+      ],
+      "capabilities": [
+        "agent memory",
+        "personalization",
+        "long-term memory"
+      ],
+      "os": null,
+      "languages": [
+        "Python"
+      ],
+      "license": "Apache-2.0",
+      "openSource": true,
+      "hosting": "hybrid",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-18T07:24:33Z",
+      "stars": 69308,
+      "securityAdvisories": null,
+      "setup": "https://docs.mem0.ai/",
+      "tradeoff": "Review retention settings and the configured model and vector store.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/mem0ai/mem0",
+          "verifiedAt": "2026-11-21T18:52:28.631Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://docs.mem0.ai/",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:05.953Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-658928958",
+      "name": "Ollama",
+      "canonicalUrl": "https://github.com/ollama/ollama",
+      "github": "https://github.com/ollama/ollama",
+      "website": "https://ollama.com/",
+      "description": "Run and serve supported language models on local hardware.",
+      "categories": [
+        "inference",
+        "models"
+      ],
+      "capabilities": [
+        "local llm",
+        "apple silicon",
+        "model serving",
+        "offline inference"
+      ],
+      "os": [
+        "macOS",
+        "Linux",
+        "Windows"
+      ],
+      "languages": [
+        "Go"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": "hybrid",
+      "noPaidApi": true,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-21T18:43:25Z",
+      "stars": 187832,
+      "securityAdvisories": null,
+      "setup": "https://docs.ollama.com/",
+      "tradeoff": "Model weights have their own licenses and hardware requirements.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/ollama/ollama",
+          "verifiedAt": "2026-11-21T18:53:16.916Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://docs.ollama.com/",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "os",
+            "noPaidApi"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:16.916Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-671269505",
+      "name": "LiteLLM",
+      "canonicalUrl": "https://github.com/BerriAI/litellm",
+      "github": "https://github.com/BerriAI/litellm",
+      "website": "https://docs.litellm.ai/docs/",
+      "description": "Route model calls through a common interface across configured providers.",
+      "categories": [
+        "models",
+        "infrastructure"
+      ],
+      "capabilities": [
+        "model gateway",
+        "provider routing",
+        "model proxy"
+      ],
+      "os": null,
+      "languages": [
+        "Python"
+      ],
+      "license": null,
+      "openSource": null,
+      "hosting": "hybrid",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-21T18:52:04Z",
+      "stars": 63665,
+      "securityAdvisories": null,
+      "setup": "https://docs.litellm.ai/",
+      "tradeoff": "Provider credentials and usage charges still apply.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/BerriAI/litellm",
+          "verifiedAt": "2026-11-21T18:52:38.145Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://docs.litellm.ai/",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:05.953Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-676672661",
+      "name": "LangGraph",
+      "canonicalUrl": "https://github.com/langchain-ai/langgraph",
+      "github": "https://github.com/langchain-ai/langgraph",
+      "website": "https://docs.langchain.com/oss/python/langgraph/",
+      "description": "Build stateful agent workflows with persistent graph execution.",
+      "categories": [
+        "frameworks",
+        "orchestration",
+        "workflow"
+      ],
+      "capabilities": [
+        "durable execution",
+        "stateful agents",
+        "human in the loop"
+      ],
+      "os": null,
+      "languages": [
+        "Python"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-20T22:56:03Z",
+      "stars": 45231,
+      "securityAdvisories": null,
+      "setup": "https://docs.langchain.com/oss/python/langgraph/overview",
+      "tradeoff": "A graph defines control flow and state. Model requirements depend on the graph.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/langchain-ai/langgraph",
+          "verifiedAt": "2026-11-21T18:53:07.107Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://docs.langchain.com/oss/python/langgraph/overview",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:07.107Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-680120071",
+      "name": "AutoGen",
+      "canonicalUrl": "https://github.com/microsoft/autogen",
+      "github": "https://github.com/microsoft/autogen",
+      "website": "https://microsoft.github.io/autogen/",
+      "description": "Coordinate agent conversations and tool calls in Python.",
+      "categories": [
+        "orchestration",
+        "frameworks"
+      ],
+      "capabilities": [
+        "multi-agent collaboration",
+        "messaging"
+      ],
+      "os": null,
+      "languages": [
+        "Python"
+      ],
+      "license": "CC-BY-4.0",
+      "openSource": null,
+      "hosting": "local",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "archived",
+      "latestRelease": null,
+      "lastActivity": "2026-11-12T10:19:36Z",
+      "stars": 61956,
+      "securityAdvisories": null,
+      "setup": "https://microsoft.github.io/autogen/stable/",
+      "tradeoff": "Check the upstream support status when starting a new project.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/microsoft/autogen",
+          "verifiedAt": "2026-11-21T18:52:39.762Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://microsoft.github.io/autogen/stable/",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:05.953Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-703411624",
+      "name": "Letta",
+      "canonicalUrl": "https://github.com/letta-ai/letta",
+      "github": "https://github.com/letta-ai/letta",
+      "website": "https://docs.letta.com/",
+      "description": "Build stateful agents with memory managed across interactions.",
+      "categories": [
+        "memory",
+        "frameworks"
+      ],
+      "capabilities": [
+        "stateful agents",
+        "long-term memory",
+        "agent memory"
+      ],
+      "os": null,
+      "languages": [
+        "Python"
+      ],
+      "license": "Apache-2.0",
+      "openSource": true,
+      "hosting": "hybrid",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-10-18T22:28:04Z",
+      "stars": 25511,
+      "securityAdvisories": null,
+      "setup": "https://docs.letta.com/",
+      "tradeoff": "Persistence and model-provider setup depend on the deployment.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/letta-ai/letta",
+          "verifiedAt": "2026-11-21T18:52:28.631Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://docs.letta.com/",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:05.953Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-707441527",
+      "name": "LiveKit Agents",
+      "canonicalUrl": "https://github.com/livekit/agents",
+      "github": "https://github.com/livekit/agents",
+      "website": "https://docs.livekit.io/agents",
+      "description": "Build voice and multimodal sessions with real-time media.",
+      "categories": [
+        "voice",
+        "frameworks"
+      ],
+      "capabilities": [
+        "voice agents",
+        "realtime audio",
+        "speech"
+      ],
+      "os": null,
+      "languages": [
+        "Python",
+        "TypeScript"
+      ],
+      "license": "Apache-2.0",
+      "openSource": true,
+      "hosting": "hybrid",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-21T12:33:54Z",
+      "stars": 15298,
+      "securityAdvisories": null,
+      "setup": "https://docs.livekit.io/agents/",
+      "tradeoff": "Telephony and provider charges depend on configuration.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/livekit/agents",
+          "verifiedAt": "2026-11-21T18:52:39.762Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://docs.livekit.io/agents/",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:05.953Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-710601088",
+      "name": "CrewAI",
+      "canonicalUrl": "https://github.com/crewAIInc/crewAI",
+      "github": "https://github.com/crewAIInc/crewAI",
+      "website": "https://crewai.com/",
+      "description": "Coordinate role-based agents and sequence workflows with flows.",
+      "categories": [
+        "frameworks",
+        "orchestration",
+        "memory"
+      ],
+      "capabilities": [
+        "multi-agent collaboration",
+        "crews",
+        "flows"
+      ],
+      "os": null,
+      "languages": [
+        "Python"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-21T02:13:50Z",
+      "stars": 61145,
+      "securityAdvisories": null,
+      "setup": "https://docs.crewai.com/",
+      "tradeoff": "Model requirements depend on the crew configuration.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/crewAIInc/crewAI",
+          "verifiedAt": "2026-11-21T18:53:07.107Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://docs.crewai.com/",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:07.107Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-719367294",
+      "name": "agency-swarm",
+      "canonicalUrl": "https://github.com/VRSEN/agency-swarm",
+      "github": "https://github.com/VRSEN/agency-swarm",
+      "website": "https://agency-swarm.ai/",
+      "description": null,
+      "categories": [
+        "emerging"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": [
+        "Python"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-16T00:36:53Z",
+      "stars": 4640,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/VRSEN/agency-swarm",
+          "verifiedAt": "2026-11-21T18:53:17.406Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:17.406Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "gh-724854743",
+      "name": "Apple MLX",
+      "canonicalUrl": "https://github.com/ml-explore/mlx",
+      "github": "https://github.com/ml-explore/mlx",
+      "website": "https://ml-explore.github.io/mlx/",
+      "description": "Use array operations for machine learning on Apple Silicon.",
+      "categories": [
+        "inference",
+        "infrastructure"
+      ],
+      "capabilities": [
+        "apple silicon",
+        "array computation",
+        "machine learning"
+      ],
+      "os": [
+        "macOS"
+      ],
+      "languages": [
+        "Python",
+        "C++",
+        "Swift"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": true,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-21T10:39:26Z",
+      "stars": 29231,
+      "securityAdvisories": null,
+      "setup": "https://github.com/ml-explore/mlx",
+      "tradeoff": "Language-model generation is provided through companion projects such as MLX LM.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/ml-explore/mlx",
+          "verifiedAt": "2026-11-21T18:53:16.918Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/ml-explore/mlx",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages",
+            "os",
+            "noPaidApi"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:16.918Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-734513626",
+      "name": "agent",
+      "canonicalUrl": "https://github.com/statelyai/agent",
+      "github": "https://github.com/statelyai/agent",
+      "website": "https://stately.ai/docs/agents",
+      "description": null,
+      "categories": [
+        "emerging"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": [
+        "TypeScript"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-21T14:16:51Z",
+      "stars": 505,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/statelyai/agent",
+          "verifiedAt": "2026-11-21T18:53:17.848Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:17.848Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "gh-753490180",
+      "name": "Daytona",
+      "canonicalUrl": "https://github.com/daytonaio/daytona",
+      "github": "https://github.com/daytonaio/daytona",
+      "website": "https://daytona.io/",
+      "description": "Create configurable code execution environments through an SDK.",
+      "categories": [
+        "sandbox"
+      ],
+      "capabilities": [
+        "isolated code execution",
+        "development environments"
+      ],
+      "os": null,
+      "languages": [
+        "Python",
+        "TypeScript"
+      ],
+      "license": null,
+      "openSource": null,
+      "hosting": "cloud",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "archived",
+      "latestRelease": null,
+      "lastActivity": "2026-07-24T07:12:07Z",
+      "stars": 71297,
+      "securityAdvisories": null,
+      "setup": "https://www.daytona.io/docs/",
+      "tradeoff": "Sandbox resource limits and network policy require review.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/daytonaio/daytona",
+          "verifiedAt": "2026-11-21T18:52:39.221Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://www.daytona.io/docs/",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:39.221Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-776908852",
+      "name": "Stagehand",
+      "canonicalUrl": "https://github.com/browserbase/stagehand",
+      "github": "https://github.com/browserbase/stagehand",
+      "website": "https://stagehand.dev/",
+      "description": "Use browser actions and structured extraction in TypeScript.",
+      "categories": [
+        "browser",
+        "extraction"
+      ],
+      "capabilities": [
+        "browser automation",
+        "structured extraction",
+        "natural-language browser actions"
+      ],
+      "os": null,
+      "languages": [
+        "TypeScript"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": "hybrid",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-21T01:07:09Z",
+      "stars": 26110,
+      "securityAdvisories": null,
+      "setup": "https://docs.stagehand.dev/",
+      "tradeoff": "AI-driven operations need a configured model.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/browserbase/stagehand",
+          "verifiedAt": "2026-11-21T18:53:16.353Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://docs.stagehand.dev/",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:16.353Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-818331198",
+      "name": "Pydantic AI",
+      "canonicalUrl": "https://github.com/pydantic/pydantic-ai",
+      "github": "https://github.com/pydantic/pydantic-ai",
+      "website": "https://pydantic.dev/pydantic-ai",
+      "description": "Build typed Python agents and validate structured outputs.",
+      "categories": [
+        "frameworks"
+      ],
+      "capabilities": [
+        "typed agents",
+        "structured outputs",
+        "tool calling"
+      ],
+      "os": null,
+      "languages": [
+        "Python"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-21T18:15:20Z",
+      "stars": 21326,
+      "securityAdvisories": null,
+      "setup": "https://ai.pydantic.dev/",
+      "tradeoff": "Model availability depends on provider configuration.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/pydantic/pydantic-ai",
+          "verifiedAt": "2026-11-21T18:52:39.763Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://ai.pydantic.dev/",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:39.763Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-881458615",
+      "name": "Browser Use",
+      "canonicalUrl": "https://github.com/browser-use/browser-use",
+      "github": "https://github.com/browser-use/browser-use",
+      "website": "https://browser-use.com/",
+      "description": "Use a model to plan and execute browser interactions from Python.",
+      "categories": [
+        "browser",
+        "frameworks"
+      ],
+      "capabilities": [
+        "browser agents",
+        "browser automation",
+        "web tasks"
+      ],
+      "os": null,
+      "languages": [
+        "Python"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-21T03:05:00Z",
+      "stars": 121663,
+      "securityAdvisories": null,
+      "setup": "https://docs.browser-use.com/",
+      "tradeoff": "Local execution still requires a suitable configured model.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/browser-use/browser-use",
+          "verifiedAt": "2026-11-21T18:53:16.352Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://docs.browser-use.com/",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:16.352Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-888092115",
+      "name": "MarkItDown",
+      "canonicalUrl": "https://github.com/microsoft/markitdown",
+      "github": "https://github.com/microsoft/markitdown",
+      "website": null,
+      "description": "Convert supported files to Markdown for downstream processing.",
+      "categories": [
+        "extraction"
+      ],
+      "capabilities": [
+        "document conversion",
+        "markdown extraction",
+        "pdf"
+      ],
+      "os": null,
+      "languages": [
+        "Python"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": true,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-07T00:14:01Z",
+      "stars": 197415,
+      "securityAdvisories": null,
+      "setup": "https://github.com/microsoft/markitdown",
+      "tradeoff": "Conversion quality depends on source format and installed extras.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/microsoft/markitdown",
+          "verifiedAt": "2026-11-21T18:52:39.220Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/microsoft/markitdown",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages",
+            "noPaidApi"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:39.220Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-890668799",
+      "name": "MCP Reference Servers",
+      "canonicalUrl": "https://github.com/modelcontextprotocol/servers",
+      "github": "https://github.com/modelcontextprotocol/servers",
+      "website": "https://modelcontextprotocol.io/",
+      "description": "Reference implementations demonstrate common MCP server patterns.",
+      "categories": [
+        "mcp",
+        "infrastructure"
+      ],
+      "capabilities": [
+        "mcp examples",
+        "reference servers",
+        "filesystem"
+      ],
+      "os": null,
+      "languages": [
+        "TypeScript"
+      ],
+      "license": null,
+      "openSource": null,
+      "hosting": "local",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": true,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-19T16:41:29Z",
+      "stars": 92143,
+      "securityAdvisories": null,
+      "setup": "https://github.com/modelcontextprotocol/servers",
+      "tradeoff": "Each reference server has separate capabilities and permission requirements.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/modelcontextprotocol/servers",
+          "verifiedAt": "2026-11-21T18:52:41.138Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/modelcontextprotocol/servers",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.138Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-899184149",
+      "name": "Browserbase MCP",
+      "canonicalUrl": "https://github.com/browserbase/mcp-server-browserbase",
+      "github": "https://github.com/browserbase/mcp-server-browserbase",
+      "website": "https://stagehand.dev/",
+      "description": "Expose managed browser sessions through a Browserbase MCP server.",
+      "categories": [
+        "browser",
+        "mcp"
+      ],
+      "capabilities": [
+        "browser automation",
+        "hosted chromium"
+      ],
+      "os": null,
+      "languages": [
+        "TypeScript"
+      ],
+      "license": "Apache-2.0",
+      "openSource": true,
+      "hosting": "cloud",
+      "noPaidApi": false,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": true,
+      "maintenance": "archived",
+      "latestRelease": null,
+      "lastActivity": "2026-07-20T21:48:14Z",
+      "stars": 3398,
+      "securityAdvisories": null,
+      "setup": "https://github.com/browserbase/mcp-server-browserbase",
+      "tradeoff": "Managed browser execution requires Browserbase credentials.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/browserbase/mcp-server-browserbase",
+          "verifiedAt": "2026-11-21T18:52:40.299Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/browserbase/mcp-server-browserbase",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages",
+            "noPaidApi"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:40.299Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-924394244",
+      "name": "Cloudflare Agents SDK",
+      "canonicalUrl": "https://github.com/cloudflare/agents",
+      "github": "https://github.com/cloudflare/agents",
+      "website": "https://developers.cloudflare.com/agents/",
+      "description": "Build and host stateful agents on Cloudflare Workers.",
+      "categories": [
+        "hosting",
+        "frameworks"
+      ],
+      "capabilities": [
+        "stateful agents",
+        "durable objects",
+        "agent deployment"
+      ],
+      "os": null,
+      "languages": [
+        "TypeScript"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": "cloud",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-21T14:50:13Z",
+      "stars": 6021,
+      "securityAdvisories": null,
+      "setup": "https://developers.cloudflare.com/agents/",
+      "tradeoff": "Production state is coupled to Workers and Durable Objects.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/cloudflare/agents",
+          "verifiedAt": "2026-11-21T18:52:39.221Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://developers.cloudflare.com/agents/",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:39.221Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-942771284",
+      "name": "GitHub MCP Server",
+      "canonicalUrl": "https://github.com/github/github-mcp-server",
+      "github": "https://github.com/github/github-mcp-server",
+      "website": null,
+      "description": "Expose GitHub repository and collaboration operations through MCP.",
+      "categories": [
+        "mcp",
+        "infrastructure"
+      ],
+      "capabilities": [
+        "repositories",
+        "issues",
+        "pull requests"
+      ],
+      "os": null,
+      "languages": [
+        "Go"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": "hybrid",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": true,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-21T08:39:12Z",
+      "stars": 34649,
+      "securityAdvisories": null,
+      "setup": "https://github.com/github/github-mcp-server",
+      "tradeoff": "Review token scopes and configure read-only access for discovery workflows.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/github/github-mcp-server",
+          "verifiedAt": "2026-11-21T18:52:40.299Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/github/github-mcp-server",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:05.953Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-946380199",
+      "name": "OpenAI Agents SDK",
+      "canonicalUrl": "https://github.com/openai/openai-agents-python",
+      "github": "https://github.com/openai/openai-agents-python",
+      "website": "https://openai.github.io/openai-agents-python/",
+      "description": "Python toolkit for agents that call tools, transfer tasks and record traces.",
+      "categories": [
+        "frameworks",
+        "orchestration"
+      ],
+      "capabilities": [
+        "agent handoffs",
+        "tracing",
+        "tool calling",
+        "guardrails"
+      ],
+      "os": null,
+      "languages": [
+        "Python"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-21T16:01:20Z",
+      "stars": 30801,
+      "securityAdvisories": null,
+      "setup": "https://openai.github.io/openai-agents-python/",
+      "tradeoff": "Confirms SDK hosting only. Model charges depend on the configured provider.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/openai/openai-agents-python",
+          "verifiedAt": "2026-11-21T18:53:07.106Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://openai.github.io/openai-agents-python/",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:07.106Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-946767878",
+      "name": "MLX LM",
+      "canonicalUrl": "https://github.com/ml-explore/mlx-lm",
+      "github": "https://github.com/ml-explore/mlx-lm",
+      "website": null,
+      "description": "Generate text and fine-tune supported language models on Apple Silicon.",
+      "categories": [
+        "inference"
+      ],
+      "capabilities": [
+        "local llm",
+        "apple silicon",
+        "offline inference",
+        "fine tuning"
+      ],
+      "os": [
+        "macOS"
+      ],
+      "languages": [
+        "Python"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": true,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-21T04:00:13Z",
+      "stars": 7723,
+      "securityAdvisories": null,
+      "setup": "https://github.com/ml-explore/mlx-lm",
+      "tradeoff": "Model and quantization choices determine memory requirements.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/ml-explore/mlx-lm",
+          "verifiedAt": "2026-11-21T18:53:16.918Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/ml-explore/mlx-lm",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages",
+            "os",
+            "noPaidApi"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:16.918Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-952688112",
+      "name": "Playwright MCP",
+      "canonicalUrl": "https://github.com/microsoft/playwright-mcp",
+      "github": "https://github.com/microsoft/playwright-mcp",
+      "website": "https://www.npmjs.com/package/@playwright/mcp",
+      "description": "Expose browser control and accessibility snapshots through MCP.",
+      "categories": [
+        "browser",
+        "mcp"
+      ],
+      "capabilities": [
+        "browser automation",
+        "accessibility snapshots",
+        "chromium"
+      ],
+      "os": null,
+      "languages": [
+        "TypeScript"
+      ],
+      "license": "Apache-2.0",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": true,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": true,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-18T18:50:37Z",
+      "stars": 39973,
+      "securityAdvisories": null,
+      "setup": "https://github.com/microsoft/playwright-mcp",
+      "tradeoff": "Browser automation can access authenticated browser state when configured to do so.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/microsoft/playwright-mcp",
+          "verifiedAt": "2026-11-21T18:53:16.353Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/microsoft/playwright-mcp",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages",
+            "noPaidApi"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:53:16.353Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-954215474",
+      "name": "Postgres MCP",
+      "canonicalUrl": "https://github.com/crystaldba/postgres-mcp",
+      "github": "https://github.com/crystaldba/postgres-mcp",
+      "website": null,
+      "description": "Expose PostgreSQL inspection and analysis features through MCP.",
+      "categories": [
+        "mcp",
+        "infrastructure"
+      ],
+      "capabilities": [
+        "postgresql",
+        "database inspection",
+        "query analysis"
+      ],
+      "os": null,
+      "languages": [
+        "Python"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": true,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-08-17T05:06:35Z",
+      "stars": 3493,
+      "securityAdvisories": null,
+      "setup": "https://github.com/crystaldba/postgres-mcp",
+      "tradeoff": "Use a database role with only the privileges required for the task.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/crystaldba/postgres-mcp",
+          "verifiedAt": "2026-11-21T18:52:40.298Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/crystaldba/postgres-mcp",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:40.298Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "mcp-ywcuag9vzc9uyw1llxnlcnzpy2u",
+      "name": "ag.hood/name-service",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ag.hood%2Fname-service/versions/0.1.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "0.1.0",
+      "lastActivity": "2026-07-10T04:58:06.628668Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ag.hood/name-service"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ag.hood%2Fname-service/versions/0.1.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywdlbmn5lmfsbw9zdgltcg9zc2libguvc2l0zq",
+      "name": "agency.almostimpossible/site",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/agency.almostimpossible%2Fsite/versions/1.0.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.0",
+      "lastActivity": "2026-11-17T21:04:09.09325Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "agency.almostimpossible/site"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/agency.almostimpossible%2Fsite/versions/1.0.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywdlbmn5lmv4dhjlbwvses9hz2vuy3k",
+      "name": "agency.extremely/agency",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/agency.extremely%2Fagency/versions/0.1.1",
+      "github": "https://github.com/maxkxd/extremely-autonomous-agents",
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "npm"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "0.1.1",
+      "lastActivity": "2026-11-05T13:13:18.17912Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": "https://github.com/maxkxd/extremely-autonomous-agents",
+      "tradeoff": null,
+      "publisherIds": [
+        "agency.extremely/agency",
+        "npm:@extremely-agency/mcp"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/agency.extremely%2Fagency/versions/0.1.1",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywmuaw5mzxjlbmnllnnol21jca",
+      "name": "ac.inference.sh/mcp",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ac.inference.sh%2Fmcp/versions/2.0.1",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "2.0.1",
+      "lastActivity": "2026-07-27T10:44:51.359634Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ac.inference.sh/mcp"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ac.inference.sh%2Fmcp/versions/2.0.1",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywmubwl6yw4vcmvnaxn0cnk",
+      "name": "ac.mizan/registry",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ac.mizan%2Fregistry/versions/1.2.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.2.0",
+      "lastActivity": "2026-11-05T23:35:33.188176Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ac.mizan/registry"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ac.mizan%2Fregistry/versions/1.2.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywmuc25hzy9zbmfn",
+      "name": "ac.snag/snag",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ac.snag%2Fsnag/versions/1.0.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.0",
+      "lastActivity": "2026-09-09T10:35:53.194664Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ac.snag/snag"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ac.snag%2Fsnag/versions/1.0.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywmudgfuzgvtl2rvy3mtbwnw",
+      "name": "ac.tandem/docs-mcp",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ac.tandem%2Fdocs-mcp/versions/0.3.2",
+      "github": "https://github.com/frumu-ai/tandem",
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "0.3.2",
+      "lastActivity": "2026-04-22T21:06:34.500049Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": "https://github.com/frumu-ai/tandem",
+      "tradeoff": null,
+      "publisherIds": [
+        "ac.tandem/docs-mcp"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ac.tandem%2Fdocs-mcp/versions/0.3.2",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywnhzgvtes5hc2uvcgvyaw9kawmtc3lzdgvt",
+      "name": "academy.ase/periodic-system",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/academy.ase%2Fperiodic-system/versions/2026.4.1",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "2026.4.1",
+      "lastActivity": "2026-10-22T20:23:57.545065Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "academy.ase/periodic-system"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/academy.ase%2Fperiodic-system/versions/2026.4.1",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywnhzgvtes5hcgv4ywkvyxblec1has1hy2fkzw15",
+      "name": "academy.apexai/apex-ai-academy",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/academy.apexai%2Fapex-ai-academy/versions/1.0.2",
+      "github": "https://github.com/apexai-academy/sample-agents",
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.2",
+      "lastActivity": "2026-10-17T03:25:05.205722Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": "https://github.com/apexai-academy/sample-agents",
+      "tradeoff": null,
+      "publisherIds": [
+        "academy.apexai/apex-ai-academy"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/academy.apexai%2Fapex-ai-academy/versions/1.0.2",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywnhzgvtes5tewnvbnrlbnqvz29vz2xllwfkcw",
+      "name": "academy.mycontent/google-ads",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/academy.mycontent%2Fgoogle-ads/versions/0.1.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "0.1.0",
+      "lastActivity": "2026-11-21T18:01:37.133183Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "academy.mycontent/google-ads"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/academy.mycontent%2Fgoogle-ads/versions/0.1.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywnhzgvtes5zzxj2awnlzw5naw5lzxivc2utywk",
+      "name": "academy.serviceengineer/se-ai",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/academy.serviceengineer%2Fse-ai/versions/1.0.1",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.1",
+      "lastActivity": "2026-11-08T16:20:02.865317Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "academy.serviceengineer/se-ai"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/academy.serviceengineer%2Fse-ai/versions/1.0.1",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywquaw5zawrll2luc2lkzs1hzhm",
+      "name": "ad.inside/inside-ads",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.inside%2Finside-ads/versions/1.0.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.0",
+      "lastActivity": "2026-08-18T20:55:46.452926Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ad.inside/inside-ads"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.inside%2Finside-ads/versions/1.0.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywqucgfudghlb24vbwnw",
+      "name": "ad.pantheon/mcp",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.pantheon%2Fmcp/versions/1.0.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.0",
+      "lastActivity": "2026-11-03T12:12:01.650543Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ad.pantheon/mcp"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.pantheon%2Fmcp/versions/1.0.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywqudglkzs9ty3a",
+      "name": "ad.tide/mcp",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.tide%2Fmcp/versions/2.0.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "2.0.0",
+      "lastActivity": "2026-11-04T06:22:37.915668Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ad.tide/mcp"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.tide%2Fmcp/versions/2.0.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywqudhjpynv0cy9ty3a",
+      "name": "ad.tributs/mcp",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.tributs%2Fmcp/versions/1.0.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.0",
+      "lastActivity": "2026-11-14T10:27:16.913528Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ad.tributs/mcp"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.tributs%2Fmcp/versions/1.0.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywquyxbvz2vll2fwb2dlzq",
+      "name": "ad.apogee/apogee",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.apogee%2Fapogee/versions/1.1.0",
+      "github": "https://github.com/apogeegit/apogee-mcp",
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.1.0",
+      "lastActivity": "2026-11-03T23:36:32.020466Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": "https://github.com/apogeegit/apogee-mcp",
+      "tradeoff": null,
+      "publisherIds": [
+        "ad.apogee/apogee"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.apogee%2Fapogee/versions/1.1.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywquz2v0bguvbgvhzhm",
+      "name": "ad.getle/leads",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.getle%2Fleads/versions/1.0.1",
+      "github": "https://github.com/adgrowofficial/getlead-mcp",
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.1",
+      "lastActivity": "2026-10-26T22:16:48.897897Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": "https://github.com/adgrowofficial/getlead-mcp",
+      "tradeoff": null,
+      "publisherIds": [
+        "ad.getle/leads"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.getle%2Fleads/versions/1.0.1",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywuubxjrl2r1ymfplxbyb3blcnr5",
+      "name": "ae.mrk/dubai-property",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.mrk%2Fdubai-property/versions/1.0.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.0",
+      "lastActivity": "2026-11-09T17:22:02.31281Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.mrk/dubai-property"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.mrk%2Fdubai-property/versions/1.0.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywuucgxhbnrndwlkzs9kdwjhas1nyxjkzw5pbmc",
+      "name": "ae.plantguide/dubai-gardening",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.plantguide%2Fdubai-gardening/versions/1.1.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.1.0",
+      "lastActivity": "2026-10-07T08:44:40.122336Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.plantguide/dubai-gardening"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.plantguide%2Fdubai-gardening/versions/1.1.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywuuchjvamvjdg9yes9ty3a",
+      "name": "ae.projectory/mcp",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.projectory%2Fmcp/versions/0.7.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "0.7.0",
+      "lastActivity": "2026-11-02T16:40:13.966873Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.projectory/mcp"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.projectory%2Fmcp/versions/0.7.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywuuchjvcgljay9wcm9wawnr",
+      "name": "ae.propick/propick",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.propick%2Fpropick/versions/1.0.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.0",
+      "lastActivity": "2026-08-25T11:16:56.879334Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.propick/propick"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.propick%2Fpropick/versions/1.0.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywuud2fnz2xll2zlbmxpz2h0",
+      "name": "ae.waggle/fenlight",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.waggle%2Ffenlight/versions/0.3.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "0.3.0",
+      "lastActivity": "2026-10-16T04:35:48.176825Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.waggle/fenlight"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.waggle%2Ffenlight/versions/0.3.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywuud2fnz2xll3zlcme",
+      "name": "ae.waggle/vera",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.waggle%2Fvera/versions/0.2.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "0.2.0",
+      "lastActivity": "2026-10-21T08:17:47.171381Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.waggle/vera"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.waggle%2Fvera/versions/0.2.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywuuymvhy2hjbhvicy9ty3a",
+      "name": "ae.beachclubs/mcp",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.beachclubs%2Fmcp/versions/0.3.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "0.3.0",
+      "lastActivity": "2026-10-23T16:09:50.932635Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.beachclubs/mcp"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.beachclubs%2Fmcp/versions/0.3.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywuuynjhaw55l2dyb2nlcnktchjpy2vz",
+      "name": "ae.brainy/grocery-prices",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.brainy%2Fgrocery-prices/versions/2.0.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "2.0.0",
+      "lastActivity": "2026-10-04T02:29:51.000704Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.brainy/grocery-prices"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.brainy%2Fgrocery-prices/versions/2.0.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywuuynjhaw55lnrpcgxpbmuvz3rhng",
+      "name": "ae.brainy.tipline/gta6",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.brainy.tipline%2Fgta6/versions/1.0.1",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.1",
+      "lastActivity": "2026-11-18T08:38:22.385581Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.brainy.tipline/gta6"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.brainy.tipline%2Fgta6/versions/1.0.1",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywuuywxlegv5c291bmqvywxlegv5lxnvdw5k",
+      "name": "ae.alexeysound/alexey-sound",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.alexeysound%2Falexey-sound/versions/1.0.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.0",
+      "lastActivity": "2026-11-10T08:53:20.037278Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.alexeysound/alexey-sound"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.alexeysound%2Falexey-sound/versions/1.0.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywuuz2vub3n5cy9nzw5vc3lz",
+      "name": "ae.genosys/genosys",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.genosys%2Fgenosys/versions/1.2.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.2.0",
+      "lastActivity": "2026-10-12T09:33:58.36606Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.genosys/genosys"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.genosys%2Fgenosys/versions/1.2.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywuuz3jvdmlzb3ivz3jvdgf4",
+      "name": "ae.grovisor/grotax",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.grovisor%2Fgrotax/versions/1.3.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.3.0",
+      "lastActivity": "2026-10-06T01:10:14.813856Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.grovisor/grotax"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.grovisor%2Fgrotax/versions/1.3.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywuuzgf0ywr1ymfpl2r1ymfplxjlywwtzxn0yxrl",
+      "name": "ae.datadubai/dubai-real-estate",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.datadubai%2Fdubai-real-estate/versions/1.1.0",
+      "github": "https://github.com/datadubai/dubai-real-estate-dld",
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.1.0",
+      "lastActivity": "2026-09-30T08:30:47.911063Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": "https://github.com/datadubai/dubai-real-estate-dld",
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.datadubai/dubai-real-estate"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.datadubai%2Fdubai-real-estate/versions/1.1.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywuuzglzy29uzc9kaxnjb25k",
+      "name": "ae.discond/discond",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.discond%2Fdiscond/versions/1.1.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.1.0",
+      "lastActivity": "2026-11-15T13:42:27.118673Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.discond/discond"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.discond%2Fdiscond/versions/1.1.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywuuznjhbwvyznkvc3rvcmutynvpbgrlcg",
+      "name": "ae.framerfy/store-builder",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.framerfy%2Fstore-builder/versions/1.0.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.0",
+      "lastActivity": "2026-11-12T12:19:25.872161Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.framerfy/store-builder"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.framerfy%2Fstore-builder/versions/1.0.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywuuzw1wbg95zxjvznjly29yzc9tb2hh",
+      "name": "ae.employerofrecord/moha",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.employerofrecord%2Fmoha/versions/1.0.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.0",
+      "lastActivity": "2026-11-10T01:38:50.217032Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.employerofrecord/moha"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.employerofrecord%2Fmoha/versions/1.0.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywuuzw1wbg95zxjvznjly29yzc9tb2hhlwfjy291bnq",
+      "name": "ae.employerofrecord/moha-account",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.employerofrecord%2Fmoha-account/versions/1.0.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.0",
+      "lastActivity": "2026-11-10T01:38:50.424244Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.employerofrecord/moha-account"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.employerofrecord%2Fmoha-account/versions/1.0.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywuuzwfzexzvawnll3r0cw",
+      "name": "ae.easyvoice/tts",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.easyvoice%2Ftts/versions/1.0.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.0",
+      "lastActivity": "2026-10-11T18:47:52.634428Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.easyvoice/tts"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.easyvoice%2Ftts/versions/1.0.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywvyby5ldmvudhmvzxzlbnrz",
+      "name": "aero.events/events",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/aero.events%2Fevents/versions/1.0.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.0",
+      "lastActivity": "2026-10-09T21:06:19.122059Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "aero.events/events"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/aero.events%2Fevents/versions/1.0.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywzyawnhlmrpdmlzas9kaxzpc2k",
+      "name": "africa.divisi/divisi",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/africa.divisi%2Fdivisi/versions/26.11.20.1",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "26.11.20.1",
+      "lastActivity": "2026-11-20T12:20:32.85826Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "africa.divisi/divisi"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/africa.divisi%2Fdivisi/versions/26.11.20.1",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywzyawnhlmxvbwkvbwnw",
+      "name": "africa.lomi/mcp",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/africa.lomi%2Fmcp/versions/1.0.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.0",
+      "lastActivity": "2026-11-04T11:43:02.854662Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "africa.lomi/mcp"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/africa.lomi%2Fmcp/versions/1.0.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywzyawnhlnn0yxj0dxbsaxn0l21jca",
+      "name": "africa.startuplist/mcp",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/africa.startuplist%2Fmcp/versions/1.0.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.0",
+      "lastActivity": "2026-11-14T06:19:45.171442Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "africa.startuplist/mcp"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/africa.startuplist%2Fmcp/versions/1.0.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-ywzyawnhlnvnyy91z2m",
+      "name": "africa.ugc/ugc",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/africa.ugc%2Fugc/versions/1.0.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.0",
+      "lastActivity": "2026-10-03T16:28:09.054327Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "africa.ugc/ugc"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/africa.ugc%2Fugc/versions/1.0.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    }
+  ]
+}
