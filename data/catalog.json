@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T18:53:05.942Z",
+  "generatedAt": "2026-11-21T19:00:50.055Z",
   "tools": [
     {
       "id": "gh-1134543109",
@@ -881,6 +881,74 @@
       "confidence": "curated"
     },
     {
+      "id": "gh-227803815",
+      "name": "Semgrep",
+      "canonicalUrl": "https://github.com/semgrep/semgrep",
+      "github": "https://github.com/semgrep/semgrep",
+      "website": "https://semgrep.dev/",
+      "description": "Scan source with static analysis rules to identify suspicious code patterns.",
+      "categories": [
+        "security"
+      ],
+      "capabilities": [
+        "static analysis",
+        "secure coding",
+        "code scanning"
+      ],
+      "os": null,
+      "languages": [
+        "C"
+      ],
+      "license": "LGPL-2.1",
+      "openSource": null,
+      "hosting": "hybrid",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-20T21:53:01Z",
+      "stars": 17879,
+      "securityAdvisories": null,
+      "setup": "https://semgrep.dev/docs/",
+      "tradeoff": "Coverage depends on the enabled rules and supported languages.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/semgrep/semgrep",
+          "verifiedAt": "2026-11-21T19:00:54.289Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://semgrep.dev/docs/",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T19:00:54.289Z",
+      "confidence": "curated"
+    },
+    {
       "id": "gh-268163609",
       "name": "Qdrant",
       "canonicalUrl": "https://github.com/qdrant/qdrant",
@@ -1692,6 +1760,83 @@
         }
       ],
       "verifiedAt": "2026-11-21T18:52:38.721Z",
+      "confidence": "curated"
+    },
+    {
+      "id": "gh-638629097",
+      "name": "Aider",
+      "canonicalUrl": "https://github.com/Aider-AI/aider",
+      "github": "https://github.com/Aider-AI/aider",
+      "website": "https://aider.chat/",
+      "description": "Edit repository files from a terminal with a model and review changes through Git.",
+      "categories": [
+        "coding"
+      ],
+      "capabilities": [
+        "coding agent",
+        "code editing",
+        "git"
+      ],
+      "os": null,
+      "languages": [
+        "Python"
+      ],
+      "license": "Apache-2.0",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-05-22T14:02:20Z",
+      "stars": 50211,
+      "securityAdvisories": null,
+      "setup": "https://aider.chat/docs/",
+      "tradeoff": "Review edits and configure the model provider for the task.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/Aider-AI/aider",
+          "verifiedAt": "2026-11-21T19:00:50.073Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "awesome",
+          "url": "https://github.com/slavakurilyak/awesome-ai-agents",
+          "verifiedAt": "2026-11-21T18:53:05.953Z",
+          "fields": [
+            "discovery"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://aider.chat/docs/",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T19:00:50.073Z",
       "confidence": "curated"
     },
     {
@@ -3052,7 +3197,7 @@
       "license": "Apache-2.0",
       "openSource": true,
       "hosting": "cloud",
-      "noPaidApi": false,
+      "noPaidApi": null,
       "pricing": null,
       "dependencies": null,
       "permissions": null,
@@ -3092,8 +3237,7 @@
             "hosting",
             "setup",
             "tradeoff",
-            "languages",
-            "noPaidApi"
+            "languages"
           ]
         }
       ],
@@ -3551,60 +3695,78 @@
       "confidence": "curated"
     },
     {
-      "id": "mcp-ywcuag9vzc9uyw1llxnlcnzpy2u",
-      "name": "ag.hood/name-service",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ag.hood%2Fname-service/versions/0.1.0",
-      "github": null,
-      "website": null,
-      "description": "MCP server listed in the Official MCP Registry.",
+      "id": "gh-975734319",
+      "name": "OpenCode",
+      "canonicalUrl": "https://github.com/anomalyco/opencode",
+      "github": "https://github.com/anomalyco/opencode",
+      "website": "https://opencode.ai/",
+      "description": "Run a coding agent through a terminal interface or an editor integration.",
       "categories": [
-        "mcp"
+        "coding"
       ],
-      "capabilities": [],
+      "capabilities": [
+        "coding agent",
+        "code editing",
+        "terminal"
+      ],
       "os": null,
-      "languages": null,
-      "license": null,
-      "openSource": null,
-      "hosting": null,
+      "languages": [
+        "TypeScript"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": "local",
       "noPaidApi": null,
       "pricing": null,
       "dependencies": null,
       "permissions": null,
       "installation": null,
-      "integrations": [
-        "streamable-http"
-      ],
-      "mcp": true,
-      "maintenance": null,
-      "latestRelease": "0.1.0",
-      "lastActivity": "2026-07-10T04:58:06.628668Z",
-      "stars": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-21T18:57:09Z",
+      "stars": 228392,
       "securityAdvisories": null,
-      "setup": null,
-      "tradeoff": null,
-      "publisherIds": [
-        "ag.hood/name-service"
-      ],
+      "setup": "https://opencode.ai/docs/",
+      "tradeoff": "Review tool permissions and isolate repositories that contain untrusted files.",
+      "publisherIds": [],
       "sources": [
         {
-          "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ag.hood%2Fname-service/versions/0.1.0",
-          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "kind": "github",
+          "url": "https://github.com/anomalyco/opencode",
+          "verifiedAt": "2026-11-21T19:00:50.089Z",
           "fields": [
-            "publisherIds",
-            "publisherVersion",
-            "mcp",
-            "integrations"
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://opencode.ai/docs/",
+          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "fields": [
+            "description",
+            "categories",
+            "capabilities",
+            "hosting",
+            "setup",
+            "tradeoff",
+            "languages"
           ]
         }
       ],
-      "verifiedAt": "2026-11-21T18:52:41.758Z",
-      "confidence": "metadata"
+      "verifiedAt": "2026-11-21T19:00:50.089Z",
+      "confidence": "curated"
     },
     {
-      "id": "mcp-ywdlbmn5lmfsbw9zdgltcg9zc2libguvc2l0zq",
-      "name": "agency.almostimpossible/site",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/agency.almostimpossible%2Fsite/versions/1.0.0",
+      "id": "mcp-058bc59553ab9586d8a89cdf2405b275",
+      "name": "africa.startuplist/mcp",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/africa.startuplist%2Fmcp/versions/1.0.0",
       "github": null,
       "website": null,
       "description": "MCP server listed in the Official MCP Registry.",
@@ -3628,18 +3790,18 @@
       "mcp": true,
       "maintenance": null,
       "latestRelease": "1.0.0",
-      "lastActivity": "2026-11-17T21:04:09.09325Z",
+      "lastActivity": "2026-11-14T06:19:45.171442Z",
       "stars": null,
       "securityAdvisories": null,
       "setup": null,
       "tradeoff": null,
       "publisherIds": [
-        "agency.almostimpossible/site"
+        "africa.startuplist/mcp"
       ],
       "sources": [
         {
           "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/agency.almostimpossible%2Fsite/versions/1.0.0",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/africa.startuplist%2Fmcp/versions/1.0.0",
           "verifiedAt": "2026-11-21T18:52:41.758Z",
           "fields": [
             "publisherIds",
@@ -3653,7 +3815,313 @@
       "confidence": "metadata"
     },
     {
-      "id": "mcp-ywdlbmn5lmv4dhjlbwvses9hz2vuy3k",
+      "id": "mcp-07d1350787581c7ebc8aac8fe5077ad0",
+      "name": "academy.serviceengineer/se-ai",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/academy.serviceengineer%2Fse-ai/versions/1.0.1",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.1",
+      "lastActivity": "2026-11-08T16:20:02.865317Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "academy.serviceengineer/se-ai"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/academy.serviceengineer%2Fse-ai/versions/1.0.1",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-0cc5e05d053e838254f28d873307171c",
+      "name": "ae.discond/discond",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.discond%2Fdiscond/versions/1.1.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.1.0",
+      "lastActivity": "2026-11-15T13:42:27.118673Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.discond/discond"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.discond%2Fdiscond/versions/1.1.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-2152481f99bf9c48245807a32fd69fd4",
+      "name": "africa.divisi/divisi",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/africa.divisi%2Fdivisi/versions/26.11.20.1",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "26.11.20.1",
+      "lastActivity": "2026-11-20T12:20:32.85826Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "africa.divisi/divisi"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/africa.divisi%2Fdivisi/versions/26.11.20.1",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-2890e7fa64ae1f01f01ab5fc8cffe14f",
+      "name": "ad.inside/inside-ads",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.inside%2Finside-ads/versions/1.0.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.0",
+      "lastActivity": "2026-08-18T20:55:46.452926Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ad.inside/inside-ads"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.inside%2Finside-ads/versions/1.0.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-2a77a8b8177d0088ac507d6cc8f791fc",
+      "name": "academy.ase/periodic-system",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/academy.ase%2Fperiodic-system/versions/2026.4.1",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "2026.4.1",
+      "lastActivity": "2026-10-22T20:23:57.545065Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "academy.ase/periodic-system"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/academy.ase%2Fperiodic-system/versions/2026.4.1",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-38d746a60d1b38e004882f855bd7783c",
+      "name": "ae.beachclubs/mcp",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.beachclubs%2Fmcp/versions/0.3.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "0.3.0",
+      "lastActivity": "2026-10-23T16:09:50.932635Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.beachclubs/mcp"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.beachclubs%2Fmcp/versions/0.3.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-3a8c0884f516bdbc2c7ba373ecfe73f4",
       "name": "agency.extremely/agency",
       "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/agency.extremely%2Fagency/versions/0.1.1",
       "github": "https://github.com/maxkxd/extremely-autonomous-agents",
@@ -3705,772 +4173,7 @@
       "confidence": "metadata"
     },
     {
-      "id": "mcp-ywmuaw5mzxjlbmnllnnol21jca",
-      "name": "ac.inference.sh/mcp",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ac.inference.sh%2Fmcp/versions/2.0.1",
-      "github": null,
-      "website": null,
-      "description": "MCP server listed in the Official MCP Registry.",
-      "categories": [
-        "mcp"
-      ],
-      "capabilities": [],
-      "os": null,
-      "languages": null,
-      "license": null,
-      "openSource": null,
-      "hosting": null,
-      "noPaidApi": null,
-      "pricing": null,
-      "dependencies": null,
-      "permissions": null,
-      "installation": null,
-      "integrations": [
-        "streamable-http"
-      ],
-      "mcp": true,
-      "maintenance": null,
-      "latestRelease": "2.0.1",
-      "lastActivity": "2026-07-27T10:44:51.359634Z",
-      "stars": null,
-      "securityAdvisories": null,
-      "setup": null,
-      "tradeoff": null,
-      "publisherIds": [
-        "ac.inference.sh/mcp"
-      ],
-      "sources": [
-        {
-          "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ac.inference.sh%2Fmcp/versions/2.0.1",
-          "verifiedAt": "2026-11-21T18:52:41.758Z",
-          "fields": [
-            "publisherIds",
-            "publisherVersion",
-            "mcp",
-            "integrations"
-          ]
-        }
-      ],
-      "verifiedAt": "2026-11-21T18:52:41.758Z",
-      "confidence": "metadata"
-    },
-    {
-      "id": "mcp-ywmubwl6yw4vcmvnaxn0cnk",
-      "name": "ac.mizan/registry",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ac.mizan%2Fregistry/versions/1.2.0",
-      "github": null,
-      "website": null,
-      "description": "MCP server listed in the Official MCP Registry.",
-      "categories": [
-        "mcp"
-      ],
-      "capabilities": [],
-      "os": null,
-      "languages": null,
-      "license": null,
-      "openSource": null,
-      "hosting": null,
-      "noPaidApi": null,
-      "pricing": null,
-      "dependencies": null,
-      "permissions": null,
-      "installation": null,
-      "integrations": [
-        "streamable-http"
-      ],
-      "mcp": true,
-      "maintenance": null,
-      "latestRelease": "1.2.0",
-      "lastActivity": "2026-11-05T23:35:33.188176Z",
-      "stars": null,
-      "securityAdvisories": null,
-      "setup": null,
-      "tradeoff": null,
-      "publisherIds": [
-        "ac.mizan/registry"
-      ],
-      "sources": [
-        {
-          "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ac.mizan%2Fregistry/versions/1.2.0",
-          "verifiedAt": "2026-11-21T18:52:41.758Z",
-          "fields": [
-            "publisherIds",
-            "publisherVersion",
-            "mcp",
-            "integrations"
-          ]
-        }
-      ],
-      "verifiedAt": "2026-11-21T18:52:41.758Z",
-      "confidence": "metadata"
-    },
-    {
-      "id": "mcp-ywmuc25hzy9zbmfn",
-      "name": "ac.snag/snag",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ac.snag%2Fsnag/versions/1.0.0",
-      "github": null,
-      "website": null,
-      "description": "MCP server listed in the Official MCP Registry.",
-      "categories": [
-        "mcp"
-      ],
-      "capabilities": [],
-      "os": null,
-      "languages": null,
-      "license": null,
-      "openSource": null,
-      "hosting": null,
-      "noPaidApi": null,
-      "pricing": null,
-      "dependencies": null,
-      "permissions": null,
-      "installation": null,
-      "integrations": [
-        "streamable-http"
-      ],
-      "mcp": true,
-      "maintenance": null,
-      "latestRelease": "1.0.0",
-      "lastActivity": "2026-09-09T10:35:53.194664Z",
-      "stars": null,
-      "securityAdvisories": null,
-      "setup": null,
-      "tradeoff": null,
-      "publisherIds": [
-        "ac.snag/snag"
-      ],
-      "sources": [
-        {
-          "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ac.snag%2Fsnag/versions/1.0.0",
-          "verifiedAt": "2026-11-21T18:52:41.758Z",
-          "fields": [
-            "publisherIds",
-            "publisherVersion",
-            "mcp",
-            "integrations"
-          ]
-        }
-      ],
-      "verifiedAt": "2026-11-21T18:52:41.758Z",
-      "confidence": "metadata"
-    },
-    {
-      "id": "mcp-ywmudgfuzgvtl2rvy3mtbwnw",
-      "name": "ac.tandem/docs-mcp",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ac.tandem%2Fdocs-mcp/versions/0.3.2",
-      "github": "https://github.com/frumu-ai/tandem",
-      "website": null,
-      "description": "MCP server listed in the Official MCP Registry.",
-      "categories": [
-        "mcp"
-      ],
-      "capabilities": [],
-      "os": null,
-      "languages": null,
-      "license": null,
-      "openSource": null,
-      "hosting": null,
-      "noPaidApi": null,
-      "pricing": null,
-      "dependencies": null,
-      "permissions": null,
-      "installation": null,
-      "integrations": [
-        "streamable-http"
-      ],
-      "mcp": true,
-      "maintenance": null,
-      "latestRelease": "0.3.2",
-      "lastActivity": "2026-04-22T21:06:34.500049Z",
-      "stars": null,
-      "securityAdvisories": null,
-      "setup": "https://github.com/frumu-ai/tandem",
-      "tradeoff": null,
-      "publisherIds": [
-        "ac.tandem/docs-mcp"
-      ],
-      "sources": [
-        {
-          "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ac.tandem%2Fdocs-mcp/versions/0.3.2",
-          "verifiedAt": "2026-11-21T18:52:41.758Z",
-          "fields": [
-            "publisherIds",
-            "publisherVersion",
-            "mcp",
-            "integrations"
-          ]
-        }
-      ],
-      "verifiedAt": "2026-11-21T18:52:41.758Z",
-      "confidence": "metadata"
-    },
-    {
-      "id": "mcp-ywnhzgvtes5hc2uvcgvyaw9kawmtc3lzdgvt",
-      "name": "academy.ase/periodic-system",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/academy.ase%2Fperiodic-system/versions/2026.4.1",
-      "github": null,
-      "website": null,
-      "description": "MCP server listed in the Official MCP Registry.",
-      "categories": [
-        "mcp"
-      ],
-      "capabilities": [],
-      "os": null,
-      "languages": null,
-      "license": null,
-      "openSource": null,
-      "hosting": null,
-      "noPaidApi": null,
-      "pricing": null,
-      "dependencies": null,
-      "permissions": null,
-      "installation": null,
-      "integrations": [
-        "streamable-http"
-      ],
-      "mcp": true,
-      "maintenance": null,
-      "latestRelease": "2026.4.1",
-      "lastActivity": "2026-10-22T20:23:57.545065Z",
-      "stars": null,
-      "securityAdvisories": null,
-      "setup": null,
-      "tradeoff": null,
-      "publisherIds": [
-        "academy.ase/periodic-system"
-      ],
-      "sources": [
-        {
-          "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/academy.ase%2Fperiodic-system/versions/2026.4.1",
-          "verifiedAt": "2026-11-21T18:52:41.758Z",
-          "fields": [
-            "publisherIds",
-            "publisherVersion",
-            "mcp",
-            "integrations"
-          ]
-        }
-      ],
-      "verifiedAt": "2026-11-21T18:52:41.758Z",
-      "confidence": "metadata"
-    },
-    {
-      "id": "mcp-ywnhzgvtes5hcgv4ywkvyxblec1has1hy2fkzw15",
-      "name": "academy.apexai/apex-ai-academy",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/academy.apexai%2Fapex-ai-academy/versions/1.0.2",
-      "github": "https://github.com/apexai-academy/sample-agents",
-      "website": null,
-      "description": "MCP server listed in the Official MCP Registry.",
-      "categories": [
-        "mcp"
-      ],
-      "capabilities": [],
-      "os": null,
-      "languages": null,
-      "license": null,
-      "openSource": null,
-      "hosting": null,
-      "noPaidApi": null,
-      "pricing": null,
-      "dependencies": null,
-      "permissions": null,
-      "installation": null,
-      "integrations": [
-        "streamable-http"
-      ],
-      "mcp": true,
-      "maintenance": null,
-      "latestRelease": "1.0.2",
-      "lastActivity": "2026-10-17T03:25:05.205722Z",
-      "stars": null,
-      "securityAdvisories": null,
-      "setup": "https://github.com/apexai-academy/sample-agents",
-      "tradeoff": null,
-      "publisherIds": [
-        "academy.apexai/apex-ai-academy"
-      ],
-      "sources": [
-        {
-          "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/academy.apexai%2Fapex-ai-academy/versions/1.0.2",
-          "verifiedAt": "2026-11-21T18:52:41.758Z",
-          "fields": [
-            "publisherIds",
-            "publisherVersion",
-            "mcp",
-            "integrations"
-          ]
-        }
-      ],
-      "verifiedAt": "2026-11-21T18:52:41.758Z",
-      "confidence": "metadata"
-    },
-    {
-      "id": "mcp-ywnhzgvtes5tewnvbnrlbnqvz29vz2xllwfkcw",
-      "name": "academy.mycontent/google-ads",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/academy.mycontent%2Fgoogle-ads/versions/0.1.0",
-      "github": null,
-      "website": null,
-      "description": "MCP server listed in the Official MCP Registry.",
-      "categories": [
-        "mcp"
-      ],
-      "capabilities": [],
-      "os": null,
-      "languages": null,
-      "license": null,
-      "openSource": null,
-      "hosting": null,
-      "noPaidApi": null,
-      "pricing": null,
-      "dependencies": null,
-      "permissions": null,
-      "installation": null,
-      "integrations": [
-        "streamable-http"
-      ],
-      "mcp": true,
-      "maintenance": null,
-      "latestRelease": "0.1.0",
-      "lastActivity": "2026-11-21T18:01:37.133183Z",
-      "stars": null,
-      "securityAdvisories": null,
-      "setup": null,
-      "tradeoff": null,
-      "publisherIds": [
-        "academy.mycontent/google-ads"
-      ],
-      "sources": [
-        {
-          "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/academy.mycontent%2Fgoogle-ads/versions/0.1.0",
-          "verifiedAt": "2026-11-21T18:52:41.758Z",
-          "fields": [
-            "publisherIds",
-            "publisherVersion",
-            "mcp",
-            "integrations"
-          ]
-        }
-      ],
-      "verifiedAt": "2026-11-21T18:52:41.758Z",
-      "confidence": "metadata"
-    },
-    {
-      "id": "mcp-ywnhzgvtes5zzxj2awnlzw5naw5lzxivc2utywk",
-      "name": "academy.serviceengineer/se-ai",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/academy.serviceengineer%2Fse-ai/versions/1.0.1",
-      "github": null,
-      "website": null,
-      "description": "MCP server listed in the Official MCP Registry.",
-      "categories": [
-        "mcp"
-      ],
-      "capabilities": [],
-      "os": null,
-      "languages": null,
-      "license": null,
-      "openSource": null,
-      "hosting": null,
-      "noPaidApi": null,
-      "pricing": null,
-      "dependencies": null,
-      "permissions": null,
-      "installation": null,
-      "integrations": [
-        "streamable-http"
-      ],
-      "mcp": true,
-      "maintenance": null,
-      "latestRelease": "1.0.1",
-      "lastActivity": "2026-11-08T16:20:02.865317Z",
-      "stars": null,
-      "securityAdvisories": null,
-      "setup": null,
-      "tradeoff": null,
-      "publisherIds": [
-        "academy.serviceengineer/se-ai"
-      ],
-      "sources": [
-        {
-          "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/academy.serviceengineer%2Fse-ai/versions/1.0.1",
-          "verifiedAt": "2026-11-21T18:52:41.758Z",
-          "fields": [
-            "publisherIds",
-            "publisherVersion",
-            "mcp",
-            "integrations"
-          ]
-        }
-      ],
-      "verifiedAt": "2026-11-21T18:52:41.758Z",
-      "confidence": "metadata"
-    },
-    {
-      "id": "mcp-ywquaw5zawrll2luc2lkzs1hzhm",
-      "name": "ad.inside/inside-ads",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.inside%2Finside-ads/versions/1.0.0",
-      "github": null,
-      "website": null,
-      "description": "MCP server listed in the Official MCP Registry.",
-      "categories": [
-        "mcp"
-      ],
-      "capabilities": [],
-      "os": null,
-      "languages": null,
-      "license": null,
-      "openSource": null,
-      "hosting": null,
-      "noPaidApi": null,
-      "pricing": null,
-      "dependencies": null,
-      "permissions": null,
-      "installation": null,
-      "integrations": [
-        "streamable-http"
-      ],
-      "mcp": true,
-      "maintenance": null,
-      "latestRelease": "1.0.0",
-      "lastActivity": "2026-08-18T20:55:46.452926Z",
-      "stars": null,
-      "securityAdvisories": null,
-      "setup": null,
-      "tradeoff": null,
-      "publisherIds": [
-        "ad.inside/inside-ads"
-      ],
-      "sources": [
-        {
-          "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.inside%2Finside-ads/versions/1.0.0",
-          "verifiedAt": "2026-11-21T18:52:41.758Z",
-          "fields": [
-            "publisherIds",
-            "publisherVersion",
-            "mcp",
-            "integrations"
-          ]
-        }
-      ],
-      "verifiedAt": "2026-11-21T18:52:41.758Z",
-      "confidence": "metadata"
-    },
-    {
-      "id": "mcp-ywqucgfudghlb24vbwnw",
-      "name": "ad.pantheon/mcp",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.pantheon%2Fmcp/versions/1.0.0",
-      "github": null,
-      "website": null,
-      "description": "MCP server listed in the Official MCP Registry.",
-      "categories": [
-        "mcp"
-      ],
-      "capabilities": [],
-      "os": null,
-      "languages": null,
-      "license": null,
-      "openSource": null,
-      "hosting": null,
-      "noPaidApi": null,
-      "pricing": null,
-      "dependencies": null,
-      "permissions": null,
-      "installation": null,
-      "integrations": [
-        "streamable-http"
-      ],
-      "mcp": true,
-      "maintenance": null,
-      "latestRelease": "1.0.0",
-      "lastActivity": "2026-11-03T12:12:01.650543Z",
-      "stars": null,
-      "securityAdvisories": null,
-      "setup": null,
-      "tradeoff": null,
-      "publisherIds": [
-        "ad.pantheon/mcp"
-      ],
-      "sources": [
-        {
-          "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.pantheon%2Fmcp/versions/1.0.0",
-          "verifiedAt": "2026-11-21T18:52:41.758Z",
-          "fields": [
-            "publisherIds",
-            "publisherVersion",
-            "mcp",
-            "integrations"
-          ]
-        }
-      ],
-      "verifiedAt": "2026-11-21T18:52:41.758Z",
-      "confidence": "metadata"
-    },
-    {
-      "id": "mcp-ywqudglkzs9ty3a",
-      "name": "ad.tide/mcp",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.tide%2Fmcp/versions/2.0.0",
-      "github": null,
-      "website": null,
-      "description": "MCP server listed in the Official MCP Registry.",
-      "categories": [
-        "mcp"
-      ],
-      "capabilities": [],
-      "os": null,
-      "languages": null,
-      "license": null,
-      "openSource": null,
-      "hosting": null,
-      "noPaidApi": null,
-      "pricing": null,
-      "dependencies": null,
-      "permissions": null,
-      "installation": null,
-      "integrations": [
-        "streamable-http"
-      ],
-      "mcp": true,
-      "maintenance": null,
-      "latestRelease": "2.0.0",
-      "lastActivity": "2026-11-04T06:22:37.915668Z",
-      "stars": null,
-      "securityAdvisories": null,
-      "setup": null,
-      "tradeoff": null,
-      "publisherIds": [
-        "ad.tide/mcp"
-      ],
-      "sources": [
-        {
-          "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.tide%2Fmcp/versions/2.0.0",
-          "verifiedAt": "2026-11-21T18:52:41.758Z",
-          "fields": [
-            "publisherIds",
-            "publisherVersion",
-            "mcp",
-            "integrations"
-          ]
-        }
-      ],
-      "verifiedAt": "2026-11-21T18:52:41.758Z",
-      "confidence": "metadata"
-    },
-    {
-      "id": "mcp-ywqudhjpynv0cy9ty3a",
-      "name": "ad.tributs/mcp",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.tributs%2Fmcp/versions/1.0.0",
-      "github": null,
-      "website": null,
-      "description": "MCP server listed in the Official MCP Registry.",
-      "categories": [
-        "mcp"
-      ],
-      "capabilities": [],
-      "os": null,
-      "languages": null,
-      "license": null,
-      "openSource": null,
-      "hosting": null,
-      "noPaidApi": null,
-      "pricing": null,
-      "dependencies": null,
-      "permissions": null,
-      "installation": null,
-      "integrations": [
-        "streamable-http"
-      ],
-      "mcp": true,
-      "maintenance": null,
-      "latestRelease": "1.0.0",
-      "lastActivity": "2026-11-14T10:27:16.913528Z",
-      "stars": null,
-      "securityAdvisories": null,
-      "setup": null,
-      "tradeoff": null,
-      "publisherIds": [
-        "ad.tributs/mcp"
-      ],
-      "sources": [
-        {
-          "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.tributs%2Fmcp/versions/1.0.0",
-          "verifiedAt": "2026-11-21T18:52:41.758Z",
-          "fields": [
-            "publisherIds",
-            "publisherVersion",
-            "mcp",
-            "integrations"
-          ]
-        }
-      ],
-      "verifiedAt": "2026-11-21T18:52:41.758Z",
-      "confidence": "metadata"
-    },
-    {
-      "id": "mcp-ywquyxbvz2vll2fwb2dlzq",
-      "name": "ad.apogee/apogee",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.apogee%2Fapogee/versions/1.1.0",
-      "github": "https://github.com/apogeegit/apogee-mcp",
-      "website": null,
-      "description": "MCP server listed in the Official MCP Registry.",
-      "categories": [
-        "mcp"
-      ],
-      "capabilities": [],
-      "os": null,
-      "languages": null,
-      "license": null,
-      "openSource": null,
-      "hosting": null,
-      "noPaidApi": null,
-      "pricing": null,
-      "dependencies": null,
-      "permissions": null,
-      "installation": null,
-      "integrations": [
-        "streamable-http"
-      ],
-      "mcp": true,
-      "maintenance": null,
-      "latestRelease": "1.1.0",
-      "lastActivity": "2026-11-03T23:36:32.020466Z",
-      "stars": null,
-      "securityAdvisories": null,
-      "setup": "https://github.com/apogeegit/apogee-mcp",
-      "tradeoff": null,
-      "publisherIds": [
-        "ad.apogee/apogee"
-      ],
-      "sources": [
-        {
-          "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.apogee%2Fapogee/versions/1.1.0",
-          "verifiedAt": "2026-11-21T18:52:41.758Z",
-          "fields": [
-            "publisherIds",
-            "publisherVersion",
-            "mcp",
-            "integrations"
-          ]
-        }
-      ],
-      "verifiedAt": "2026-11-21T18:52:41.758Z",
-      "confidence": "metadata"
-    },
-    {
-      "id": "mcp-ywquz2v0bguvbgvhzhm",
-      "name": "ad.getle/leads",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.getle%2Fleads/versions/1.0.1",
-      "github": "https://github.com/adgrowofficial/getlead-mcp",
-      "website": null,
-      "description": "MCP server listed in the Official MCP Registry.",
-      "categories": [
-        "mcp"
-      ],
-      "capabilities": [],
-      "os": null,
-      "languages": null,
-      "license": null,
-      "openSource": null,
-      "hosting": null,
-      "noPaidApi": null,
-      "pricing": null,
-      "dependencies": null,
-      "permissions": null,
-      "installation": null,
-      "integrations": [
-        "streamable-http"
-      ],
-      "mcp": true,
-      "maintenance": null,
-      "latestRelease": "1.0.1",
-      "lastActivity": "2026-10-26T22:16:48.897897Z",
-      "stars": null,
-      "securityAdvisories": null,
-      "setup": "https://github.com/adgrowofficial/getlead-mcp",
-      "tradeoff": null,
-      "publisherIds": [
-        "ad.getle/leads"
-      ],
-      "sources": [
-        {
-          "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.getle%2Fleads/versions/1.0.1",
-          "verifiedAt": "2026-11-21T18:52:41.758Z",
-          "fields": [
-            "publisherIds",
-            "publisherVersion",
-            "mcp",
-            "integrations"
-          ]
-        }
-      ],
-      "verifiedAt": "2026-11-21T18:52:41.758Z",
-      "confidence": "metadata"
-    },
-    {
-      "id": "mcp-ywuubxjrl2r1ymfplxbyb3blcnr5",
-      "name": "ae.mrk/dubai-property",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.mrk%2Fdubai-property/versions/1.0.0",
-      "github": null,
-      "website": null,
-      "description": "MCP server listed in the Official MCP Registry.",
-      "categories": [
-        "mcp"
-      ],
-      "capabilities": [],
-      "os": null,
-      "languages": null,
-      "license": null,
-      "openSource": null,
-      "hosting": null,
-      "noPaidApi": null,
-      "pricing": null,
-      "dependencies": null,
-      "permissions": null,
-      "installation": null,
-      "integrations": [
-        "streamable-http"
-      ],
-      "mcp": true,
-      "maintenance": null,
-      "latestRelease": "1.0.0",
-      "lastActivity": "2026-11-09T17:22:02.31281Z",
-      "stars": null,
-      "securityAdvisories": null,
-      "setup": null,
-      "tradeoff": null,
-      "publisherIds": [
-        "ae.mrk/dubai-property"
-      ],
-      "sources": [
-        {
-          "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.mrk%2Fdubai-property/versions/1.0.0",
-          "verifiedAt": "2026-11-21T18:52:41.758Z",
-          "fields": [
-            "publisherIds",
-            "publisherVersion",
-            "mcp",
-            "integrations"
-          ]
-        }
-      ],
-      "verifiedAt": "2026-11-21T18:52:41.758Z",
-      "confidence": "metadata"
-    },
-    {
-      "id": "mcp-ywuucgxhbnrndwlkzs9kdwjhas1nyxjkzw5pbmc",
+      "id": "mcp-3af0e6357fb9fb82d1c551821dad0d3f",
       "name": "ae.plantguide/dubai-gardening",
       "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.plantguide%2Fdubai-gardening/versions/1.1.0",
       "github": null,
@@ -4521,160 +4224,7 @@
       "confidence": "metadata"
     },
     {
-      "id": "mcp-ywuuchjvamvjdg9yes9ty3a",
-      "name": "ae.projectory/mcp",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.projectory%2Fmcp/versions/0.7.0",
-      "github": null,
-      "website": null,
-      "description": "MCP server listed in the Official MCP Registry.",
-      "categories": [
-        "mcp"
-      ],
-      "capabilities": [],
-      "os": null,
-      "languages": null,
-      "license": null,
-      "openSource": null,
-      "hosting": null,
-      "noPaidApi": null,
-      "pricing": null,
-      "dependencies": null,
-      "permissions": null,
-      "installation": null,
-      "integrations": [
-        "streamable-http"
-      ],
-      "mcp": true,
-      "maintenance": null,
-      "latestRelease": "0.7.0",
-      "lastActivity": "2026-11-02T16:40:13.966873Z",
-      "stars": null,
-      "securityAdvisories": null,
-      "setup": null,
-      "tradeoff": null,
-      "publisherIds": [
-        "ae.projectory/mcp"
-      ],
-      "sources": [
-        {
-          "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.projectory%2Fmcp/versions/0.7.0",
-          "verifiedAt": "2026-11-21T18:52:41.758Z",
-          "fields": [
-            "publisherIds",
-            "publisherVersion",
-            "mcp",
-            "integrations"
-          ]
-        }
-      ],
-      "verifiedAt": "2026-11-21T18:52:41.758Z",
-      "confidence": "metadata"
-    },
-    {
-      "id": "mcp-ywuuchjvcgljay9wcm9wawnr",
-      "name": "ae.propick/propick",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.propick%2Fpropick/versions/1.0.0",
-      "github": null,
-      "website": null,
-      "description": "MCP server listed in the Official MCP Registry.",
-      "categories": [
-        "mcp"
-      ],
-      "capabilities": [],
-      "os": null,
-      "languages": null,
-      "license": null,
-      "openSource": null,
-      "hosting": null,
-      "noPaidApi": null,
-      "pricing": null,
-      "dependencies": null,
-      "permissions": null,
-      "installation": null,
-      "integrations": [
-        "streamable-http"
-      ],
-      "mcp": true,
-      "maintenance": null,
-      "latestRelease": "1.0.0",
-      "lastActivity": "2026-08-25T11:16:56.879334Z",
-      "stars": null,
-      "securityAdvisories": null,
-      "setup": null,
-      "tradeoff": null,
-      "publisherIds": [
-        "ae.propick/propick"
-      ],
-      "sources": [
-        {
-          "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.propick%2Fpropick/versions/1.0.0",
-          "verifiedAt": "2026-11-21T18:52:41.758Z",
-          "fields": [
-            "publisherIds",
-            "publisherVersion",
-            "mcp",
-            "integrations"
-          ]
-        }
-      ],
-      "verifiedAt": "2026-11-21T18:52:41.758Z",
-      "confidence": "metadata"
-    },
-    {
-      "id": "mcp-ywuud2fnz2xll2zlbmxpz2h0",
-      "name": "ae.waggle/fenlight",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.waggle%2Ffenlight/versions/0.3.0",
-      "github": null,
-      "website": null,
-      "description": "MCP server listed in the Official MCP Registry.",
-      "categories": [
-        "mcp"
-      ],
-      "capabilities": [],
-      "os": null,
-      "languages": null,
-      "license": null,
-      "openSource": null,
-      "hosting": null,
-      "noPaidApi": null,
-      "pricing": null,
-      "dependencies": null,
-      "permissions": null,
-      "installation": null,
-      "integrations": [
-        "streamable-http"
-      ],
-      "mcp": true,
-      "maintenance": null,
-      "latestRelease": "0.3.0",
-      "lastActivity": "2026-10-16T04:35:48.176825Z",
-      "stars": null,
-      "securityAdvisories": null,
-      "setup": null,
-      "tradeoff": null,
-      "publisherIds": [
-        "ae.waggle/fenlight"
-      ],
-      "sources": [
-        {
-          "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.waggle%2Ffenlight/versions/0.3.0",
-          "verifiedAt": "2026-11-21T18:52:41.758Z",
-          "fields": [
-            "publisherIds",
-            "publisherVersion",
-            "mcp",
-            "integrations"
-          ]
-        }
-      ],
-      "verifiedAt": "2026-11-21T18:52:41.758Z",
-      "confidence": "metadata"
-    },
-    {
-      "id": "mcp-ywuud2fnz2xll3zlcme",
+      "id": "mcp-450cf1a781ba9c15b18ea714508a7e7c",
       "name": "ae.waggle/vera",
       "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.waggle%2Fvera/versions/0.2.0",
       "github": null,
@@ -4725,211 +4275,7 @@
       "confidence": "metadata"
     },
     {
-      "id": "mcp-ywuuymvhy2hjbhvicy9ty3a",
-      "name": "ae.beachclubs/mcp",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.beachclubs%2Fmcp/versions/0.3.0",
-      "github": null,
-      "website": null,
-      "description": "MCP server listed in the Official MCP Registry.",
-      "categories": [
-        "mcp"
-      ],
-      "capabilities": [],
-      "os": null,
-      "languages": null,
-      "license": null,
-      "openSource": null,
-      "hosting": null,
-      "noPaidApi": null,
-      "pricing": null,
-      "dependencies": null,
-      "permissions": null,
-      "installation": null,
-      "integrations": [
-        "streamable-http"
-      ],
-      "mcp": true,
-      "maintenance": null,
-      "latestRelease": "0.3.0",
-      "lastActivity": "2026-10-23T16:09:50.932635Z",
-      "stars": null,
-      "securityAdvisories": null,
-      "setup": null,
-      "tradeoff": null,
-      "publisherIds": [
-        "ae.beachclubs/mcp"
-      ],
-      "sources": [
-        {
-          "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.beachclubs%2Fmcp/versions/0.3.0",
-          "verifiedAt": "2026-11-21T18:52:41.758Z",
-          "fields": [
-            "publisherIds",
-            "publisherVersion",
-            "mcp",
-            "integrations"
-          ]
-        }
-      ],
-      "verifiedAt": "2026-11-21T18:52:41.758Z",
-      "confidence": "metadata"
-    },
-    {
-      "id": "mcp-ywuuynjhaw55l2dyb2nlcnktchjpy2vz",
-      "name": "ae.brainy/grocery-prices",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.brainy%2Fgrocery-prices/versions/2.0.0",
-      "github": null,
-      "website": null,
-      "description": "MCP server listed in the Official MCP Registry.",
-      "categories": [
-        "mcp"
-      ],
-      "capabilities": [],
-      "os": null,
-      "languages": null,
-      "license": null,
-      "openSource": null,
-      "hosting": null,
-      "noPaidApi": null,
-      "pricing": null,
-      "dependencies": null,
-      "permissions": null,
-      "installation": null,
-      "integrations": [
-        "streamable-http"
-      ],
-      "mcp": true,
-      "maintenance": null,
-      "latestRelease": "2.0.0",
-      "lastActivity": "2026-10-04T02:29:51.000704Z",
-      "stars": null,
-      "securityAdvisories": null,
-      "setup": null,
-      "tradeoff": null,
-      "publisherIds": [
-        "ae.brainy/grocery-prices"
-      ],
-      "sources": [
-        {
-          "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.brainy%2Fgrocery-prices/versions/2.0.0",
-          "verifiedAt": "2026-11-21T18:52:41.758Z",
-          "fields": [
-            "publisherIds",
-            "publisherVersion",
-            "mcp",
-            "integrations"
-          ]
-        }
-      ],
-      "verifiedAt": "2026-11-21T18:52:41.758Z",
-      "confidence": "metadata"
-    },
-    {
-      "id": "mcp-ywuuynjhaw55lnrpcgxpbmuvz3rhng",
-      "name": "ae.brainy.tipline/gta6",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.brainy.tipline%2Fgta6/versions/1.0.1",
-      "github": null,
-      "website": null,
-      "description": "MCP server listed in the Official MCP Registry.",
-      "categories": [
-        "mcp"
-      ],
-      "capabilities": [],
-      "os": null,
-      "languages": null,
-      "license": null,
-      "openSource": null,
-      "hosting": null,
-      "noPaidApi": null,
-      "pricing": null,
-      "dependencies": null,
-      "permissions": null,
-      "installation": null,
-      "integrations": [
-        "streamable-http"
-      ],
-      "mcp": true,
-      "maintenance": null,
-      "latestRelease": "1.0.1",
-      "lastActivity": "2026-11-18T08:38:22.385581Z",
-      "stars": null,
-      "securityAdvisories": null,
-      "setup": null,
-      "tradeoff": null,
-      "publisherIds": [
-        "ae.brainy.tipline/gta6"
-      ],
-      "sources": [
-        {
-          "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.brainy.tipline%2Fgta6/versions/1.0.1",
-          "verifiedAt": "2026-11-21T18:52:41.758Z",
-          "fields": [
-            "publisherIds",
-            "publisherVersion",
-            "mcp",
-            "integrations"
-          ]
-        }
-      ],
-      "verifiedAt": "2026-11-21T18:52:41.758Z",
-      "confidence": "metadata"
-    },
-    {
-      "id": "mcp-ywuuywxlegv5c291bmqvywxlegv5lxnvdw5k",
-      "name": "ae.alexeysound/alexey-sound",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.alexeysound%2Falexey-sound/versions/1.0.0",
-      "github": null,
-      "website": null,
-      "description": "MCP server listed in the Official MCP Registry.",
-      "categories": [
-        "mcp"
-      ],
-      "capabilities": [],
-      "os": null,
-      "languages": null,
-      "license": null,
-      "openSource": null,
-      "hosting": null,
-      "noPaidApi": null,
-      "pricing": null,
-      "dependencies": null,
-      "permissions": null,
-      "installation": null,
-      "integrations": [
-        "streamable-http"
-      ],
-      "mcp": true,
-      "maintenance": null,
-      "latestRelease": "1.0.0",
-      "lastActivity": "2026-11-10T08:53:20.037278Z",
-      "stars": null,
-      "securityAdvisories": null,
-      "setup": null,
-      "tradeoff": null,
-      "publisherIds": [
-        "ae.alexeysound/alexey-sound"
-      ],
-      "sources": [
-        {
-          "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.alexeysound%2Falexey-sound/versions/1.0.0",
-          "verifiedAt": "2026-11-21T18:52:41.758Z",
-          "fields": [
-            "publisherIds",
-            "publisherVersion",
-            "mcp",
-            "integrations"
-          ]
-        }
-      ],
-      "verifiedAt": "2026-11-21T18:52:41.758Z",
-      "confidence": "metadata"
-    },
-    {
-      "id": "mcp-ywuuz2vub3n5cy9nzw5vc3lz",
+      "id": "mcp-46609cd6bf68802e3d2f72b0351c34f5",
       "name": "ae.genosys/genosys",
       "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.genosys%2Fgenosys/versions/1.2.0",
       "github": null,
@@ -4980,7 +4326,7 @@
       "confidence": "metadata"
     },
     {
-      "id": "mcp-ywuuz3jvdmlzb3ivz3jvdgf4",
+      "id": "mcp-48bd83fe55ca58354a58fdafe305f030",
       "name": "ae.grovisor/grotax",
       "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.grovisor%2Fgrotax/versions/1.3.0",
       "github": null,
@@ -5031,60 +4377,9 @@
       "confidence": "metadata"
     },
     {
-      "id": "mcp-ywuuzgf0ywr1ymfpl2r1ymfplxjlywwtzxn0yxrl",
-      "name": "ae.datadubai/dubai-real-estate",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.datadubai%2Fdubai-real-estate/versions/1.1.0",
-      "github": "https://github.com/datadubai/dubai-real-estate-dld",
-      "website": null,
-      "description": "MCP server listed in the Official MCP Registry.",
-      "categories": [
-        "mcp"
-      ],
-      "capabilities": [],
-      "os": null,
-      "languages": null,
-      "license": null,
-      "openSource": null,
-      "hosting": null,
-      "noPaidApi": null,
-      "pricing": null,
-      "dependencies": null,
-      "permissions": null,
-      "installation": null,
-      "integrations": [
-        "streamable-http"
-      ],
-      "mcp": true,
-      "maintenance": null,
-      "latestRelease": "1.1.0",
-      "lastActivity": "2026-09-30T08:30:47.911063Z",
-      "stars": null,
-      "securityAdvisories": null,
-      "setup": "https://github.com/datadubai/dubai-real-estate-dld",
-      "tradeoff": null,
-      "publisherIds": [
-        "ae.datadubai/dubai-real-estate"
-      ],
-      "sources": [
-        {
-          "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.datadubai%2Fdubai-real-estate/versions/1.1.0",
-          "verifiedAt": "2026-11-21T18:52:41.758Z",
-          "fields": [
-            "publisherIds",
-            "publisherVersion",
-            "mcp",
-            "integrations"
-          ]
-        }
-      ],
-      "verifiedAt": "2026-11-21T18:52:41.758Z",
-      "confidence": "metadata"
-    },
-    {
-      "id": "mcp-ywuuzglzy29uzc9kaxnjb25k",
-      "name": "ae.discond/discond",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.discond%2Fdiscond/versions/1.1.0",
+      "id": "mcp-4c1e7a688431029d01dbcd1be00d5ac4",
+      "name": "academy.mycontent/google-ads",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/academy.mycontent%2Fgoogle-ads/versions/0.1.0",
       "github": null,
       "website": null,
       "description": "MCP server listed in the Official MCP Registry.",
@@ -5107,19 +4402,19 @@
       ],
       "mcp": true,
       "maintenance": null,
-      "latestRelease": "1.1.0",
-      "lastActivity": "2026-11-15T13:42:27.118673Z",
+      "latestRelease": "0.1.0",
+      "lastActivity": "2026-11-21T18:01:37.133183Z",
       "stars": null,
       "securityAdvisories": null,
       "setup": null,
       "tradeoff": null,
       "publisherIds": [
-        "ae.discond/discond"
+        "academy.mycontent/google-ads"
       ],
       "sources": [
         {
           "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.discond%2Fdiscond/versions/1.1.0",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/academy.mycontent%2Fgoogle-ads/versions/0.1.0",
           "verifiedAt": "2026-11-21T18:52:41.758Z",
           "fields": [
             "publisherIds",
@@ -5133,9 +4428,9 @@
       "confidence": "metadata"
     },
     {
-      "id": "mcp-ywuuznjhbwvyznkvc3rvcmutynvpbgrlcg",
-      "name": "ae.framerfy/store-builder",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.framerfy%2Fstore-builder/versions/1.0.0",
+      "id": "mcp-4f2f106bfabf3259fe952fa27cfb8a6d",
+      "name": "ad.tide/mcp",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.tide%2Fmcp/versions/2.0.0",
       "github": null,
       "website": null,
       "description": "MCP server listed in the Official MCP Registry.",
@@ -5158,19 +4453,19 @@
       ],
       "mcp": true,
       "maintenance": null,
-      "latestRelease": "1.0.0",
-      "lastActivity": "2026-11-12T12:19:25.872161Z",
+      "latestRelease": "2.0.0",
+      "lastActivity": "2026-11-04T06:22:37.915668Z",
       "stars": null,
       "securityAdvisories": null,
       "setup": null,
       "tradeoff": null,
       "publisherIds": [
-        "ae.framerfy/store-builder"
+        "ad.tide/mcp"
       ],
       "sources": [
         {
           "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.framerfy%2Fstore-builder/versions/1.0.0",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.tide%2Fmcp/versions/2.0.0",
           "verifiedAt": "2026-11-21T18:52:41.758Z",
           "fields": [
             "publisherIds",
@@ -5184,109 +4479,7 @@
       "confidence": "metadata"
     },
     {
-      "id": "mcp-ywuuzw1wbg95zxjvznjly29yzc9tb2hh",
-      "name": "ae.employerofrecord/moha",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.employerofrecord%2Fmoha/versions/1.0.0",
-      "github": null,
-      "website": null,
-      "description": "MCP server listed in the Official MCP Registry.",
-      "categories": [
-        "mcp"
-      ],
-      "capabilities": [],
-      "os": null,
-      "languages": null,
-      "license": null,
-      "openSource": null,
-      "hosting": null,
-      "noPaidApi": null,
-      "pricing": null,
-      "dependencies": null,
-      "permissions": null,
-      "installation": null,
-      "integrations": [
-        "streamable-http"
-      ],
-      "mcp": true,
-      "maintenance": null,
-      "latestRelease": "1.0.0",
-      "lastActivity": "2026-11-10T01:38:50.217032Z",
-      "stars": null,
-      "securityAdvisories": null,
-      "setup": null,
-      "tradeoff": null,
-      "publisherIds": [
-        "ae.employerofrecord/moha"
-      ],
-      "sources": [
-        {
-          "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.employerofrecord%2Fmoha/versions/1.0.0",
-          "verifiedAt": "2026-11-21T18:52:41.758Z",
-          "fields": [
-            "publisherIds",
-            "publisherVersion",
-            "mcp",
-            "integrations"
-          ]
-        }
-      ],
-      "verifiedAt": "2026-11-21T18:52:41.758Z",
-      "confidence": "metadata"
-    },
-    {
-      "id": "mcp-ywuuzw1wbg95zxjvznjly29yzc9tb2hhlwfjy291bnq",
-      "name": "ae.employerofrecord/moha-account",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.employerofrecord%2Fmoha-account/versions/1.0.0",
-      "github": null,
-      "website": null,
-      "description": "MCP server listed in the Official MCP Registry.",
-      "categories": [
-        "mcp"
-      ],
-      "capabilities": [],
-      "os": null,
-      "languages": null,
-      "license": null,
-      "openSource": null,
-      "hosting": null,
-      "noPaidApi": null,
-      "pricing": null,
-      "dependencies": null,
-      "permissions": null,
-      "installation": null,
-      "integrations": [
-        "streamable-http"
-      ],
-      "mcp": true,
-      "maintenance": null,
-      "latestRelease": "1.0.0",
-      "lastActivity": "2026-11-10T01:38:50.424244Z",
-      "stars": null,
-      "securityAdvisories": null,
-      "setup": null,
-      "tradeoff": null,
-      "publisherIds": [
-        "ae.employerofrecord/moha-account"
-      ],
-      "sources": [
-        {
-          "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.employerofrecord%2Fmoha-account/versions/1.0.0",
-          "verifiedAt": "2026-11-21T18:52:41.758Z",
-          "fields": [
-            "publisherIds",
-            "publisherVersion",
-            "mcp",
-            "integrations"
-          ]
-        }
-      ],
-      "verifiedAt": "2026-11-21T18:52:41.758Z",
-      "confidence": "metadata"
-    },
-    {
-      "id": "mcp-ywuuzwfzexzvawnll3r0cw",
+      "id": "mcp-54daaf0d83f3a3e300e8ba1eee4421c9",
       "name": "ae.easyvoice/tts",
       "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.easyvoice%2Ftts/versions/1.0.0",
       "github": null,
@@ -5337,9 +4530,60 @@
       "confidence": "metadata"
     },
     {
-      "id": "mcp-ywvyby5ldmvudhmvzxzlbnrz",
-      "name": "aero.events/events",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/aero.events%2Fevents/versions/1.0.0",
+      "id": "mcp-5dd00e7273cb03e2f4bed314b6185df7",
+      "name": "ac.inference.sh/mcp",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ac.inference.sh%2Fmcp/versions/2.0.1",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "2.0.1",
+      "lastActivity": "2026-07-27T10:44:51.359634Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ac.inference.sh/mcp"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ac.inference.sh%2Fmcp/versions/2.0.1",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-633ed97bf6da7773d6b35bc32aa60df6",
+      "name": "agency.almostimpossible/site",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/agency.almostimpossible%2Fsite/versions/1.0.0",
       "github": null,
       "website": null,
       "description": "MCP server listed in the Official MCP Registry.",
@@ -5363,18 +4607,18 @@
       "mcp": true,
       "maintenance": null,
       "latestRelease": "1.0.0",
-      "lastActivity": "2026-10-09T21:06:19.122059Z",
+      "lastActivity": "2026-11-17T21:04:09.09325Z",
       "stars": null,
       "securityAdvisories": null,
       "setup": null,
       "tradeoff": null,
       "publisherIds": [
-        "aero.events/events"
+        "agency.almostimpossible/site"
       ],
       "sources": [
         {
           "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/aero.events%2Fevents/versions/1.0.0",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/agency.almostimpossible%2Fsite/versions/1.0.0",
           "verifiedAt": "2026-11-21T18:52:41.758Z",
           "fields": [
             "publisherIds",
@@ -5388,9 +4632,9 @@
       "confidence": "metadata"
     },
     {
-      "id": "mcp-ywzyawnhlmrpdmlzas9kaxzpc2k",
-      "name": "africa.divisi/divisi",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/africa.divisi%2Fdivisi/versions/26.11.20.1",
+      "id": "mcp-6862973c52050bd5ccd56533290cdb20",
+      "name": "ae.propick/propick",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.propick%2Fpropick/versions/1.0.0",
       "github": null,
       "website": null,
       "description": "MCP server listed in the Official MCP Registry.",
@@ -5413,19 +4657,19 @@
       ],
       "mcp": true,
       "maintenance": null,
-      "latestRelease": "26.11.20.1",
-      "lastActivity": "2026-11-20T12:20:32.85826Z",
+      "latestRelease": "1.0.0",
+      "lastActivity": "2026-08-25T11:16:56.879334Z",
       "stars": null,
       "securityAdvisories": null,
       "setup": null,
       "tradeoff": null,
       "publisherIds": [
-        "africa.divisi/divisi"
+        "ae.propick/propick"
       ],
       "sources": [
         {
           "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/africa.divisi%2Fdivisi/versions/26.11.20.1",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.propick%2Fpropick/versions/1.0.0",
           "verifiedAt": "2026-11-21T18:52:41.758Z",
           "fields": [
             "publisherIds",
@@ -5439,7 +4683,568 @@
       "confidence": "metadata"
     },
     {
-      "id": "mcp-ywzyawnhlmxvbwkvbwnw",
+      "id": "mcp-694afcc053a8c98464fb3fb8df62ea00",
+      "name": "ae.brainy/grocery-prices",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.brainy%2Fgrocery-prices/versions/2.0.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "2.0.0",
+      "lastActivity": "2026-10-04T02:29:51.000704Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.brainy/grocery-prices"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.brainy%2Fgrocery-prices/versions/2.0.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-7a2798afe975a3309fdcf0d84e65023e",
+      "name": "academy.apexai/apex-ai-academy",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/academy.apexai%2Fapex-ai-academy/versions/1.0.2",
+      "github": "https://github.com/apexai-academy/sample-agents",
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.2",
+      "lastActivity": "2026-10-17T03:25:05.205722Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": "https://github.com/apexai-academy/sample-agents",
+      "tradeoff": null,
+      "publisherIds": [
+        "academy.apexai/apex-ai-academy"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/academy.apexai%2Fapex-ai-academy/versions/1.0.2",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-7ae354fca3ec9debc3c29b3a280f40c8",
+      "name": "ae.alexeysound/alexey-sound",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.alexeysound%2Falexey-sound/versions/1.0.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.0",
+      "lastActivity": "2026-11-10T08:53:20.037278Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.alexeysound/alexey-sound"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.alexeysound%2Falexey-sound/versions/1.0.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-7bc6d7aec3c3f0ab240be0c26f9139a0",
+      "name": "ac.snag/snag",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ac.snag%2Fsnag/versions/1.0.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.0",
+      "lastActivity": "2026-09-09T10:35:53.194664Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ac.snag/snag"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ac.snag%2Fsnag/versions/1.0.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-7d5b467fd82bb2c3e7d0506f5cf8d9b0",
+      "name": "ad.pantheon/mcp",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.pantheon%2Fmcp/versions/1.0.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.0",
+      "lastActivity": "2026-11-03T12:12:01.650543Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ad.pantheon/mcp"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.pantheon%2Fmcp/versions/1.0.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-82006fd921514a1fd7cde1f562110635",
+      "name": "ae.framerfy/store-builder",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.framerfy%2Fstore-builder/versions/1.0.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.0",
+      "lastActivity": "2026-11-12T12:19:25.872161Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.framerfy/store-builder"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.framerfy%2Fstore-builder/versions/1.0.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-8924af1829b80fe91f895da5b4137d0d",
+      "name": "ad.getle/leads",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.getle%2Fleads/versions/1.0.1",
+      "github": "https://github.com/adgrowofficial/getlead-mcp",
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.1",
+      "lastActivity": "2026-10-26T22:16:48.897897Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": "https://github.com/adgrowofficial/getlead-mcp",
+      "tradeoff": null,
+      "publisherIds": [
+        "ad.getle/leads"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.getle%2Fleads/versions/1.0.1",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-91277f2470e5a8411d52a64ac9b4e1b2",
+      "name": "ae.brainy.tipline/gta6",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.brainy.tipline%2Fgta6/versions/1.0.1",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.1",
+      "lastActivity": "2026-11-18T08:38:22.385581Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.brainy.tipline/gta6"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.brainy.tipline%2Fgta6/versions/1.0.1",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-a9a57f9efb24616334034d5a0bea2b01",
+      "name": "ae.waggle/fenlight",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.waggle%2Ffenlight/versions/0.3.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "0.3.0",
+      "lastActivity": "2026-10-16T04:35:48.176825Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.waggle/fenlight"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.waggle%2Ffenlight/versions/0.3.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-bf6ad8188c90fc0bf706a4901c8b8c2a",
+      "name": "ae.datadubai/dubai-real-estate",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.datadubai%2Fdubai-real-estate/versions/1.1.0",
+      "github": "https://github.com/datadubai/dubai-real-estate-dld",
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.1.0",
+      "lastActivity": "2026-09-30T08:30:47.911063Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": "https://github.com/datadubai/dubai-real-estate-dld",
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.datadubai/dubai-real-estate"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.datadubai%2Fdubai-real-estate/versions/1.1.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-bf94c195f06c7e2a599e5f686dc6793a",
+      "name": "ae.employerofrecord/moha-account",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.employerofrecord%2Fmoha-account/versions/1.0.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.0",
+      "lastActivity": "2026-11-10T01:38:50.424244Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.employerofrecord/moha-account"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.employerofrecord%2Fmoha-account/versions/1.0.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-c17a5842a8bca5c650c3eefe815a0b83",
       "name": "africa.lomi/mcp",
       "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/africa.lomi%2Fmcp/versions/1.0.0",
       "github": null,
@@ -5490,9 +5295,60 @@
       "confidence": "metadata"
     },
     {
-      "id": "mcp-ywzyawnhlnn0yxj0dxbsaxn0l21jca",
-      "name": "africa.startuplist/mcp",
-      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/africa.startuplist%2Fmcp/versions/1.0.0",
+      "id": "mcp-c85904e3adcacf091d6cbcad21377d37",
+      "name": "ac.tandem/docs-mcp",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ac.tandem%2Fdocs-mcp/versions/0.3.2",
+      "github": "https://github.com/frumu-ai/tandem",
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "0.3.2",
+      "lastActivity": "2026-04-22T21:06:34.500049Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": "https://github.com/frumu-ai/tandem",
+      "tradeoff": null,
+      "publisherIds": [
+        "ac.tandem/docs-mcp"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ac.tandem%2Fdocs-mcp/versions/0.3.2",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-cffd60db33c86ff9d4fba0cb068dad2e",
+      "name": "ad.tributs/mcp",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.tributs%2Fmcp/versions/1.0.0",
       "github": null,
       "website": null,
       "description": "MCP server listed in the Official MCP Registry.",
@@ -5516,18 +5372,18 @@
       "mcp": true,
       "maintenance": null,
       "latestRelease": "1.0.0",
-      "lastActivity": "2026-11-14T06:19:45.171442Z",
+      "lastActivity": "2026-11-14T10:27:16.913528Z",
       "stars": null,
       "securityAdvisories": null,
       "setup": null,
       "tradeoff": null,
       "publisherIds": [
-        "africa.startuplist/mcp"
+        "ad.tributs/mcp"
       ],
       "sources": [
         {
           "kind": "registry",
-          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/africa.startuplist%2Fmcp/versions/1.0.0",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.tributs%2Fmcp/versions/1.0.0",
           "verifiedAt": "2026-11-21T18:52:41.758Z",
           "fields": [
             "publisherIds",
@@ -5541,7 +5397,262 @@
       "confidence": "metadata"
     },
     {
-      "id": "mcp-ywzyawnhlnvnyy91z2m",
+      "id": "mcp-d6398d26a5e5fc04ca2058aa9262c347",
+      "name": "ae.employerofrecord/moha",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.employerofrecord%2Fmoha/versions/1.0.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.0",
+      "lastActivity": "2026-11-10T01:38:50.217032Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.employerofrecord/moha"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.employerofrecord%2Fmoha/versions/1.0.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-d6c920bda70249e529f0a0bdd38f1e6b",
+      "name": "ac.mizan/registry",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ac.mizan%2Fregistry/versions/1.2.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.2.0",
+      "lastActivity": "2026-11-05T23:35:33.188176Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ac.mizan/registry"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ac.mizan%2Fregistry/versions/1.2.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-d93d5742db12b0c56b9febdd45a97de1",
+      "name": "ae.mrk/dubai-property",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.mrk%2Fdubai-property/versions/1.0.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.0",
+      "lastActivity": "2026-11-09T17:22:02.31281Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.mrk/dubai-property"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.mrk%2Fdubai-property/versions/1.0.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-dd45e8561b3810b313a337b1742f4856",
+      "name": "ad.apogee/apogee",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.apogee%2Fapogee/versions/1.1.0",
+      "github": "https://github.com/apogeegit/apogee-mcp",
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.1.0",
+      "lastActivity": "2026-11-03T23:36:32.020466Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": "https://github.com/apogeegit/apogee-mcp",
+      "tradeoff": null,
+      "publisherIds": [
+        "ad.apogee/apogee"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ad.apogee%2Fapogee/versions/1.1.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-e7cebe9f0871b3482825006316bc2af1",
+      "name": "aero.events/events",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/aero.events%2Fevents/versions/1.0.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "1.0.0",
+      "lastActivity": "2026-10-09T21:06:19.122059Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "aero.events/events"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/aero.events%2Fevents/versions/1.0.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-f19ee3c7158bbcfd4548e7a7f9aceac5",
       "name": "africa.ugc/ugc",
       "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/africa.ugc%2Fugc/versions/1.0.0",
       "github": null,
@@ -5579,6 +5690,108 @@
         {
           "kind": "registry",
           "url": "https://registry.modelcontextprotocol.io/v0.1/servers/africa.ugc%2Fugc/versions/1.0.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-fc4dbde4be5d6c4d44f0fddfb4722174",
+      "name": "ae.projectory/mcp",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.projectory%2Fmcp/versions/0.7.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "0.7.0",
+      "lastActivity": "2026-11-02T16:40:13.966873Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ae.projectory/mcp"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ae.projectory%2Fmcp/versions/0.7.0",
+          "verifiedAt": "2026-11-21T18:52:41.758Z",
+          "fields": [
+            "publisherIds",
+            "publisherVersion",
+            "mcp",
+            "integrations"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-21T18:52:41.758Z",
+      "confidence": "metadata"
+    },
+    {
+      "id": "mcp-fd6ebc8d3fc1b9d5ef9d9295562e73e2",
+      "name": "ag.hood/name-service",
+      "canonicalUrl": "https://registry.modelcontextprotocol.io/v0.1/servers/ag.hood%2Fname-service/versions/0.1.0",
+      "github": null,
+      "website": null,
+      "description": "MCP server listed in the Official MCP Registry.",
+      "categories": [
+        "mcp"
+      ],
+      "capabilities": [],
+      "os": null,
+      "languages": null,
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [
+        "streamable-http"
+      ],
+      "mcp": true,
+      "maintenance": null,
+      "latestRelease": "0.1.0",
+      "lastActivity": "2026-07-10T04:58:06.628668Z",
+      "stars": null,
+      "securityAdvisories": null,
+      "setup": null,
+      "tradeoff": null,
+      "publisherIds": [
+        "ag.hood/name-service"
+      ],
+      "sources": [
+        {
+          "kind": "registry",
+          "url": "https://registry.modelcontextprotocol.io/v0.1/servers/ag.hood%2Fname-service/versions/0.1.0",
           "verifiedAt": "2026-11-21T18:52:41.758Z",
           "fields": [
             "publisherIds",

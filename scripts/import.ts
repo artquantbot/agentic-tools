@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto";
 import { readFile, writeFile, rename } from "node:fs/promises";
 import * as z from "zod";
 import { snapshot, type Tool, type Source } from "../src/schema.ts";
@@ -98,7 +99,7 @@ try {
     const linked = github ? repositories.get(github) : undefined;
     const byPackage = [...tools.values()].find(tool => packageIds.some(pkg => tool.publisherIds.includes(pkg)));
     const record = linked ?? byPackage ?? empty({
-      id: `mcp-${Buffer.from(entry.name).toString("base64url").toLowerCase().replaceAll("_", "-")}`, name: entry.name,
+      id: `mcp-${createHash("sha256").update(entry.name).digest("hex").slice(0, 32)}`, name: entry.name,
       canonicalUrl: api, categories: ["mcp"], sources: []
     });
     if (record.publisherIds.includes(entry.name)) continue;
@@ -107,6 +108,7 @@ try {
     record.sources = [...record.sources, evidence];
     record.categories = [...new Set([...record.categories, "mcp"])];
     record.mcp = true;
+    record.verifiedAt = record.sources.map(source => source.verifiedAt).sort().at(-1) ?? record.verifiedAt;
     if (!linked && !byPackage) {
       record.description = "MCP server listed in the Official MCP Registry.";
       record.latestRelease = entry.version;
