@@ -16,6 +16,9 @@ test("official MCP client discovers and invokes all read-only tools over Streama
     assert.ok(tools.every(item => item.annotations?.readOnlyHint === true));
     const found = await client.callTool({ name: "search_tools", arguments: { query: "Run an LLM locally on a Mac", limit: 3 } });
     assert.equal(found.isError, false);
+    assert.equal((found.structuredContent as { untrusted: boolean }).untrusted, true);
+    const broad = await client.callTool({ name: "search_tools", arguments: { limit: 50 } });
+    assert.ok(new TextEncoder().encode(JSON.stringify(broad)).byteLength <= 96 * 1024);
     const rows = (found.structuredContent as { results: { tool: { id: string } }[] }).results;
     assert.ok(rows.length >= 2);
     const ids = rows.slice(0, 2).map(row => row.tool.id);

@@ -7,10 +7,12 @@ import { awesomeProjects, parseRegistryPage, repoKey, requestText, safeUrl } fro
 
 test("catalog is normalized and each record has source evidence", () => {
   assert.equal(snapshot.parse(catalog).tools.length, new Set(catalog.tools.map(item => item.id)).size);
-  assert.ok(catalog.tools.length >= 80);
-  for (const source of ["awesome", "github", "registry", "documentation"]) {
+  assert.ok(catalog.tools.length >= 40);
+  for (const source of ["awesome", "github", "documentation"]) {
     assert.ok(catalog.tools.some(item => item.sources.some(evidence => evidence.kind === source)));
   }
+  assert.ok(catalog.tools.every(item => item.id.startsWith("gh-") && !item.sources.some(source => source.kind === "registry")));
+  assert.ok(catalog.tools.every(item => item.publisherIds.length === 0 && item.integrations.length === 0));
   const invalid = { ...catalog.tools[0], canonicalUrl: "javascript:alert(1)" };
   assert.equal(tool.safeParse(invalid).success, false);
 });
@@ -33,7 +35,9 @@ test("registry parser whitelists facts and excludes deleted and invalid versions
   };
   const deleted = structuredClone(value);
   deleted._meta["io.modelcontextprotocol.registry/official"].status = "deleted";
-  const parsed = parseRegistryPage({ servers: [value, deleted, { server: { name: "invalid" } }], metadata: { nextCursor: "next" } });
+  const invalidPackage = structuredClone(value);
+  const invalid = { ...invalidPackage, server: { ...invalidPackage.server, packages: [{ registryType: "npm", identifier: "put words here" }] } };
+  const parsed = parseRegistryPage({ servers: [value, deleted, invalid, { server: { name: "invalid" } }], metadata: { nextCursor: "next" } });
   assert.equal(parsed.next, "next");
   assert.equal(parsed.entries.length, 1);
   assert.equal("description" in parsed.entries[0], false);
@@ -61,4 +65,14 @@ test("popular tools with conflicts, missing data or deprecation cannot outrank a
 test("unsupported platform has no eligible results", () => {
   const result = search(searchInput.parse({ query: "Run an LLM locally on FreeBSD" }));
   assert.equal(result.results.length, 0);
+});
+
+test("repository metadata alone does not qualify a project for task recommendations", () => {
+  const basis = catalog.tools.find(item => item.name === "Playwright")!;
+  const metadata = { ...basis, confidence: "metadata" as const };
+  const rank = makeRanker([metadata]);
+  const task = rank(searchInput.parse({ query: "Playwright" }));
+  assert.equal(task.total, 0);
+  assert.deepEqual(task.unverified.map(item => item.tool.id), [basis.id]);
+  assert.equal(rank(searchInput.parse({})).total, 1);
 });

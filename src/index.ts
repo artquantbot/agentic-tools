@@ -9,9 +9,12 @@ export interface Env {
   LIMIT?: { limit(input: { key: string }): Promise<{ success: boolean }> };
 }
 const api = "/api/v1";
+const productionHost = "agentic-tools.ususuni.com";
+const transportSecurity = "max-age=86400";
 const maxBody = 16_384;
 const cacheControl = "public, max-age=60, s-maxage=300";
 const securityHeaders = {
+  "Content-Security-Policy": "default-src 'none'; frame-ancestors 'none'",
   "X-Content-Type-Options": "nosniff", "Referrer-Policy": "strict-origin-when-cross-origin",
   "X-Frame-Options": "DENY", "Permissions-Policy": "camera=(), microphone=(), geolocation=()"
 };
@@ -88,6 +91,10 @@ function getSearch(params: URLSearchParams) {
 
 export async function handle(request: Request, env: Env = {}): Promise<Response> {
   const url = new URL(request.url);
+  const onProduction = url.hostname === productionHost;
+  if (onProduction && url.protocol === "http:") {
+    return Response.redirect(`https://${productionHost}${url.pathname}${url.search}`, 308);
+  }
   const path = url.pathname;
   const isApi = path === "/api" || path.startsWith("/api/");
   const isMcp = path === "/mcp";
@@ -95,6 +102,7 @@ export async function handle(request: Request, env: Env = {}): Promise<Response>
 
   const json = (value: unknown, status = 200, headers?: HeadersInit) => {
     const responseHeaders = new Headers({ ...securityHeaders, "Cache-Control": "no-store" });
+    if (onProduction) responseHeaders.set("Strict-Transport-Security", transportSecurity);
     new Headers(headers).forEach((value, key) => responseHeaders.set(key, value));
     return Response.json(value, { status, headers: responseHeaders });
   };
@@ -103,11 +111,17 @@ export async function handle(request: Request, env: Env = {}): Promise<Response>
     const origin = request.headers.get("origin");
     if (origin && origin !== url.origin) error(403, "origin", "Origin must match this service.");
     if (request.headers.get("sec-fetch-site") === "cross-site" && request.method === "POST") error(403, "origin", "Cross-site request denied.");
-    if (path === api + "/health" && request.method === "GET") return json({ status: "ok", version: "1.0.0", generatedAt: catalog.generatedAt, count: catalog.tools.length });
+    if (path === api + "/health" && request.method === "GET") return json({ status: "ok", version: "1.0.0", generatedAt: catalog.generatedAt, count: catalog.tools.length }, 200, { "Cache-Control": "public, max-age=30" });
     if (!(await allowed(request, env))) error(429, "rate_limited", "Request limit exceeded.", { "Retry-After": "60" });
     if (isMcp) {
       const parsedBody = request.method === "POST" ? await readBody(request) : undefined;
-      return await mcp.fetch(request, { parsedBody });
+      if (Array.isArray(parsedBody)) error(400, "mcp_batch_not_supported", "Send one JSON-RPC message per request.");
+      const response = await mcp.fetch(request, { parsedBody });
+      const headers = new Headers(response.headers);
+      for (const [name, value] of Object.entries(securityHeaders)) headers.set(name, value);
+      headers.set("Cache-Control", "no-store");
+      if (onProduction) headers.set("Strict-Transport-Security", transportSecurity);
+      return new Response(response.body, { status: response.status, headers });
     }
     const get = request.method === "GET";
     const post = request.method === "POST";

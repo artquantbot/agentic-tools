@@ -41,3 +41,5 @@ VS Code workspace configuration in `.vscode/mcp.json`
 [Codex MCP guide](https://learn.chatgpt.com/docs/extend/mcp?surface=cli) · [VS Code MCP guide](https://code.visualstudio.com/docs/agent-customization/mcp-servers)
 
 Run the SDK smoke test against an actual endpoint with `MCP_TEST_URL=http://127.0.0.1:4173/mcp node --test tests/mcp.test.ts`.
+
+MCP accepts one JSON-RPC message per HTTP request. A JSON array receives HTTP 400 with `mcp_batch_not_supported`. Tool results mark third-party data with `untrusted: true` and cap the serialized tool result at 96 KiB. Request fewer records or use narrower filters if a response exceeds that cap.

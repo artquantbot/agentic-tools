@@ -2,7 +2,7 @@
 
 **Tell us what your agent needs. We find the tools that fit.**
 
-Agentic Tools helps developers and AI agents discover frameworks, MCP servers, skills and infrastructure. The catalog combines GitHub metadata, Official MCP Registry identifiers, Awesome AI Agents discovery links and source-backed capability notes.
+Agentic Tools helps developers and AI agents discover frameworks, MCP servers, skills and infrastructure. The catalog combines GitHub metadata, Awesome AI Agents discovery links and source-backed capability notes.
 
 [Open Agentic Tools](https://agentic-tools.ususuni.com) · [Production health](https://agentic-tools.ususuni.com/api/v1/health) · [OpenAPI](https://agentic-tools.ususuni.com/api/v1/openapi.json)
 

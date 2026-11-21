@@ -16,7 +16,7 @@ export default defineConfig(({ isPreview }) => ({
     },
     domains: isPreview ? [] : ["agentic-tools.ususuni.com"],
     workersDev: false,
-    previewUrls: true,
+    previewUrls: false,
     observability: {
       enabled: true,
       logs: { enabled: true, invocationLogs: false, headSamplingRate: 1 },
