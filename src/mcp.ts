@@ -6,8 +6,18 @@ import { comparison, id, searchInput, stackInput } from "./schema.ts";
 const toolId = z.strictObject({ id });
 const annotations = { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false };
 
+const maxToolResultBytes = 96 * 1024;
+const encoder = new TextEncoder();
+
 function result(value: Record<string, unknown>, isError = false) {
-  return { content: [{ type: "text" as const, text: JSON.stringify(value) }], structuredContent: value, isError };
+  const structuredContent = { ...value, untrusted: true };
+  const response = { content: [{ type: "text" as const, text: JSON.stringify(structuredContent) }], structuredContent, isError };
+  if (encoder.encode(JSON.stringify(response)).byteLength <= maxToolResultBytes) return response;
+  return {
+    content: [{ type: "text" as const, text: "Tool result exceeds the response limit. Narrow the query or request fewer records." }],
+    structuredContent: { error: "result_too_large", untrusted: true },
+    isError: true
+  };
 }
 
 export const mcp = createMcpHandler(() => {

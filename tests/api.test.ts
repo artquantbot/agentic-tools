@@ -51,3 +51,23 @@ test("REST rejects malformed inputs, oversized bodies and cross-origin requests"
   assert.equal(limited.status, 429);
   assert.equal(limited.headers.get("Retry-After"), "60");
 });
+
+
+test("production redirects HTTP and advertises HSTS only on HTTPS", async () => {
+  const root = "agentic-tools.ususuni.com";
+  for (const path of ["/", "/api/v1/health?check=1", "/mcp"]) {
+    const response = await handle(new Request(`http://${root}${path}`), allow);
+    assert.equal(response.status, 308);
+    assert.equal(response.headers.get("Location"), `https://${root}${path}`);
+    assert.equal(response.headers.get("Strict-Transport-Security"), null);
+  }
+  const secure = await handle(new Request(`https://${root}/api/v1/health`), allow);
+  assert.match(secure.headers.get("Strict-Transport-Security") ?? "", /^max-age=86400$/);
+  assert.equal((await request("/api/v1/health")).headers.get("Strict-Transport-Security"), null);
+});
+
+test("MCP rejects arrays before dispatching any messages", async () => {
+  const response = await post("/mcp", []);
+  assert.equal(response.status, 400);
+  assert.equal((await response.json()).error.code, "mcp_batch_not_supported");
+});

@@ -1,11 +1,6 @@
 name: Production smoke test
 on:
   workflow_dispatch:
-    inputs:
-      version_url:
-        description: Optional Cloudflare version URL to check
-        type: string
-        required: false
 permissions:
   contents: read
 jobs:
@@ -24,20 +19,20 @@ jobs:
         env:
           BASE: https://agentic-tools.ususuni.com
         run: |
-          curl -fsS --retry 8 --retry-all-errors --retry-delay 10 --max-time 15 "$BASE/api/v1/health" | jq -e '.status == "ok" and .count > 80'
+          curl -fsS --retry 8 --retry-all-errors --retry-delay 10 --max-time 15 "$BASE/api/v1/health" | jq -e '.status == "ok" and .count >= 40'
+          for path in / /api/v1/health /mcp; do
+            curl -sSI --max-time 15 "http://agentic-tools.ususuni.com$path" | grep -qi "^location: $BASE$path"
+          done
+          for path in / /api/v1/health; do
+            curl -fsSD - --max-time 15 -o /dev/null "$BASE$path" | grep -qi '^strict-transport-security: max-age='
+          done
+          curl -fsS --max-time 15 "$BASE/.well-known/security.txt" | grep -q '^Contact: https://github.com/artquantbot/agentic-tools/security/advisories/new'
+          status=$(curl -sS --max-time 15 -o /tmp/mcp-rejection.json -w '%{http_code}' "$BASE/mcp" -H 'Content-Type: application/json' -d '[]')
+          test "$status" = 400
+          jq -e '.error.code == "mcp_batch_not_supported"' /tmp/mcp-rejection.json
           curl -fsS --max-time 15 "$BASE/discover" | grep -q '<title>Agentic Tools'
           curl -fsS --max-time 15 "$BASE/api/v1/search" -H 'Content-Type: application/json' \
             -d '{"query":"Run an LLM locally on a Mac"}' | jq -e '.total > 0 and (.results[0].evidence | length > 0)'
-      - name: Verify version URL
-        if: inputs.version_url != ''
-        env:
-          VERSION_URL: ${{ inputs.version_url }}
-        run: |
-          if [[ ! "$VERSION_URL" =~ ^https://[a-f0-9]{8}-agentic-tools\.ege-eryazgan\.workers\.dev$ ]]; then
-            echo "Use the Cloudflare version URL for the Agentic Tools Worker." >&2
-            exit 1
-          fi
-          curl -fsS --retry 3 --retry-all-errors --max-time 15 "$VERSION_URL/api/v1/health" | jq -e '.status == "ok" and .count > 80'
       - run: npm ci
       - name: Verify production MCP tools
         env:

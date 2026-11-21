@@ -1,18 +1,18 @@
-import { createHash } from "node:crypto";
-import { readFile, writeFile, rename } from "node:fs/promises";
+import { mkdir, readFile, writeFile, rename } from "node:fs/promises";
 import * as z from "zod";
 import { snapshot, type Tool, type Source } from "../src/schema.ts";
 import { awesomeProjects, awesomeRaw, awesomeUrl, parseRegistryPage, registryUrl, repoKey, requestText, safeUrl } from "./sources.ts";
 import categories from "../data/categories.json" with { type: "json" };
 
-const generatedAt = new Date().toISOString();
 const target = new URL("../data/catalog.json", import.meta.url);
 const old = await readFile(target, "utf8").then(text => snapshot.parse(JSON.parse(text))).catch(() => null);
+const options = { cacheOnly: process.argv.includes("--cached") };
 const token = process.env.GITHUB_TOKEN;
+const generatedAt = options.cacheOnly ? old?.generatedAt ?? new Date().toISOString() : new Date().toISOString();
 const openLicenses = new Set(["MIT", "Apache-2.0", "BSD-2-Clause", "BSD-3-Clause", "GPL-2.0", "GPL-3.0", "AGPL-3.0", "MPL-2.0", "ISC", "Unlicense", "LGPL-3.0", "Artistic-2.0", "EPL-2.0"]);
 const githubSchema = z.object({
-  id: z.int(), name: z.string().max(160), html_url: z.string(), homepage: z.string().nullable(),
-  full_name: z.string(), language: z.string().nullable(), archived: z.boolean(), disabled: z.boolean(),
+  id: z.int(), name: z.string().max(160), html_url: z.string(),
+  language: z.string().nullable(), archived: z.boolean(), disabled: z.boolean(),
   license: z.object({ spdx_id: z.string().nullable() }).nullable(),
   pushed_at: z.iso.datetime().nullable(), stargazers_count: z.int().nonnegative()
 });
@@ -47,15 +47,14 @@ function observation(kind: Source["kind"], url: string, verifiedAt: string, fiel
   return { kind, url, verifiedAt, fields };
 }
 const tools = new Map<string, Tool>();
-const repositories = new Map<string, Tool>();
-const imported = await requestText(awesomeRaw).catch(error => { console.warn("Awesome AI Agents unavailable", error.message); return null; });
+const imported = await requestText(awesomeRaw, undefined, options).catch(error => { console.warn("Awesome AI Agents unavailable", error.message); return null; });
 const awesome = imported ? awesomeProjects(imported.body) : new Map<string, string>();
 if (imported && !awesome.size) throw new Error("Awesome source format changed");
 const keys = [...new Set([...curated.keys(), ...[...awesome.keys()].filter(key => !curated.has(key)).slice(0, 12)])];
 for (let offset = 0; offset < keys.length; offset += 4) {
   await Promise.all(keys.slice(offset, offset + 4).map(async key => {
     try {
-      const response = await requestText(`https://api.github.com/repos/${key}`, token);
+      const response = await requestText(`https://api.github.com/repos/${key}`, token, options);
       const metadata = githubSchema.parse(JSON.parse(response.body));
       if (metadata.disabled || !safeUrl(metadata.html_url)) return;
       const doc = curated.get(key);
@@ -67,65 +66,41 @@ for (let offset = 0; offset < keys.length; offset += 4) {
         id: `gh-${metadata.id}`, name: metadata.name, canonicalUrl: metadata.html_url, categories: ["emerging"], sources
       });
       Object.assign(record, doc, {
-        github: metadata.html_url, website: safeUrl(metadata.homepage), languages: doc?.languages ?? (metadata.language ? [metadata.language] : null),
+        github: metadata.html_url, website: null, languages: doc?.languages ?? (metadata.language ? [metadata.language] : null),
         license: metadata.license?.spdx_id && metadata.license.spdx_id !== "NOASSERTION" ? metadata.license.spdx_id : null,
         openSource: metadata.license?.spdx_id && openLicenses.has(metadata.license.spdx_id.replace(/-(only|or-later)$/, "")) ? true : null,
         stars: metadata.stargazers_count, lastActivity: metadata.pushed_at,
         maintenance: metadata.archived ? "archived" : "repository-active"
       });
       tools.set(record.id, record);
-      repositories.set(key, record);
-      const actual = repoKey(metadata.full_name);
-      if (actual) repositories.set(actual, record);
     } catch (error) {
-      const previous = old?.tools.find(tool => repoKey(tool.github ?? undefined) === key);
-      if (previous) { tools.set(previous.id, previous); repositories.set(key, previous); }
+      const previous = old?.tools.find(tool => tool.id.startsWith("gh-") && repoKey(tool.github ?? undefined) === key
+        && tool.sources.some(source => source.kind === "github"));
+      if (previous) {
+        const doc = curated.get(key);
+        const sources = previous.sources.filter(source => source.kind !== "registry");
+        tools.set(previous.id, {
+          ...empty({ id: previous.id, name: previous.name, canonicalUrl: previous.canonicalUrl, categories: ["emerging"], sources }),
+          ...doc, github: previous.github, license: previous.license, openSource: previous.openSource, stars: previous.stars,
+          languages: doc?.languages ?? previous.languages, lastActivity: previous.lastActivity, maintenance: previous.maintenance
+        });
+      }
       console.warn(`GitHub metadata unavailable for ${key}: ${(error as Error).message}`);
     }
   }));
 }
 
-try {
-  const result = await requestText(`${registryUrl}?limit=40&version=latest`);
+if (process.argv.includes("--registry-leads")) {
+  const result = await requestText(`${registryUrl}?limit=40&version=latest`, undefined, options);
   const page = parseRegistryPage(JSON.parse(result.body));
-  if (!page.entries.length) throw new Error("No valid latest entries in source response");
-  for (const entry of page.entries) {
-    const github = entry.repository?.url && /^https:\/\/github\.com\//i.test(entry.repository.url)
-      ? repoKey(entry.repository.url) : null;
-    const api = `${registryUrl}/${encodeURIComponent(entry.name)}/versions/${encodeURIComponent(entry.version)}`;
-    const evidence = observation("registry", api, result.checkedAt, ["publisherIds", "publisherVersion", "mcp", "integrations"]);
-    const packageIds = entry.packages.map(pkg => `${pkg.registryType}:${pkg.identifier}`).filter(value => value.length <= 80);
-    const publisherIds = [...new Set([entry.name, ...packageIds])];
-    const linked = github ? repositories.get(github) : undefined;
-    const byPackage = [...tools.values()].find(tool => packageIds.some(pkg => tool.publisherIds.includes(pkg)));
-    const record = linked ?? byPackage ?? empty({
-      id: `mcp-${createHash("sha256").update(entry.name).digest("hex").slice(0, 32)}`, name: entry.name,
-      canonicalUrl: api, categories: ["mcp"], sources: []
-    });
-    if (record.publisherIds.includes(entry.name)) continue;
-    record.publisherIds = [...new Set([...record.publisherIds, ...publisherIds])];
-    record.integrations = [...new Set([...record.integrations, ...entry.remotes.map(remote => remote.type), ...entry.packages.map(pkg => pkg.registryType)])];
-    record.sources = [...record.sources, evidence];
-    record.categories = [...new Set([...record.categories, "mcp"])];
-    record.mcp = true;
-    record.verifiedAt = record.sources.map(source => source.verifiedAt).sort().at(-1) ?? record.verifiedAt;
-    if (!linked && !byPackage) {
-      record.description = "MCP server listed in the Official MCP Registry.";
-      record.latestRelease = entry.version;
-      record.lastActivity = entry.updatedAt;
-      record.verifiedAt = result.checkedAt;
-      record.maintenance = entry.status === "deprecated" ? "publisher-deprecated" : null;
-      record.github = github ? `https://github.com/${github}` : null;
-      record.setup = record.github;
-    }
-    tools.set(record.id, record);
-    if (github) repositories.set(github, record);
-  }
-} catch (error) {
-  console.warn("Official MCP Registry unavailable:", (error as Error).message);
-  for (const record of old?.tools ?? []) {
-    if (record.id.startsWith("mcp-") && !tools.has(record.id)) tools.set(record.id, record);
-  }
+  const leads = page.entries.filter(entry => entry.status === "active").map(entry => ({
+    name: entry.name, version: entry.version, status: entry.status,
+    registryEvidence: `${registryUrl}/${encodeURIComponent(entry.name)}/versions/${encodeURIComponent(entry.version)}`
+  }));
+  const output = new URL("../.cache/import/registry-leads.json", import.meta.url);
+  await mkdir(new URL("./", output), { recursive: true });
+  await writeFile(output, JSON.stringify({ observedAt: result.checkedAt, untrusted: true, leads }, null, 2) + "\n");
+  console.log(`Saved ${leads.length} unreviewed Registry leads outside the catalog`);
 }
 
 const next = snapshot.parse({ generatedAt, tools: [...tools.values()].sort((a, b) => a.id.localeCompare(b.id)) });

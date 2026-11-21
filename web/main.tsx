@@ -183,7 +183,7 @@ function Discover({ directory, selection, toggle }: { directory?: Directory; sel
           {!!data.constraints.length && <div className="tags requirements">{data.constraints.map((item, index) => <span key={index}>{item.required ? "Required" : "Preferred"} · {String(item.value)}</span>)}</div>}
           {!data.total && <p className="notice">No tools satisfy all recognized requirements. Try changing the query or filters.</p>}
           <Cards items={data.results} selection={selection} toggle={toggle} explained/>
-          {!!data.unverified.length && <section className="secondary-results"><SectionHeading title="Needs review" description="These candidates have missing requirement evidence or a retired catalog status."/><Cards items={data.unverified} selection={selection} toggle={toggle} explained/></section>}
+          {!!data.unverified.length && <section className="secondary-results"><SectionHeading title="Needs review" description="These candidates have limited evidence, missing requirements or a retired catalog status."/><Cards items={data.unverified} selection={selection} toggle={toggle} explained/></section>}
           {Math.max(data.total, data.unverifiedTotal) > data.limit && <div className="pagination"><button className="button" disabled={page <= 1} onClick={() => setPage(page - 1)}>Previous</button><span>Page {page}</span><button className="button" disabled={page * data.limit >= Math.max(data.total, data.unverifiedTotal)} onClick={() => setPage(page + 1)}>Next</button></div>}
         </>}
       </section>
@@ -271,7 +271,7 @@ function About() {
     <div className="detail-grid"><section className="panel" id="methodology"><CircleHelp size={23}/><h2>Methodology</h2>
       <p>Search recognizes common requirements for platform, language, hosting, license and paid API access. A documented conflict disqualifies a candidate. Missing hard-requirement evidence appears under Needs review.</p>
       <p>Freshness reflects when the metadata was last observed. Advisory coverage is unknown where package and version evidence is missing.</p></section>
-    <section className="panel"><BookOpen size={23}/><h2>Data sources</h2><ul className="source-list"><li><a href="https://github.com/slavakurilyak/awesome-ai-agents">Awesome AI Agents</a></li><li><a href="https://modelcontextprotocol.io/registry/registry-aggregators">Official MCP Registry</a></li><li><a href="https://docs.github.com/en/rest/repos/repos">GitHub repository metadata</a></li><li>Upstream setup documents linked in each curated entry</li></ul><a href={repo + "/blob/main/docs/SOURCES.md"} className="text-link">Attribution and source policy</a></section></div></>;
+    <section className="panel"><BookOpen size={23}/><h2>Data sources</h2><ul className="source-list"><li><a href="https://github.com/slavakurilyak/awesome-ai-agents">Awesome AI Agents</a></li><li><a href="https://modelcontextprotocol.io/registry/registry-aggregators">Official MCP Registry (discovery leads)</a></li><li><a href="https://docs.github.com/en/rest/repos/repos">GitHub repository metadata</a></li><li>Upstream setup documents linked in each curated entry</li></ul><a href={repo + "/blob/main/docs/SOURCES.md"} className="text-link">Attribution and source policy</a></section></div></>;
 }
 function App() {
   const path = location.pathname.replace(/\/$/, "") || "/";

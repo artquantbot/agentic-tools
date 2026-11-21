@@ -113,7 +113,8 @@ export function makeRanker(tools: Tool[]) {
       const fit = queryTokens.length ? (1 - Math.exp(-score / 5)) : 0;
       const upkeep = tool.maintenance === "repository-active" ? "repository-active" : tool.maintenance ?? "unknown";
       const catalogStatus = upkeep === "archived" || upkeep === "publisher-deprecated" ? "retired" : "listed";
-      const eligible = catalogStatus === "listed" && requirements.every(r => !r.required || r.status === "satisfied");
+      const hasTaskEvidence = !input.query || tool.confidence === "curated";
+      const eligible = catalogStatus === "listed" && hasTaskEvidence && requirements.every(r => !r.required || r.status === "satisfied");
       const preference = requirements.filter(r => !r.required && r.status === "satisfied").length / Math.max(constraints.filter(r => !r.required).length, 1);
       return [{
         tool, requirements, eligible, why: terms.length ? `Matches catalog terms: ${terms.join(", ")}.` : "Matches the selected catalog scope.",

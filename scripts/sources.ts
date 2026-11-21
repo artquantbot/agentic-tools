@@ -40,7 +40,7 @@ const registryEntry = z.object({
     name: z.string().regex(/^[\w.-]+\/[\w.-]+$/).max(80),
     version: z.string().min(1).max(80),
     repository: z.object({ url: z.string().optional() }).optional(),
-    packages: z.array(z.object({ registryType: z.string().max(20), identifier: z.string().max(100) })).default([]),
+    packages: z.array(z.object({ registryType: z.string().regex(/^[a-z][a-z0-9-]{0,19}$/), identifier: z.string().regex(/^[@\w./:+-]{1,100}$/) })).default([]),
     remotes: z.array(z.object({ type: z.enum(["streamable-http", "sse"]) })).default([])
   }),
   _meta: z.object({
@@ -69,13 +69,17 @@ type Cached = { checkedAt: string; etag?: string; body: string };
 const hosts = new Set(["api.github.com", "raw.githubusercontent.com", "registry.modelcontextprotocol.io", "hacker-news.firebaseio.com"]);
 const cacheDir = new URL("../.cache/import/", import.meta.url);
 
-export async function requestText(url: string, token?: string): Promise<Cached> {
+export async function requestText(url: string, token?: string, { cacheOnly = false } = {}): Promise<Cached> {
   const parsed = new URL(url);
   if (!safeUrl(url) || !hosts.has(parsed.hostname)) throw new Error("Upstream host is outside the importer allowlist");
   await mkdir(cacheDir, { recursive: true });
   const cache = new URL(createHash("sha256").update(url).digest("hex") + ".json", cacheDir);
   const previous: Cached | null = await readFile(cache, "utf8").then(JSON.parse).catch(() => null);
   const now = new Date().toISOString();
+  if (cacheOnly) {
+    if (!previous) throw new Error("No cached response for this source");
+    return previous;
+  }
   if (previous && Date.now() - Date.parse(previous.checkedAt) < 3600000) return previous;
   const headers = new Headers({ "user-agent": "agentic-tools-catalog/0.1" });
   if (previous?.etag) headers.set("if-none-match", previous.etag);
@@ -83,12 +87,8 @@ export async function requestText(url: string, token?: string): Promise<Cached> 
   try {
     const response = await fetch(parsed, { headers, redirect: "error", signal: AbortSignal.timeout(18000) });
     if (response.status !== 304 && !response.ok) throw new Error(`HTTP ${response.status}`);
-    const bytes = response.status === 304 ? null : await response.arrayBuffer();
-    if (bytes && bytes.byteLength > 4_000_000) throw new Error("Source response exceeds import limit");
-    const item = {
-      checkedAt: now, etag: response.headers.get("etag") ?? previous?.etag,
-      body: bytes ? new TextDecoder().decode(bytes) : previous?.body ?? ""
-    };
+    const body = response.status === 304 ? previous?.body ?? "" : await boundedText(response);
+    const item = { checkedAt: now, etag: response.headers.get("etag") ?? previous?.etag, body };
     await writeFile(cache, JSON.stringify(item));
     return item;
   } catch (error) {
@@ -97,5 +97,30 @@ export async function requestText(url: string, token?: string): Promise<Cached> 
       return previous;
     }
     throw error;
+  }
+}
+
+
+async function boundedText(response: Response) {
+  const maxBytes = 4_000_000;
+  if (Number(response.headers.get("content-length")) > maxBytes) throw new Error("Source response exceeds import limit");
+  const reader = response.body?.getReader();
+  if (!reader) return "";
+  const decoder = new TextDecoder("utf-8", { fatal: true });
+  let bytes = 0;
+  const chunks: string[] = [];
+  try {
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) return chunks.join("") + decoder.decode();
+      bytes += value.byteLength;
+      if (bytes > maxBytes) {
+        await reader.cancel();
+        throw new Error("Source response exceeds import limit");
+      }
+      chunks.push(decoder.decode(value, { stream: true }));
+    }
+  } finally {
+    reader.releaseLock();
   }
 }
