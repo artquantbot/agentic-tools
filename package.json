@@ -13,7 +13,8 @@
     "import": "node --experimental-strip-types scripts/import.ts",
     "test": "node --experimental-strip-types --test 'tests/*.test.ts'",
     "test:e2e": "playwright test",
-    "evaluate": "node --experimental-strip-types scripts/evaluate.ts"
+    "evaluate": "node --experimental-strip-types scripts/evaluate.ts",
+    "discover:hn": "node --experimental-strip-types scripts/hn-leads.ts"
   },
   "dependencies": {
     "@modelcontextprotocol/server": "2.4.0",

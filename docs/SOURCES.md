@@ -6,3 +6,5 @@
 - Curated capability notes paraphrase upstream documentation. Each record carries the source URL and date. Imports use cached metadata on recoverable upstream errors and keep the committed snapshot if curated coverage drops below the minimum.
 
 GitHub popular sorting uses observed stars. Metadata freshness uses a 30-day threshold. Repository activity refers to GitHub pushes or publisher updates and can include routine changes. The catalog has no live package/version advisory feed. See the [research](RESEARCH.md) and [competitor review](COMPETITORS.md).
+
+Optional leads from the [Hacker News API](https://github.com/HackerNews/API) are available with `npm run discover:hn`. The command emits repository and discussion links from a bounded sample. It leaves the catalog snapshot and ranking untouched.
