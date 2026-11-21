@@ -1,5 +1,7 @@
 # Deployment
 
+The initial release was deployed on 2026-11-21. The [production smoke run](https://github.com/artquantbot/agentic-tools/actions/runs/44939771849) verified HTTPS, browser entry routing, REST search and all five MCP tools.
+
 Use Node 24+, npm and the locked Cloudflare CLI. From a clean checkout:
 
 ```sh
@@ -21,7 +23,7 @@ npx cf deploy --prebuilt
 curl -fsS https://agentic-tools.ususuni.com/api/v1/health
 ```
 
-For CI, set `CLOUDFLARE_ACCOUNT_ID` as an environment variable and configure `CLOUDFLARE_API_TOKEN` as a GitHub environment secret in each authorized environment. Scope the token to the appropriate account and zone with Workers Scripts Write and custom-domain permissions. Run the manual Deploy workflow from main. Preview mode omits the production domain.
+For CI, set `CLOUDFLARE_ACCOUNT_ID` as an environment variable and configure `CLOUDFLARE_API_TOKEN` as a GitHub environment secret in each authorized environment. Scope the token to the appropriate account and zone with Workers Scripts Write and custom-domain permissions. Run the manual Deploy workflow from main after connecting the scoped token. Preview mode omits the production domain. A version URL is useful for checking a specific upload. An isolated branch preview is created by the Deploy workflow's preview target.
 
 Workers Logs and sampled traces are enabled. Monitor HTTP errors and CPU time in Cloudflare Analytics, then run the health and MCP smoke tests. For rollback, select the previous healthy version under Workers & Pages → Agentic Tools → Deployments, deploy it at 100%, and check HTTPS, the snapshot timestamp and MCP connectivity. The previous version carries its original catalog and assets.
 

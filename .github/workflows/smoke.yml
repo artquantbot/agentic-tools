@@ -1,6 +1,11 @@
 name: Production smoke test
 on:
   workflow_dispatch:
+    inputs:
+      version_url:
+        description: Optional Cloudflare version URL to check
+        type: string
+        required: false
 permissions:
   contents: read
 jobs:
@@ -23,8 +28,22 @@ jobs:
           curl -fsS --max-time 15 "$BASE/discover" | grep -q '<title>Agentic Tools'
           curl -fsS --max-time 15 "$BASE/api/v1/search" -H 'Content-Type: application/json' \
             -d '{"query":"Run an LLM locally on a Mac"}' | jq -e '.total > 0 and (.results[0].evidence | length > 0)'
+      - name: Verify version URL
+        if: inputs.version_url != ''
+        env:
+          VERSION_URL: ${{ inputs.version_url }}
+        run: |
+          if [[ ! "$VERSION_URL" =~ ^https://[a-f0-9]{8}-agentic-tools\.ege-eryazgan\.workers\.dev$ ]]; then
+            echo "Use the Cloudflare version URL for the Agentic Tools Worker." >&2
+            exit 1
+          fi
+          curl -fsS --retry 3 --retry-all-errors --max-time 15 "$VERSION_URL/api/v1/health" | jq -e '.status == "ok" and .count > 80'
       - run: npm ci
       - name: Verify production MCP tools
         env:
           MCP_TEST_URL: https://agentic-tools.ususuni.com/mcp
         run: node --test tests/mcp.test.ts
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e
+        env:
+          E2E_BASE_URL: https://agentic-tools.ususuni.com

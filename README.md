@@ -4,6 +4,8 @@
 
 Agentic Tools helps developers and AI agents discover frameworks, MCP servers, skills and infrastructure. The catalog combines GitHub metadata, Official MCP Registry identifiers, Awesome AI Agents discovery links and source-backed capability notes.
 
+[Open Agentic Tools](https://agentic-tools.ususuni.com) · [Production health](https://agentic-tools.ususuni.com/api/v1/health) · [OpenAPI](https://agentic-tools.ususuni.com/api/v1/openapi.json)
+
 ## Run locally
 
 Use Node 24 LTS or newer and npm.
@@ -31,7 +33,7 @@ React and Vite render the website. A TypeScript Worker serves the versioned REST
 
 - [Architecture and cost model](docs/ARCHITECTURE.md)
 - [Research](docs/RESEARCH.md) and [competitors](docs/COMPETITORS.md)
-- [Catalog attribution](docs/SOURCES.md)
+- [Catalog attribution](docs/SOURCES.md) and [ranking evaluation](docs/EVALUATION.md)
 - [Deployment and rollback](docs/DEPLOYMENT.md)
 - [Contribution guide](CONTRIBUTING.md) and [security reporting](SECURITY.md)
 
