@@ -1,7 +1,7 @@
 import type { Filters, SearchInput, Tool } from "./schema.ts";
 import categoryLabels from "../data/categories.json" with { type: "json" };
 
-type Constraint = { field: keyof Filters | "architecture" | "mcp" | "cloudOnly" | "browser"; value: string | boolean; required: boolean };
+type Constraint = { field: keyof Filters | "architecture" | "mcp" | "cloudOnly" | "browser" | "codex" | "videoRendering"; value: string | boolean; required: boolean };
 export type Assessment = Constraint & { status: "satisfied" | "unverified" | "conflict" };
 const vocab = {
   os: { macOS: /\b(mac|macos|osx|apple silicon)\b/i, Linux: /\blinux\b/i, Windows: /\bwindows\b/i, Android: /\bandroid\b/i, iOS: /\bios\b/i, FreeBSD: /\bfreebsd\b/i },
@@ -25,7 +25,8 @@ export function parseConstraints(query: string, filters: Filters = {}): Constrai
     }
   }
   const open = query.match(/\bopen[- ]source\b/i);
-  const free = query.match(/\b(?:no paid API|without (?:a )?paid API|offline)\b/i);
+  const free = query.match(/\b(?:no paid API|without (?:a )?paid API|offline)\b/i)
+    ?? query.match(/\bfree\b(?=.{0,28}\blocal\b.{0,25}\b(?:video|rendering)\b)/i);
   const silicon = query.match(/\bapple silicon\b/i);
   const license = query.match(/\b(MIT|Apache[- ]2\.0|BSD-3-Clause|AGPL-3\.0|GPL-3\.0)\b/i);
   if (open) add("openSource", true, open);
@@ -35,6 +36,10 @@ export function parseConstraints(query: string, filters: Filters = {}): Constrai
   const browser = query.match(/\b(?:hosted browser|browser automation|browser agents?)\b/i);
   if (mcp) add("mcp", true, mcp);
   if (browser) add("browser", true, browser);
+  const codex = query.match(/\bcodex\b/i);
+  const rendering = query.match(/\blocal video rendering\b/i);
+  if (codex && /\b(?:video|animation|film)\b/i.test(query)) add("codex", true, codex);
+  if (rendering) add("videoRendering", true, rendering);
   if (cloudOnly) add("cloudOnly", true, cloudOnly);
   if (silicon) add("architecture", "Apple Silicon", silicon);
   if (license) add("license", license[0].replace(/^apache /i, "Apache-"), license);
@@ -48,7 +53,9 @@ export function parseConstraints(query: string, filters: Filters = {}): Constrai
 function evaluate(tool: Tool, constraint: Constraint): Assessment {
   const { field, value } = constraint;
   const observation = {
-    category: tool.categories, os: tool.os, language: tool.languages,
+    category: tool.categories, kind: tool.kinds, os: tool.os, language: tool.languages,
+    codex: tool.capabilities.includes("Codex workflow") || tool.integrations.includes("MCP stdio") ? true : null,
+    videoRendering: tool.capabilities.some(capability => ["local video rendering", "programmatic video rendering"].includes(capability)) ? true : null,
     hosting: tool.hosting === "hybrid" ? ["local", "cloud", "hybrid"] : tool.hosting,
     mcp: tool.mcp,
     browser: tool.categories.includes("browser") ? true : tool.confidence === "curated" ? false : null,
@@ -62,7 +69,7 @@ function evaluate(tool: Tool, constraint: Constraint): Assessment {
   return { ...constraint, status };
 }
 
-const stopWords = new Set("a an the for to on in of and or using use with find build run compare that need needs i we agent agents tool tools can which supports support requires required must no paid api only prefer ideally local locally cloud source open macos mac apple silicon linux windows python typescript javascript rust ruby swift java kotlin freebsd android ios golang".split(" "));
+const stopWords = new Set("a an the for to on in of and or using use with find build run compare that need needs i we agent agents tool tools can which supports support requires required must no paid api only prefer ideally local locally cloud source open macos mac apple silicon linux windows python typescript javascript rust ruby swift java kotlin freebsd android ios golang free".split(" "));
 const concepts: Array<[RegExp, string]> = [
   [/\b(?:browser (?:automation|agent)|automate (?:the )?browser|web testing)\b/i, "browser automation"],
   [/\b(?:llms?|language models?)\b/i, "llm inference"],
@@ -72,7 +79,11 @@ const concepts: Array<[RegExp, string]> = [
   [/\b(?:observe|traces?|tracing|telemetry)\b/i, "observability tracing"],
   [/\b(?:coordinate|multi.agent|handoffs)\b/i, "orchestration"],
   [/\b(?:isolat\w+|sandbox\w*)\b/i, "sandbox isolated execution"],
-  [/\b(?:embedding\w*|similarity search)\b/i, "vector search"]
+  [/\b(?:embedding\w*|similarity search)\b/i, "vector search"],
+  [/\b(?:ai video production|video production pipeline|ai film studio)\b/i, "video production pipeline render video generation"],
+  [/\b(?:automated video editing|edit(?:ing)? videos?)\b/i, "automated video editing compositing video rendering"],
+  [/\b(?:cinematic animation|motion graphics)\b/i, "cinematic animation motion graphics"],
+  [/\b(?:video tools|video rendering)\b/i, "video rendering"]
 ];
 function tokens(value: string) {
   return value.toLowerCase().match(/[\p{L}\p{N}]+/gu)?.filter(word => !stopWords.has(word)) ?? [];

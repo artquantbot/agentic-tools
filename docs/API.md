@@ -43,3 +43,9 @@ VS Code workspace configuration in `.vscode/mcp.json`
 Run the SDK smoke test against an actual endpoint with `MCP_TEST_URL=http://127.0.0.1:4173/mcp node --test tests/mcp.test.ts`.
 
 MCP accepts one JSON-RPC message per HTTP request. A JSON array receives HTTP 400 with `mcp_batch_not_supported`. Tool results mark third-party data with `untrusted: true` and cap the serialized tool result at 96 KiB. Request fewer records or use narrower filters if a response exceeds that cap.
+
+## Creative production
+
+`creative-production` is the Video & Creative Production category. The optional `kind` filter works on GET and POST search and MCP `search_tools`. Reviewed creative results add optional `kinds`, `mcp`, and `reviewedAt` fields. Details add licensing restrictions, installation and evidence. A project with a separate MCP integration can have `mcp: true` while its tool type remains a library, CLI or application.
+
+Request `{"query":"AI Film Studio"}` through REST recommendation or MCP `recommend_stack` to get the optional `curatedStack` guide. Explicit filters get regular constraint-aware search results. See [creative catalog evidence](CREATIVE_PRODUCTION.md).

@@ -43,3 +43,19 @@ test("home and discover pass automated accessibility and fit the viewport", asyn
   const light = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa"]).analyze();
   expect(light.violations).toEqual([]);
 });
+
+
+test("creative tools can be filtered and the film studio guide links to verified tools", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("link", { name: /Video & Creative Production/ }).click();
+  await expect(page.getByRole("heading", { name: "13 matches" })).toBeVisible();
+  await page.getByLabel("Tool type").selectOption("mcp-server");
+  await expect(page.getByRole("heading", { name: "2 matches" })).toBeVisible();
+  await expect(page.getByRole("link", { name: "EffectCraft", exact: true })).toBeVisible();
+  await page.getByRole("navigation").getByRole("link", { name: "Stack Builder" }).click();
+  await page.getByRole("link", { name: "Explore AI Film Studio" }).click();
+  const guide = page.getByRole("region", { name: "AI Film Studio" });
+  await expect(guide.getByRole("heading", { name: "Licensing and costs" })).toBeVisible();
+  await guide.getByRole("link", { name: "FFmpeg" }).click();
+  await expect(page.getByText("Licensing restrictions")).toBeVisible();
+});

@@ -1,6 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { catalog, search } from "../src/catalog.ts";
+import reviews from "../data/reviewed-tools.json" with { type: "json" };
+import { byId, catalog, search } from "../src/catalog.ts";
 import { makeRanker, parseConstraints } from "../src/ranking.ts";
 import { searchInput, snapshot, tool } from "../src/schema.ts";
 import { awesomeProjects, parseRegistryPage, repoKey, requestText, safeUrl } from "../scripts/sources.ts";
@@ -12,7 +13,7 @@ test("catalog is normalized and each record has source evidence", () => {
     assert.ok(catalog.tools.some(item => item.sources.some(evidence => evidence.kind === source)));
   }
   assert.ok(catalog.tools.every(item => item.id.startsWith("gh-") && !item.sources.some(source => source.kind === "registry")));
-  assert.ok(catalog.tools.every(item => item.publisherIds.length === 0 && item.integrations.length === 0));
+  assert.ok(catalog.tools.every(item => item.publisherIds.length === 0 && (item.reviewedAt || item.integrations.length === 0)));
   const invalid = { ...catalog.tools[0], canonicalUrl: "javascript:alert(1)" };
   assert.equal(tool.safeParse(invalid).success, false);
 });
@@ -75,4 +76,47 @@ test("repository metadata alone does not qualify a project for task recommendati
   assert.equal(task.total, 0);
   assert.deepEqual(task.unverified.map(item => item.tool.id), [basis.id]);
   assert.equal(rank(searchInput.parse({})).total, 1);
+});
+
+
+test("creative records preserve GitHub identity and distinguish actual MCP servers", () => {
+  assert.equal(reviews.length, 13);
+  const records = catalog.tools.filter(item => item.categories.includes("creative-production"));
+  assert.equal(records.length, 13);
+  for (const input of reviews) {
+    const record = byId.get(`gh-${input.githubId}`);
+    assert.equal(record?.canonicalUrl, `https://github.com/${input.repository}`);
+    assert.equal(record?.reviewedAt, input.reviewedAt);
+    assert.ok(record?.kinds?.length && record.licenseTerms);
+    assert.ok(record.sources.some(source => source.url === input.licenseSource));
+  }
+  assert.deepEqual(records.filter(item => item.kinds?.includes("mcp-server")).map(item => item.name).sort(), ["EffectCraft", "MCP for Blender"]);
+  assert.equal(byId.get("gh-274495425")?.mcp, false);
+  assert.equal(byId.get("gh-1137388347")?.license, null);
+  assert.equal(byId.get("gh-5905330")?.openSource, false);
+});
+
+test("creative discovery supports documented Codex and free local rendering requirements", () => {
+  const codex = search(searchInput.parse({ query: "Which video tools can Codex operate?", filters: { category: "creative-production" } }));
+  assert.ok(codex.results.some(item => item.tool.name === "HyperFrames"));
+  assert.ok(codex.results.some(item => item.tool.name === "MCP for Blender"));
+  assert.ok(!codex.results.some(item => item.tool.name === "Awesome Opus 5.5 Videos"));
+  const local = search(searchInput.parse({ query: "Build a free local video rendering stack" }));
+  assert.ok(local.results.some(item => item.tool.name === "FFmpeg"));
+  assert.ok(local.results.some(item => item.tool.name === "HyperFrames"));
+  assert.ok(local.results.every(item => item.requirements.filter(req => req.required).every(req => req.status === "satisfied")));
+  assert.ok(!local.results.some(item => item.tool.name === "Remotion"));
+});
+
+test("common creative production queries rank relevant tools first", () => {
+  const cases = [
+    { query: "Build an AI video production pipeline", expected: "ComfyUI" },
+    { query: "Find open-source tools for cinematic animation", expected: "EffectCraft" },
+    { query: "Recommend tools for automated video editing", expected: "HyperFrames" }
+  ];
+  for (const { query, expected } of cases) {
+    const output = search(searchInput.parse({ query, limit: 3 }));
+    assert.ok(output.results.some(item => item.tool.name === expected), query);
+    if (query.includes("open-source")) assert.ok(output.results.every(item => item.tool.openSource === true));
+  }
 });

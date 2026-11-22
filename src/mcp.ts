@@ -33,7 +33,7 @@ export const mcp = createMcpHandler(() => {
       const tool = byId.get(id);
       return tool ? result(detail(tool)) : result({ error: "Unknown catalog ID" }, true);
     });
-  server.registerTool("recommend_stack", { description: "Find candidates grouped by their primary category. Compatibility must be checked.", inputSchema: stackInput, annotations },
+  server.registerTool("recommend_stack", { description: "Find candidates grouped by category or request the curated AI Film Studio guide. Check compatibility before use.", inputSchema: stackInput, annotations },
     ({ query, filters }) => result(recommendStack(query, filters)));
   server.registerTool("get_setup_guide", { description: "Find upstream setup documentation and documented permissions.", inputSchema: toolId, annotations },
     ({ id }) => {

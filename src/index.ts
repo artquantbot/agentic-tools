@@ -83,7 +83,7 @@ function getSearch(params: URLSearchParams) {
     if (key === "page" || key === "limit") input[key] = /^\d+$/.test(val) ? Number(val) : val;
     else if (key === "sort" || key === "query") input[key] = val;
     else if (key === "openSource" || key === "noPaidApi") filters[key] = val === "true" ? true : val === "false" ? false : val;
-    else if (["category", "hosting", "os", "language", "license"].includes(key)) filters[key] = val;
+    else if (["category", "kind", "hosting", "os", "language", "license"].includes(key)) filters[key] = val;
     else error(400, "invalid_input", "Unknown query parameter.");
   }
   return searchInput.parse(input);

@@ -1,4 +1,7 @@
 import * as z from "zod";
+import { toolKinds } from "./tool-kinds.ts";
+
+export const toolKind = z.enum(Object.keys(toolKinds) as (keyof typeof toolKinds)[]);
 
 export const id = z.string().regex(/^[a-z0-9][a-z0-9-]{1,119}$/);
 export const label = z.string().trim().min(1).max(80);
@@ -19,13 +22,16 @@ export const tool = z.object({
   latestRelease: label.nullable(), lastActivity: z.iso.datetime().nullable(), stars: z.int().nonnegative().nullable(),
   securityAdvisories: z.array(url).nullable(), setup: url.nullable(), tradeoff: z.string().nullable(),
   publisherIds: z.array(label), sources: z.array(source).min(1), verifiedAt: z.iso.datetime(),
-  confidence: z.enum(["curated", "metadata"])
+  confidence: z.enum(["curated", "metadata"]),
+  kinds: z.array(toolKind).min(1).optional(),
+  licenseTerms: z.string().max(500).optional(),
+  reviewedAt: z.iso.datetime().optional()
 });
 export type Tool = z.infer<typeof tool>;
 export type Source = z.infer<typeof source>;
 export const snapshot = z.object({ generatedAt: z.iso.datetime(), tools: z.array(tool).min(1) });
 export const filters = z.strictObject({
-  category: id.optional(), openSource: z.boolean().optional(),
+  category: id.optional(), kind: toolKind.optional(), openSource: z.boolean().optional(),
   hosting: z.enum(["local", "cloud", "hybrid"]).optional(), os: label.optional(),
   language: label.optional(), license: label.optional(), noPaidApi: z.boolean().optional()
 });

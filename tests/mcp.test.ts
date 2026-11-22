@@ -30,6 +30,16 @@ test("official MCP client discovers and invokes all read-only tools over Streama
       assert.equal(response.isError, false);
       assert.ok(response.structuredContent);
     }
+
+    const creative = await client.callTool({ name: "search_tools", arguments: {
+      filters: { category: "creative-production", kind: "mcp-server" }, limit: 4
+    } });
+    assert.equal(creative.isError, false);
+    const entries = (creative.structuredContent as { results: { tool: { name: string } }[] }).results;
+    assert.deepEqual(entries.map(item => item.tool.name).sort(), ["EffectCraft", "MCP for Blender"]);
+    const film = await client.callTool({ name: "recommend_stack", arguments: { query: "AI Film Studio" } });
+    assert.equal(film.isError, false);
+    assert.equal((film.structuredContent as { curatedStack: { name: string } }).curatedStack.name, "AI Film Studio");
   } finally {
     await client.close();
   }
