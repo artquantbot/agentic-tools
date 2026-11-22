@@ -150,3 +150,36 @@ code{font-family:"IBM Plex Mono",ui-monospace,monospace}
 .studio-graph label { margin-top: .65rem; }
 .studio-key { max-width: 30rem; margin-bottom: .8rem; }
 .studio-digest { overflow-wrap: anywhere; }
+
+.saas-page { --directory-accent: var(--link); margin-block: clamp(2rem, 5vw, 5rem) 4rem; }
+.saas-heading { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(15rem, 1fr); gap: clamp(1.5rem, 5vw, 5rem); align-items: end; border-bottom: 1px solid var(--line); padding-bottom: 2.25rem; }
+.saas-heading h1 { margin: .4rem 0 .9rem; max-width: 13ch; font: 400 clamp(2.7rem, 5.6vw, 5.3rem)/.98 Georgia, serif; letter-spacing: -.055em; text-wrap: balance; }
+.saas-heading h1 em { color: var(--directory-accent); }
+.saas-heading p, .saas-row p, .saas-source, .saas-sidebar p { color: var(--muted); }
+.saas-heading p { max-width: 50ch; margin-block: .35rem; }
+.saas-agent { border-inline-start: 2px solid var(--directory-accent); background: var(--surface); padding: 1rem 1.25rem; }
+.saas-agent h2 { font-size: 1.08rem; margin: .4rem 0; }
+.saas-agent a { display: inline-block; margin-top: .4rem; margin-inline-end: .85rem; }
+.saas-layout { display: grid; grid-template-columns: minmax(12rem, .32fr) minmax(0, 1fr); gap: clamp(1.25rem, 4vw, 4rem); margin-block: 1.6rem 2.5rem; }
+.saas-sidebar { display: grid; align-content: start; gap: .65rem; }
+.saas-sidebar > label { margin-top: .4rem; font-weight: 650; }
+.saas-sidebar input[type="search"], .saas-sidebar select { min-width: 0; width: 100%; padding: .65rem; border-radius: 7px; background: var(--surface); border: 1px solid var(--line); color: var(--fg); font: inherit; }
+.saas-shortlist { display: flex; align-items: center; gap: .4rem; }
+.saas-sidebar p, .saas-total { font-size: .875rem; font-variant-numeric: tabular-nums; color: var(--muted); }
+.saas-group { margin-bottom: 1.8rem; min-width: 0; }
+.saas-group h2 { font: 400 1.75rem Georgia, serif; margin: 0; padding-block: .75rem; border-bottom: 1px solid var(--line); }
+.saas-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: start; gap: .75rem 1.1rem; padding: 1.1rem 0; border-bottom: 1px solid var(--line); }
+.saas-row h3 { margin: .2rem 0; font-size: 1.25rem; }
+.saas-row h3 a { color: var(--fg); }
+.saas-row p { margin: .25rem 0; max-width: 58ch; }
+.saas-row .saas-task { color: var(--directory-accent); font-size: .8rem; font-weight: 650; }
+.saas-actions { display: flex; align-items: center; gap: .4rem; flex-wrap: wrap; }
+.saas-actions .text-link { margin-inline-end: .2rem; }
+.saas-actions button[aria-pressed="true"] { border-color: var(--directory-accent); color: var(--directory-accent); }
+.saas-meta { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .55rem; }
+.saas-meta span { border: 1px solid var(--line); border-radius: 4px; padding: .1rem .38rem; font-size: .77rem; }
+.saas-source { font-size: .9rem; border-top: 1px solid var(--line); padding-top: 1rem; }
+@media (max-width: 720px) {
+  .saas-heading, .saas-layout, .saas-row { grid-template-columns: minmax(0, 1fr); }
+  .saas-heading { align-items: start; }
+}

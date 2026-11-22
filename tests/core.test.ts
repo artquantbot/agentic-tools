@@ -1,5 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import saasGroups from "../data/saas-alternatives.json" with { type: "json" };
 import reviews from "../data/reviewed-tools.json" with { type: "json" };
 import { byId, catalog, search } from "../src/catalog.ts";
 import { makeRanker, parseConstraints } from "../src/ranking.ts";
@@ -118,4 +119,16 @@ test("common creative production queries rank relevant tools first", () => {
     assert.ok(output.results.some(item => item.tool.name === expected), query);
     if (query.includes("open-source")) assert.ok(output.results.every(item => item.tool.openSource === true));
   }
+});
+
+
+test("SaaS directory entries match canonical searchable catalog records", () => {
+  const ids = saasGroups.flatMap(section => section.entries.map(entry => entry.id));
+  const { results } = search(searchInput.parse({ filters: { category: "saas-alternatives" }, limit: 50 }));
+  assert.equal(new Set(ids).size, 23);
+  assert.deepEqual(new Set(results.map(item => item.tool.id)), new Set(ids));
+  assert.equal(catalog.tools.filter(item => item.id === "gh-193215554").length, 1);
+  assert.equal(byId.get("gh-193215554")?.openSource, false);
+  const alternatives = search(searchInput.parse({ query: "Slack alternative", filters: { category: "saas-alternatives" } }));
+  assert.equal(alternatives.results[0]?.tool.name, "Rocket.Chat");
 });

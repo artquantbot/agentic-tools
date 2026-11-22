@@ -1,0 +1,147 @@
+[
+  {
+    "id": "workspace",
+    "label": "Workspaces",
+    "entries": [
+      {
+        "id": "gh-377496562",
+        "alternativeTo": "Notion",
+        "task": "Organize team knowledge"
+      },
+      {
+        "id": "gh-48769241",
+        "alternativeTo": "Figma",
+        "task": "Design interfaces"
+      },
+      {
+        "id": "gh-350360184",
+        "alternativeTo": "Calendly",
+        "task": "Schedule meetings"
+      },
+      {
+        "id": "gh-11981144",
+        "alternativeTo": "Grammarly",
+        "task": "Check writing"
+      },
+      {
+        "id": "gh-46755185",
+        "alternativeTo": "1Password",
+        "task": "Manage passwords"
+      }
+    ]
+  },
+  {
+    "id": "collaboration",
+    "label": "Collaboration",
+    "entries": [
+      {
+        "id": "gh-35866694",
+        "alternativeTo": "Slack",
+        "task": "Coordinate a team"
+      },
+      {
+        "id": "gh-60243197",
+        "alternativeTo": "Dropbox",
+        "task": "Share files"
+      },
+      {
+        "id": "gh-720209383",
+        "alternativeTo": "Loom",
+        "task": "Record a screen"
+      },
+      {
+        "id": "gh-459095253",
+        "alternativeTo": "Linktree",
+        "task": "Publish links"
+      }
+    ]
+  },
+  {
+    "id": "development",
+    "label": "Development",
+    "entries": [
+      {
+        "id": "gh-332880689",
+        "alternativeTo": "Vercel",
+        "task": "Deploy applications"
+      },
+      {
+        "id": "gh-701547123",
+        "alternativeTo": "ChatGPT Plus",
+        "task": "Use an AI chat workspace"
+      },
+      {
+        "id": "gh-568098118",
+        "alternativeTo": "Jira",
+        "task": "Track projects"
+      },
+      {
+        "id": "gh-108761645",
+        "alternativeTo": "Airtable",
+        "task": "Build shared data tables"
+      },
+      {
+        "id": "gh-16089035",
+        "alternativeTo": "Trello",
+        "task": "Manage Kanban boards"
+      }
+    ]
+  },
+  {
+    "id": "operations",
+    "label": "Business operations",
+    "entries": [
+      {
+        "id": "gh-193215554",
+        "alternativeTo": "Zapier",
+        "task": "Automate workflows"
+      },
+      {
+        "id": "gh-500289888",
+        "alternativeTo": "Typeform",
+        "task": "Collect feedback"
+      },
+      {
+        "id": "gh-613010835",
+        "alternativeTo": "DocuSign",
+        "task": "Sign documents"
+      },
+      {
+        "id": "gh-202291859",
+        "alternativeTo": "Intercom",
+        "task": "Support customers"
+      },
+      {
+        "id": "gh-193833307",
+        "alternativeTo": "Mailchimp",
+        "task": "Send newsletters"
+      }
+    ]
+  },
+  {
+    "id": "analytics",
+    "label": "Analytics & monitoring",
+    "entries": [
+      {
+        "id": "gh-235901813",
+        "alternativeTo": "Mixpanel",
+        "task": "Analyze product usage"
+      },
+      {
+        "id": "gh-664013991",
+        "alternativeTo": "Buffer",
+        "task": "Schedule social posts"
+      },
+      {
+        "id": "gh-382496361",
+        "alternativeTo": "Statuspage",
+        "task": "Monitor uptime"
+      },
+      {
+        "id": "gh-362806180",
+        "alternativeTo": "Hotjar",
+        "task": "Review web sessions"
+      }
+    ]
+  }
+]

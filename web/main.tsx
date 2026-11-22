@@ -5,6 +5,7 @@ import type { SearchResult, StackResult } from "../src/catalog.ts";
 import type { Filters, Tool } from "../src/schema.ts";
 import { categoryTitle } from "../src/ranking.ts";
 import { toolKinds } from "../src/tool-kinds.ts";
+import saasGroups from "../data/saas-alternatives.json";
 import { Studio } from "./studio.tsx";
 import "./style.css";
 
@@ -48,7 +49,7 @@ function useRequest<T>(path: string, body?: string) {
   return state;
 }
 
-const links = [["/discover", "Discover"], ["/categories", "Categories"], ["/compare", "Compare"], ["/stack", "Stack Builder"], ["/developers", "Developers"]];
+const links = [["/discover", "Discover"], ["/categories", "Categories"], ["/compare", "Compare"], ["/alternatives", "SaaS alternatives"], ["/stack", "Stack Builder"], ["/developers", "Developers"]];
 function Layout({ children, path }: { children: ReactNode; path: string }) {
   const [theme, setTheme] = useState(() => localStorage.getItem("agentic-theme") === "light" ? "light" : "dark");
   useEffect(() => { document.documentElement.dataset.theme = theme; localStorage.setItem("agentic-theme", theme); }, [theme]);
@@ -140,13 +141,90 @@ function Home({ directory, selection, toggle }: { directory: ReturnType<typeof u
     <section className="home-section editorial-grid">
       {[["Emerging tools", "Explore new catalog leads with source links and explicit metadata gaps.", "/discover?category=emerging", "Explore emerging tools", Activity],
       ["Security & maintenance", "Review advisory coverage, repository status and freshness before adoption.", "/about#methodology", "Read the methodology", Shield],
-      ["Open-source alternatives", "Compare projects with a recognized open-source license.", "/discover?openSource=true", "Find open-source tools", GitFork],
+      ["SaaS alternatives", "Evaluate repositories for everyday software tasks, with license terms and upstream setup links.", "/alternatives", "Browse SaaS alternatives", GitFork],
       ["Build with the catalog", "Search through the versioned REST API or connect a read-only MCP client.", "/developers", "Developer documentation", Terminal]].map(([title, desc, href, cta, Visual]) => {
         const Symbol = Visual as typeof Activity;
         return <article className="editorial-card" key={String(title)}><Symbol size={21}/><h2>{String(title)}</h2><p>{String(desc)}</p><a className="text-link" href={String(href)}>{String(cta)}</a></article>;
       })}
     </section>
   </>;
+}
+function SaaSAlternatives({ selection, toggle }: { selection: string[]; toggle: (id: string) => void }) {
+  const request = useRequest<SearchResult>("/tools?category=saas-alternatives&limit=50");
+  const [group, setGroup] = useState("");
+  const [query, setQuery] = useState("");
+  const [savedOnly, setSavedOnly] = useState(false);
+  const [saved, setSaved] = useState<string[]>(() => {
+    try {
+      const value: unknown = JSON.parse(localStorage.getItem("agentic-saas-shortlist") ?? "[]");
+      return Array.isArray(value) ? saasGroups.flatMap(section => section.entries.filter(entry => value.includes(entry.id)).map(entry => entry.id)) : [];
+    } catch { return []; }
+  });
+  useEffect(() => { try { localStorage.setItem("agentic-saas-shortlist", JSON.stringify(saved)); } catch {} }, [saved]);
+  const count = saasGroups.reduce((total, section) => total + section.entries.length, 0);
+  const catalog = new Map(request.data?.results.map(item => [item.tool.id, item.tool]));
+  const needle = query.trim().toLowerCase();
+  const visible = saasGroups.filter(section => !group || section.id === group).flatMap(section => {
+    const entries = section.entries.filter(entry => {
+      const record = catalog.get(entry.id);
+      return record && (!savedOnly || saved.includes(entry.id))
+        && [record.name, record.description, entry.task, entry.alternativeTo, section.label].join(" ").toLowerCase().includes(needle);
+    });
+    return entries.length ? [{ ...section, entries }] : [];
+  });
+  const shown = visible.reduce((total, section) => total + section.entries.length, 0);
+  function save(id: string) {
+    setSaved(previous => previous.includes(id) ? previous.filter(value => value !== id) : [...previous, id]);
+  }
+  return <div className="saas-page">
+    <header className="saas-heading">
+      <div><p className="eyebrow">SaaS alternatives</p><h1>Find software you <em>can run yourself.</em></h1>
+      <p>Browse {count} repositories by task. Compare licenses and deployment options before migrating your work.</p></div>
+      <aside className="saas-agent" aria-label="Agent access">
+        <Terminal size={20} aria-hidden="true"/><h2>Use the catalog in an agent</h2>
+        <p>Browse this category through REST or the read-only MCP catalog.</p>
+        <a href="/api/v1/tools?category=saas-alternatives&amp;limit=50">Open JSON</a>
+        <a href="/developers">MCP documentation</a>
+      </aside>
+    </header>
+    <div className="saas-layout">
+      <aside className="saas-sidebar" aria-label="Directory filters">
+        <label htmlFor="saas-query">Find by tool or task</label>
+        <input id="saas-query" type="search" placeholder="e.g. Slack or uptime" value={query} onChange={event => setQuery(event.target.value)} maxLength={100}/>
+        <label htmlFor="saas-group">Area of work</label>
+        <select id="saas-group" value={group} onChange={event => setGroup(event.target.value)}>
+          <option value="">All areas</option>{saasGroups.map(section => <option key={section.id} value={section.id}>{section.label}</option>)}
+        </select>
+        <label className="saas-shortlist"><input type="checkbox" checked={savedOnly} onChange={event => setSavedOnly(event.target.checked)}/> Show saved only</label>
+        <p><strong>{saved.length}</strong> saved for evaluation</p>
+      </aside>
+      <section aria-label="SaaS repository results" className="saas-results">
+        <Notice error={request.error} loading={!request.data && !request.error}/>
+        {request.data && <p role="status" className="saas-total">{shown} {shown === 1 ? "repository" : "repositories"} shown</p>}
+        {request.data && !visible.length && <p className="notice">No repositories match these filters.</p>}
+        {visible.map(section => <section className="saas-group" key={section.id}>
+          <h2>{section.label}</h2>
+          {section.entries.map(entry => {
+            const record = catalog.get(entry.id)!;
+            const marked = saved.includes(entry.id);
+            const compared = selection.includes(entry.id);
+            return <article className="saas-row" key={entry.id}>
+              <div><p className="saas-task">{entry.task} · Alternative to {entry.alternativeTo}</p>
+              <h3><a href={"/tools/" + entry.id}>{record.name}</a></h3>
+              <p>{record.description}</p>
+              <div className="saas-meta"><span>{record.license ?? "See license terms"}</span><span>{record.hosting === "hybrid" ? "Self-hosted or hosted" : record.hosting === "local" ? "Self-hosted" : "See deployment docs"}</span></div></div>
+              <div className="saas-actions">
+                {record.github && <a className="text-link" href={record.github}>GitHub <ArrowUpRight size={14} aria-hidden="true"/></a>}
+                <button type="button" className="button" aria-pressed={marked} aria-label={"Save " + record.name} onClick={() => save(entry.id)}>Save</button>
+                <button type="button" className="button" aria-pressed={compared} aria-label={"Compare " + record.name} disabled={!compared && selection.length >= 5} onClick={() => toggle(entry.id)}>Compare</button>
+              </div>
+            </article>;
+          })}
+        </section>)}
+      </section>
+    </div>
+    <p className="saas-source">Software licenses, infrastructure and paid editions vary. The original directory helped identify these projects. <a href="https://freesaasrepos.surge.sh/">Free SaaS Repos</a></p>
+  </div>;
 }
 function PageHeading({ title, children }: { title: string; children: ReactNode }) {
   return <header className="page-heading"><h1>{title}</h1><p>{children}</p></header>;
@@ -316,6 +394,7 @@ function App() {
   if (path === "/") page = <Home directory={directory} {...props}/>;
   else if (path === "/discover") page = <Discover directory={directory.data} {...props}/>;
   else if (path === "/categories") page = <><PageHeading title="Categories">Explore tools by role across the agent technology stack.</PageHeading>{directory.error ? <Notice error={directory.error}/> : <CategoryGrid directory={directory.data}/>}</>;
+  else if (path === "/alternatives") page = <SaaSAlternatives {...props}/>;
   else if (path === "/compare") page = <Compare {...props}/>;
   else if (path === "/studio") page = <Studio/>;
   else if (path === "/stack") page = <Stack {...props}/>;

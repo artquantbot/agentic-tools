@@ -12,3 +12,7 @@ Optional leads from the [Hacker News API](https://github.com/HackerNews/API) are
 Run the importer with `--cached` to rebuild from existing source observations without network access. Cached source timestamps are preserved. GitHub publisher homepages are omitted from the catalog.
 
 Repository metadata records remain browsable. Task search places them under Needs review until capability evidence is reviewed.
+
+## SaaS alternatives collection
+
+[Free SaaS Repos](https://freesaasrepos.surge.sh/) and its [published list](https://freesaasrepos.surge.sh/llms.txt) provided 23 repository discovery leads. Each catalog record uses the canonical GitHub ID and links to the project README and its license file. Names of commercial products identify comparable tasks; check the project and edition for feature fit. The collection stores no vendor prices or savings estimates. Running the listed software can require infrastructure, providers, backups and maintenance.
