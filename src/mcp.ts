@@ -1,6 +1,7 @@
 import { createMcpHandler, McpServer } from "@modelcontextprotocol/server";
 import * as z from "zod";
 import { byId, compareTools, detail, recommendStack, search } from "./catalog.ts";
+import { buildPlan, comparePlansInput, planInput } from "./studio.ts";
 import { comparison, id, searchInput, stackInput } from "./schema.ts";
 
 const toolId = z.strictObject({ id });
@@ -41,5 +42,11 @@ export const mcp = createMcpHandler(() => {
       return tool ? result({ id, setup: tool.setup, installation: tool.installation, permissions: tool.permissions, evidence: tool.sources })
         : result({ error: "Unknown catalog ID" }, true);
     });
+  server.registerTool("build_stack", { description: "Generate a dependency and configuration manifest from reviewed stack templates.", inputSchema: planInput, annotations },
+    input => result(buildPlan(input)));
+  server.registerTool("validate_stack", { description: "Check stack selections and requirements against the catalog. Does not run tools.", inputSchema: planInput, annotations },
+    input => result(buildPlan(input)));
+  server.registerTool("compare_stacks", { description: "Compare two or three stack plans using the same evidence and constraints.", inputSchema: comparePlansInput, annotations },
+    ({ plans }) => result({ plans: plans.map(buildPlan) }));
   return server;
 });

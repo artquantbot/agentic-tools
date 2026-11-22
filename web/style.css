@@ -132,3 +132,21 @@ code{font-family:"IBM Plex Mono",ui-monospace,monospace}
 .film-studio-steps h3{font-size:1rem;margin-bottom:.2rem}
 .film-studio-steps .text-link{display:inline-block;margin-bottom:.3rem}
 @media(max-width:650px){.film-studio-steps{grid-template-columns:1fr}}
+
+.studio-form, .studio-form label, .studio-graph label, .studio-key { display: grid; gap: .6rem; }
+.studio-form { gap: 1rem; }
+.studio-fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: .8rem; }
+.studio-form fieldset { min-width: 0; border: 1px solid var(--line); border-radius: 10px; }
+.studio-form textarea, .studio-form select, .studio-form input:not([type="checkbox"]), .studio-graph select, .studio-key input {
+  width: 100%; min-width: 0; font: inherit; padding: .65rem; border-radius: 8px; border: 1px solid var(--line); color: inherit; background: var(--surface);
+}
+.studio-form textarea { resize: vertical; min-height: 5rem; }
+.studio-form .studio-check, .studio-check { display: flex; align-items: center; gap: .55rem; margin-block: .6rem; }
+.studio-form > button { justify-self: start; }
+.studio-graph { display: grid; gap: .8rem; padding-inline-start: 1.5rem; }
+.studio-graph li { padding: .75rem; border: 1px solid var(--line); border-radius: 10px; }
+.studio-graph h4 { margin-block: 0 .4rem; }
+.studio-graph p { margin-block: .4rem; }
+.studio-graph label { margin-top: .65rem; }
+.studio-key { max-width: 30rem; margin-bottom: .8rem; }
+.studio-digest { overflow-wrap: anywhere; }

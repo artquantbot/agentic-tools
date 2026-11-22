@@ -1,4 +1,5 @@
 import * as z from "zod";
+import { comparePlansInput, planInput, planOutput } from "./studio.ts";
 import { comparison, filters, searchInput, stackInput, tool } from "./schema.ts";
 
 const json = (schema: unknown) => ({ "application/json": { schema } });
@@ -68,6 +69,9 @@ export const openapi = {
     }))) },
     "/search": { post: operation("Find suitable tools", summaryResponse, searchInput) },
     "/compare": { post: operation("Compare tools", { type: "object", properties: { tools: { type: "array", items: detailSchema }, missing: { type: "array", items: { type: "string" } } } }, comparison) },
+    "/stacks/build": { post: operation("Build a reviewed stack manifest", z.toJSONSchema(planOutput), planInput) },
+    "/stacks/validate": { post: operation("Validate a requested plan against catalog evidence", z.toJSONSchema(planOutput), planInput) },
+    "/stacks/compare": { post: operation("Compare reviewed stack manifests", z.toJSONSchema(z.object({ plans: z.array(planOutput) })), comparePlansInput) },
     "/recommend-stack": { post: operation("Shortlist components by category", z.toJSONSchema(z.object({
       constraints: z.array(constraint), groups: z.array(z.object({ category: identifier, candidates: z.array(item) })),
       unverified: z.array(item), compatibility: z.string(), curatedStack: curatedStack.optional()
