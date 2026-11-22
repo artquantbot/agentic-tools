@@ -1,15 +1,17 @@
 import { createRoot } from "react-dom/client";
 import { useEffect, useState, type FormEvent, type ReactNode } from "react";
-import { Activity, ArrowUpRight, AudioLines, BookOpen, Box, Braces, ChevronRight, CircleHelp, Code2, Command, Cpu, Database, Filter, GitBranch, GitFork, Globe, Layers3, Moon, Network, Package, Plus, ScanLine, Search, Shield, Sun, Terminal, Waypoints, X } from "lucide-react";
+import { Activity, ArrowUpRight, AudioLines, BookOpen, Box, Braces, ChevronRight, CircleHelp, Clapperboard, Code2, Command, Cpu, Database, Filter, GitBranch, GitFork, Globe, Layers3, Moon, Network, Package, Plus, ScanLine, Search, Shield, Sun, Terminal, Waypoints, X } from "lucide-react";
 import type { SearchResult, StackResult } from "../src/catalog.ts";
 import type { Filters, Tool } from "../src/schema.ts";
 import { categoryTitle } from "../src/ranking.ts";
+import { toolKinds } from "../src/tool-kinds.ts";
+import { Studio } from "./studio.tsx";
 import "./style.css";
 
 const repo = "https://github.com/artquantbot/agentic-tools";
 const examples = ["Build a secure coding agent.", "Run an LLM locally on a Mac.", "Find an MCP server for PostgreSQL.", "Compare agent memory frameworks.", "Build a browser automation stack."];
-const icons = { frameworks: Network, browser: Globe, inference: Cpu, mcp: Waypoints, memory: Database, security: Shield, sandbox: Box, models: Braces, orchestration: GitBranch, workflow: Layers3, extraction: ScanLine, voice: AudioLines, hosting: Terminal, emerging: Activity };
-const categoryOrder = ["frameworks", "mcp", "browser", "inference", "memory", "sandbox"];
+const icons = { "creative-production": Clapperboard, frameworks: Network, browser: Globe, inference: Cpu, mcp: Waypoints, memory: Database, security: Shield, sandbox: Box, models: Braces, orchestration: GitBranch, workflow: Layers3, extraction: ScanLine, voice: AudioLines, hosting: Terminal, emerging: Activity };
+const categoryOrder = ["creative-production", "frameworks", "mcp", "browser", "inference", "memory"];
 type Directory = { categories: { id: string; name: string; count: number }[]; count: number; generatedAt: string; facets: { os: string[]; language: string[]; license: string[] } };
 type Card = SearchResult["results"][number];
 type Detailed = Tool & { freshness: string };
@@ -89,7 +91,7 @@ function ToolCard({ item, selection, toggle, explained = false }: { item: Card; 
     <p className="eyebrow category-label">{categoryTitle(tool.categories[0])}</p>
     <h3><a href={"/tools/" + tool.id}>{tool.name}</a></h3>
     <p className="tool-desc">{tool.description ?? "Repository metadata available. Capability details are pending."}</p>
-    <div className="tags">{tool.license && <span>{tool.license}</span>}{tool.hosting && <span>{tool.hosting}</span>}{!eligible && <span>Review required</span>}</div>
+    <div className="tags">{tool.kinds?.map(kind => <span key={kind}>{toolKinds[kind]}</span>)}{tool.license && <span>{tool.license}</span>}{tool.hosting && <span>{tool.hosting}</span>}{!eligible && <span>Review required</span>}</div>
     {explained && <details><summary>{scores.taskFit ? why : "Evidence and requirements"}</summary>
       <ul>{requirements.map(req => <li key={req.field + String(req.value)}>{req.field}: {String(req.value)} · {req.required ? "required" : "preferred"} · {req.status}</li>)}</ul>
       {tool.tradeoff && <p>{tool.tradeoff}</p>}
@@ -155,8 +157,11 @@ function FilterSelect({ title, values, value, onChange }: { title: string; value
 function Discover({ directory, selection, toggle }: { directory?: Directory; selection: string[]; toggle: (id: string) => void }) {
   const params = new URLSearchParams(location.search);
   const [query, setQuery] = useState(params.get("query") ?? "");
+  const kind = params.get("kind");
   const [filters, setFilters] = useState<Filters>(() => ({
-    category: params.get("category") ?? undefined, openSource: params.get("openSource") === "true" || undefined
+    category: params.get("category") ?? undefined,
+    kind: kind && Object.hasOwn(toolKinds, kind) ? kind as keyof typeof toolKinds : undefined,
+    openSource: params.get("openSource") === "true" || undefined
   }));
   const [sort, setSort] = useState(params.get("sort") === "recent" ? "recent" : "relevance");
   const [page, setPage] = useState(1);
@@ -169,6 +174,7 @@ function Discover({ directory, selection, toggle }: { directory?: Directory; sel
     <div className="discover-layout">
       <aside className="filter-panel" aria-label="Search filters"><h2><Filter size={18}/> Filters</h2>
         <FilterSelect title="Category" values={(directory?.categories ?? []).map(category => [category.id, category.name])} value={filters.category} onChange={val => setFilter("category", val)}/>
+        <FilterSelect title="Tool type" values={Object.entries(toolKinds)} value={filters.kind} onChange={val => setFilter("kind", val)}/>
         <FilterSelect title="Deployment" values={[["local", "Local"], ["cloud", "Cloud"], ["hybrid", "Hybrid"]]} value={filters.hosting} onChange={val => setFilter("hosting", val)}/>
         <FilterSelect title="Operating system" values={options(directory?.facets.os)} value={filters.os} onChange={val => setFilter("os", val)}/>
         <FilterSelect title="Language" values={options(directory?.facets.language)} value={filters.language} onChange={val => setFilter("language", val)}/>
@@ -192,6 +198,9 @@ function Discover({ directory, selection, toggle }: { directory?: Directory; sel
 }
 const valueFor = (record: Detailed, field: string): string => {
   switch (field) {
+    case "Tool type": return record.kinds?.map(kind => toolKinds[kind]).join(", ") ?? "Unknown";
+    case "Licensing restrictions": return label(record.licenseTerms ?? null);
+    case "Documentation checked": return record.reviewedAt ? date(record.reviewedAt) : "Unknown";
     case "License": return label(record.license);
     case "Open source": return record.openSource == null ? "Unknown" : record.openSource ? "Yes" : "No";
     case "Deployment": return label(record.hosting);
@@ -207,12 +216,13 @@ const valueFor = (record: Detailed, field: string): string => {
     case "Last activity": return record.lastActivity ? date(record.lastActivity) : "Unknown";
     case "Paid API": return record.noPaidApi == null ? "Unknown" : record.noPaidApi ? "Path without a paid API documented" : "Required";
     case "Pricing": return label(record.pricing);
-    case "MCP": return record.mcp ? "Documented" : "Unknown";
+    case "MCP": return record.mcp === true ? "Documented" : record.mcp === false ? "No active MCP server documented" : "Unknown";
     case "Security advisories": return record.securityAdvisories == null ? "Coverage unknown" : String(record.securityAdvisories.length);
     case "Freshness": return record.freshness + " · " + date(record.verifiedAt);
     default: return "Unknown";
   }
 };
+const creativeFields = ["Tool type", "Licensing restrictions", "Documentation checked"];
 const fields = ["License", "Open source", "Deployment", "Operating systems", "Languages", "Capabilities", "Installation", "Integrations", "Permissions", "Dependencies", "Maintenance", "Latest listed version", "Last activity", "Paid API", "Pricing", "MCP", "Security advisories", "Freshness"];
 
 function ToolDetails({ id, selection, toggle }: { id: string; selection: string[]; toggle: (id: string) => void }) {
@@ -226,7 +236,7 @@ function ToolDetails({ id, selection, toggle }: { id: string; selection: string[
       {data.website && <a className="button" href={data.website}><Globe size={16}/> Website</a>}
       <button className="button" aria-pressed={selection.includes(id)} disabled={!selection.includes(id) && selection.length >= 5} onClick={() => toggle(id)}>{selection.includes(id) ? "Remove from comparison" : "Add to comparison"}</button>
     </div>
-    <div className="detail-grid"><section className="panel"><h2>Technical profile</h2><dl className="profile">{fields.map(field => <div key={field}><dt>{field}</dt><dd>{valueFor(data, field)}</dd></div>)}</dl></section>
+    <div className="detail-grid"><section className="panel"><h2>Technical profile</h2><dl className="profile">{(data.kinds ? [...creativeFields, ...fields] : fields).map(field => <div key={field}><dt>{field}</dt><dd>{valueFor(data, field)}</dd></div>)}</dl></section>
       <section className="panel"><h2>Evidence & trade-offs</h2><p>{data.tradeoff ?? "Trade-offs require further review."}</p>
         <ul className="source-list">{data.sources.map((source, index) => <li key={index}><a href={source.url}>{source.kind}</a><small>{date(source.verifiedAt)} · {source.fields.join(", ")}</small></li>)}</ul>
         {data.publisherIds.length > 0 && <p>Publisher IDs <code>{data.publisherIds.join(", ")}</code></p>}
@@ -239,16 +249,20 @@ function Compare({ selection, toggle }: { selection: string[]; toggle: (id: stri
       <Notice error={request.error} loading={!request.data}/>
       {!!request.data?.missing.length && <p className="notice">Some saved projects are unavailable. {request.data.missing.map(id => <button key={id} className="button" onClick={() => toggle(id)}>Remove {id}</button>)}</p>}
       {request.data && <div className="table-scroll" tabIndex={0} role="region" aria-label="Tool comparison table"><table><caption>Selected tool attributes</caption><thead><tr><th scope="col">Attribute</th>{request.data.tools.map(tool => <th scope="col" key={tool.id}><a href={"/tools/" + tool.id}>{tool.name}</a><button className="icon-button" aria-label={"Remove " + tool.name} onClick={() => toggle(tool.id)}><X size={16}/></button></th>)}</tr></thead>
-        <tbody>{fields.map(field => <tr key={field}><th scope="row">{field}</th>{request.data!.tools.map(tool => <td key={tool.id}>{valueFor(tool, field)}</td>)}</tr>)}</tbody></table></div>}
+        <tbody>{(request.data.tools.some(tool => tool.kinds) ? [...creativeFields, ...fields] : fields).map(field => <tr key={field}><th scope="row">{field}</th>{request.data!.tools.map(tool => <td key={tool.id}>{valueFor(tool, field)}</td>)}</tr>)}</tbody></table></div>}
     </>}
   </>;
 }
 function Stack({ selection, toggle }: { selection: string[]; toggle: (id: string) => void }) {
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState(() => new URLSearchParams(location.search).get("guide") === "ai-film-studio" ? "AI Film Studio" : "");
   const request = useRequest<StackResult>(query ? "/recommend-stack" : "", JSON.stringify({ query }));
   return <><PageHeading title="Stack Builder">Shortlist components by role, then review interfaces, versions and deployment requirements.</PageHeading>
-    <SearchBox stack onSearch={setQuery}/>{query && <Notice error={request.error} loading={!request.data}/>}
+    <SearchBox stack initial={query} onSearch={setQuery}/>
+    <a className="text-link back" href="/studio">Open Stack Studio</a>
+    {query !== "AI Film Studio" && <a className="text-link back" href="/stack?guide=ai-film-studio">Explore AI Film Studio</a>}
+    {query && <Notice error={request.error} loading={!request.data}/>}
     {request.data && <>
+      {request.data.curatedStack && <FilmStudioGuide guide={request.data.curatedStack}/>}
       {!request.data.groups.length && <p className="notice">No components satisfy every recognized hard requirement.</p>}
       {request.data.groups.map(group => <section className="home-section" key={group.category}><SectionHeading title={categoryTitle(group.category)}/><Cards items={group.candidates} selection={selection} toggle={toggle} explained/></section>)}
       {!!request.data.unverified.length && <section className="home-section"><SectionHeading title="Needs review" description="Check missing requirement evidence before selecting these components."/><Cards items={request.data.unverified} selection={selection} toggle={toggle} explained/></section>}
@@ -256,13 +270,26 @@ function Stack({ selection, toggle }: { selection: string[]; toggle: (id: string
     </>}
   </>;
 }
+function FilmStudioGuide({ guide }: { guide: NonNullable<StackResult["curatedStack"]> }) {
+  return <section className="panel home-section" aria-labelledby="film-studio-title">
+    <h2 id="film-studio-title">{guide.name}</h2>
+    <p>{guide.description}</p>
+    <ol className="film-studio-steps">{guide.steps.map(step => <li key={step.role}>
+      <h3>{step.role}</h3><a className="text-link" href={"/tools/" + step.tool.id}>{step.tool.name}</a>
+      <p>{step.notes}</p>
+      {!!step.alternatives.length && <div className="tags">{step.alternatives.map(tool => <a key={tool.id} href={"/tools/" + tool.id}>{tool.name}</a>)}</div>}
+    </li>)}</ol>
+    <h3>Licensing and costs</h3><p>{guide.licensing}</p>
+    <p>Documentation reviewed {date(guide.reviewedAt)}. Check versions and interfaces before combining tools.</p>
+  </section>;
+}
 function Developers() {
   return <><PageHeading title="Developers">Use the same catalog through a versioned REST API or a read-only MCP server.</PageHeading>
     <div className="detail-grid"><section className="panel"><Terminal size={23}/><h2>REST API</h2><p>Read catalog records, compare tool IDs or search by task.</p>
       <pre><code>{'curl ' + location.origin + '/api/v1/search \\\n  -H "Content-Type: application/json" \\\n  -d \'{"query":"Run an LLM locally on a Mac"}\''}</code></pre>
       <div className="action-row"><a className="button primary" href="/api/v1/openapi.json">OpenAPI document</a><a className="button" href="/api/v1/health">Health endpoint</a></div></section>
     <section className="panel"><Waypoints size={23}/><h2>Model Context Protocol</h2><p>Add the Streamable HTTP endpoint to your MCP client.</p><pre><code>{location.origin + "/mcp"}</code></pre>
-      <ul className="mono-list">{["search_tools", "compare_tools", "get_tool_details", "recommend_stack", "get_setup_guide"].map(name => <li key={name}><code>{name}</code></li>)}</ul>
+      <ul className="mono-list">{["search_tools", "compare_tools", "get_tool_details", "recommend_stack", "get_setup_guide", "build_stack", "validate_stack", "compare_stacks"].map(name => <li key={name}><code>{name}</code></li>)}</ul>
       <a href={repo + "/blob/main/docs/API.md"} className="text-link">Client configuration and examples</a></section></div>
     </>;
 }
@@ -290,6 +317,7 @@ function App() {
   else if (path === "/discover") page = <Discover directory={directory.data} {...props}/>;
   else if (path === "/categories") page = <><PageHeading title="Categories">Explore tools by role across the agent technology stack.</PageHeading>{directory.error ? <Notice error={directory.error}/> : <CategoryGrid directory={directory.data}/>}</>;
   else if (path === "/compare") page = <Compare {...props}/>;
+  else if (path === "/studio") page = <Studio/>;
   else if (path === "/stack") page = <Stack {...props}/>;
   else if (path === "/developers") page = <Developers/>;
   else if (path === "/about") page = <About/>;

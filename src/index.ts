@@ -1,6 +1,7 @@
 import { byId, catalog, categoryList, compareTools, detail, recommendStack, search } from "./catalog.ts";
 import { comparison, id, searchInput, stackInput, type Filters } from "./schema.ts";
 import { mcp } from "./mcp.ts";
+import { buildPlan, comparePlansInput, planInput } from "./studio.ts";
 import { openapi } from "./openapi.ts";
 import * as z from "zod";
 
@@ -83,7 +84,7 @@ function getSearch(params: URLSearchParams) {
     if (key === "page" || key === "limit") input[key] = /^\d+$/.test(val) ? Number(val) : val;
     else if (key === "sort" || key === "query") input[key] = val;
     else if (key === "openSource" || key === "noPaidApi") filters[key] = val === "true" ? true : val === "false" ? false : val;
-    else if (["category", "hosting", "os", "language", "license"].includes(key)) filters[key] = val;
+    else if (["category", "kind", "hosting", "os", "language", "license"].includes(key)) filters[key] = val;
     else error(400, "invalid_input", "Unknown query parameter.");
   }
   return searchInput.parse(input);
@@ -126,6 +127,7 @@ export async function handle(request: Request, env: Env = {}): Promise<Response>
     const get = request.method === "GET";
     const post = request.method === "POST";
     const cache = { "Cache-Control": cacheControl };
+    if (path.startsWith(api + "/executions/")) error(501, "unsupported", "Execution requires the separate local runner.");
     if (get && path === api + "/openapi.json") return json(openapi, 200, cache);
     if (get && path === api + "/categories") {
       const distinct = <T extends string>(items: T[]) => [...new Set(items)].sort();
@@ -150,7 +152,12 @@ export async function handle(request: Request, env: Env = {}): Promise<Response>
       const { query, filters } = stackInput.parse(await readBody(request));
       return json(recommendStack(query, filters as Filters));
     }
-    const postPaths = ["/search", "/compare", "/recommend-stack"].map(name => api + name);
+    if (post && (path === api + "/stacks/build" || path === api + "/stacks/validate")) return json(buildPlan(planInput.parse(await readBody(request))));
+    if (post && path === api + "/stacks/compare") {
+      const { plans } = comparePlansInput.parse(await readBody(request));
+      return json({ plans: plans.map(buildPlan) });
+    }
+    const postPaths = ["/search", "/compare", "/recommend-stack", "/stacks/build", "/stacks/validate", "/stacks/compare"].map(name => api + name);
     const getPaths = ["/health", "/tools", "/categories", "/openapi.json"].map(name => api + name);
     if (postPaths.includes(path)) error(405, "method", "Use POST.", { Allow: "POST" });
     if (getPaths.includes(path) || path.startsWith(api + "/tools/")) error(405, "method", "Use GET.", { Allow: "GET" });

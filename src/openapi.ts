@@ -1,4 +1,5 @@
 import * as z from "zod";
+import { comparePlansInput, planInput, planOutput } from "./studio.ts";
 import { comparison, filters, searchInput, stackInput, tool } from "./schema.ts";
 
 const json = (schema: unknown) => ({ "application/json": { schema } });
@@ -17,8 +18,8 @@ const item = z.object({
   tool: tool.pick({
     id: true, name: true, description: true, categories: true, github: true, hosting: true,
     openSource: true, license: true, verifiedAt: true, stars: true, setup: true, tradeoff: true,
-    confidence: true, lastActivity: true
-  }).extend({ freshness }),
+    confidence: true, lastActivity: true, kinds: true, reviewedAt: true
+  }).extend({ freshness, mcp: tool.shape.mcp.optional() }),
   why: z.string(), eligible: z.boolean(), requirements: z.array(assessment),
   evidence: tool.shape.sources,
   scores: z.object({
@@ -31,6 +32,11 @@ const summaryResponse = { type: "object", required: ["total", "unverifiedTotal",
   total: { type: "integer" }, unverifiedTotal: { type: "integer" }, page: { type: "integer" }, limit: { type: "integer" },
   results: { type: "array", items: z.toJSONSchema(item) }, unverified: { type: "array", items: z.toJSONSchema(item) }, constraints: { type: "array", items: z.toJSONSchema(constraint) }
 } };
+const stackTool = z.object({ id: identifier, name: z.string(), setup: tool.shape.setup, license: tool.shape.license });
+const curatedStack = z.object({
+  id: identifier, name: z.string(), description: z.string(), reviewedAt: z.iso.datetime(), licensing: z.string(),
+  steps: z.array(z.object({ role: z.string(), notes: z.string(), tool: stackTool, alternatives: z.array(stackTool) }))
+});
 const detailSchema = z.toJSONSchema(tool.extend({ freshness: z.enum(["current", "stale"]) }));
 const operation = (summary: string, schema: unknown, input?: z.ZodType) => ({
   summary,
@@ -63,9 +69,12 @@ export const openapi = {
     }))) },
     "/search": { post: operation("Find suitable tools", summaryResponse, searchInput) },
     "/compare": { post: operation("Compare tools", { type: "object", properties: { tools: { type: "array", items: detailSchema }, missing: { type: "array", items: { type: "string" } } } }, comparison) },
+    "/stacks/build": { post: operation("Build a reviewed stack manifest", z.toJSONSchema(planOutput), planInput) },
+    "/stacks/validate": { post: operation("Validate a requested plan against catalog evidence", z.toJSONSchema(planOutput), planInput) },
+    "/stacks/compare": { post: operation("Compare reviewed stack manifests", z.toJSONSchema(z.object({ plans: z.array(planOutput) })), comparePlansInput) },
     "/recommend-stack": { post: operation("Shortlist components by category", z.toJSONSchema(z.object({
       constraints: z.array(constraint), groups: z.array(z.object({ category: identifier, candidates: z.array(item) })),
-      unverified: z.array(item), compatibility: z.string()
+      unverified: z.array(item), compatibility: z.string(), curatedStack: curatedStack.optional()
     })), stackInput) }
   }
 };

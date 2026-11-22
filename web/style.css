@@ -126,3 +126,27 @@ code{font-family:"IBM Plex Mono",ui-monospace,monospace}
 @media(max-width:1050px){.wrap{width:calc(100% - 60px)}.hero{padding:38px}.hero-illustration{opacity:.64}.discover-layout .tool-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:780px){.wrap{width:calc(100% - 36px)}.header{flex-wrap:wrap;gap:.5rem;padding-block:12px}.header nav{order:3;flex-basis:100%;overflow-x:auto;padding:4px 3px;gap:1rem}.hero{margin-top:22px;padding:26px}.hero-illustration{opacity:.33}.hero h1{font-size:clamp(2.4rem,8vw,4.4rem)}.category-grid,.tool-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.discover-layout{grid-template-columns:minmax(0,1fr)}.filter-panel{display:grid;grid-template-columns:1fr 1fr;gap:.45rem .8rem}.filter-panel h2{grid-column:1/-1;margin:0}.field{margin:0}.detail-grid{grid-template-columns:1fr}}
 @media(max-width:490px){.wrap{width:calc(100% - 26px)}.header-actions{gap:.45rem}.github-link span,.desktop-break,.hero-illustration{display:none}.hero{padding:20px 16px}.hero h1{margin-block:14px}.hero-controls{margin-top:20px}.search-box{flex-wrap:wrap;padding:8px;gap:.1rem .45rem}.search-box input{width:calc(100% - 29px);flex:1 1 75%}.search-box .button{width:100%}.catalog-bar{gap:.45rem .8rem}.catalog-bar a{margin-left:0}.category-grid,.tool-grid,.editorial-grid,.discover-layout .tool-grid{grid-template-columns:1fr}.section-heading{align-items:start;flex-wrap:wrap;gap:.35rem}.footer{flex-direction:column;align-items:start}.compare-tray{right:12px;bottom:12px}.results-head{align-items:center}}
+
+.film-studio-steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 30px;padding-left:1.3rem}
+.film-studio-steps li{padding-left:5px;overflow-wrap:anywhere}
+.film-studio-steps h3{font-size:1rem;margin-bottom:.2rem}
+.film-studio-steps .text-link{display:inline-block;margin-bottom:.3rem}
+@media(max-width:650px){.film-studio-steps{grid-template-columns:1fr}}
+
+.studio-form, .studio-form label, .studio-graph label, .studio-key { display: grid; gap: .6rem; }
+.studio-form { gap: 1rem; }
+.studio-fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: .8rem; }
+.studio-form fieldset { min-width: 0; border: 1px solid var(--line); border-radius: 10px; }
+.studio-form textarea, .studio-form select, .studio-form input:not([type="checkbox"]), .studio-graph select, .studio-key input {
+  width: 100%; min-width: 0; font: inherit; padding: .65rem; border-radius: 8px; border: 1px solid var(--line); color: inherit; background: var(--surface);
+}
+.studio-form textarea { resize: vertical; min-height: 5rem; }
+.studio-form .studio-check, .studio-check { display: flex; align-items: center; gap: .55rem; margin-block: .6rem; }
+.studio-form > button { justify-self: start; }
+.studio-graph { display: grid; gap: .8rem; padding-inline-start: 1.5rem; }
+.studio-graph li { padding: .75rem; border: 1px solid var(--line); border-radius: 10px; }
+.studio-graph h4 { margin-block: 0 .4rem; }
+.studio-graph p { margin-block: .4rem; }
+.studio-graph label { margin-top: .65rem; }
+.studio-key { max-width: 30rem; margin-bottom: .8rem; }
+.studio-digest { overflow-wrap: anywhere; }

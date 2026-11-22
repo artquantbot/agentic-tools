@@ -12,7 +12,7 @@ test("official MCP client discovers and invokes all read-only tools over Streama
   try {
     await client.connect(transport);
     const { tools } = await client.listTools();
-    assert.deepEqual(tools.map(item => item.name).sort(), ["compare_tools", "get_setup_guide", "get_tool_details", "recommend_stack", "search_tools"]);
+    assert.deepEqual(tools.map(item => item.name).sort(), ["build_stack", "compare_stacks", "compare_tools", "get_setup_guide", "get_tool_details", "recommend_stack", "search_tools", "validate_stack"]);
     assert.ok(tools.every(item => item.annotations?.readOnlyHint === true));
     const found = await client.callTool({ name: "search_tools", arguments: { query: "Run an LLM locally on a Mac", limit: 3 } });
     assert.equal(found.isError, false);
@@ -30,6 +30,26 @@ test("official MCP client discovers and invokes all read-only tools over Streama
       assert.equal(response.isError, false);
       assert.ok(response.structuredContent);
     }
+
+    const video = { query: "Build me a complete AI video production stack using open-source tools." };
+    for (const [name, args] of [
+      ["build_stack", video], ["validate_stack", video],
+      ["compare_stacks", { plans: [video, { query: "Build a local AI agent with memory." }] }]
+    ] as const) {
+      const response = await client.callTool({ name, arguments: args });
+      assert.equal(response.isError, false);
+      assert.ok(response.structuredContent);
+    }
+
+    const creative = await client.callTool({ name: "search_tools", arguments: {
+      filters: { category: "creative-production", kind: "mcp-server" }, limit: 4
+    } });
+    assert.equal(creative.isError, false);
+    const entries = (creative.structuredContent as { results: { tool: { name: string } }[] }).results;
+    assert.deepEqual(entries.map(item => item.tool.name).sort(), ["EffectCraft", "MCP for Blender"]);
+    const film = await client.callTool({ name: "recommend_stack", arguments: { query: "AI Film Studio" } });
+    assert.equal(film.isError, false);
+    assert.equal((film.structuredContent as { curatedStack: { name: string } }).curatedStack.name, "AI Film Studio");
   } finally {
     await client.close();
   }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T19:00:50.055Z",
+  "generatedAt": "2026-11-22T08:09:43.871Z",
   "tools": [
     {
       "id": "gh-1134543109",
@@ -68,6 +68,109 @@
       ],
       "verifiedAt": "2026-11-21T18:52:41.138Z",
       "confidence": "curated"
+    },
+    {
+      "id": "gh-1137388347",
+      "name": "Remotion Agent Skills",
+      "canonicalUrl": "https://github.com/remotion-dev/skills",
+      "github": "https://github.com/remotion-dev/skills",
+      "website": null,
+      "description": "Add Remotion authoring and rendering guidance to Codex and other compatible coding agents.",
+      "categories": [
+        "creative-production",
+        "skills"
+      ],
+      "capabilities": [
+        "Codex workflow",
+        "React video",
+        "automated video editing",
+        "captions",
+        "video production pipeline"
+      ],
+      "os": null,
+      "languages": [
+        "TypeScript"
+      ],
+      "license": null,
+      "openSource": null,
+      "hosting": "local",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": [
+        "Compatible coding agent",
+        "Remotion project for project-specific authoring and rendering"
+      ],
+      "permissions": null,
+      "installation": [
+        "Use the documented Remotion, skills CLI or GitHub CLI installation flow"
+      ],
+      "integrations": [
+        "Codex skill",
+        "Claude Code skill"
+      ],
+      "mcp": false,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-18T10:18:33Z",
+      "stars": 7754,
+      "securityAdvisories": null,
+      "setup": "https://www.remotion.dev/docs/ai/skills",
+      "tradeoff": "The skills guide a coding agent. Running and licensing the renderer requires a separate Remotion setup.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/remotion-dev/skills",
+          "verifiedAt": "2026-11-22T08:09:44.903Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://www.remotion.dev/docs/ai/skills",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/remotion-dev/skills/tree/main",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/remotion-dev/skills/blob/main/README.md",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "supplementary evidence"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T08:09:44.903Z",
+      "confidence": "curated",
+      "kinds": [
+        "agent-skill"
+      ],
+      "licenseTerms": "No standalone repository license or license files were verified. Consult upstream before redistribution. Remotion’s product license applies separately.",
+      "reviewedAt": "2026-11-22T08:08:30.000Z"
     },
     {
       "id": "gh-1163183284",
@@ -245,6 +348,119 @@
       ],
       "verifiedAt": "2026-11-21T18:53:18.310Z",
       "confidence": "metadata"
+    },
+    {
+      "id": "gh-1177402105",
+      "name": "HyperFrames",
+      "canonicalUrl": "https://github.com/heygen-com/hyperframes",
+      "github": "https://github.com/heygen-com/hyperframes",
+      "website": null,
+      "description": "Create and render editable video compositions with HTML, CSS, JavaScript and an agent-assisted workflow.",
+      "categories": [
+        "creative-production",
+        "skills"
+      ],
+      "capabilities": [
+        "Codex workflow",
+        "HTML video",
+        "local video rendering",
+        "automated video editing",
+        "video production pipeline"
+      ],
+      "os": [
+        "macOS",
+        "Windows",
+        "Linux"
+      ],
+      "languages": [
+        "JavaScript",
+        "TypeScript"
+      ],
+      "license": "Apache-2.0",
+      "openSource": true,
+      "hosting": "hybrid",
+      "noPaidApi": true,
+      "pricing": null,
+      "dependencies": [
+        "Node.js 22 or later",
+        "FFmpeg",
+        "Headless Chrome for CLI rendering"
+      ],
+      "permissions": null,
+      "installation": [
+        "Review the local HyperFrames CLI or Studio installer before use"
+      ],
+      "integrations": [
+        "Codex skill",
+        "CLI",
+        "Separate hosted HeyGen MCP connector"
+      ],
+      "mcp": true,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-22T08:08:55Z",
+      "stars": 87954,
+      "securityAdvisories": null,
+      "setup": "https://github.com/heygen-com/hyperframes/blob/main/README.md",
+      "tradeoff": "The local renderer has a no-paid-API path. The hosted connector requires eligible accounts and has separate costs.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/heygen-com/hyperframes",
+          "verifiedAt": "2026-11-22T08:09:45.402Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/heygen-com/hyperframes/blob/main/README.md",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/heygen-com/hyperframes/blob/main/LICENSE",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/heygen-com/hyperframes/blob/main/docs/guides/mcp.mdx",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "supplementary evidence"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T08:09:45.402Z",
+      "confidence": "curated",
+      "kinds": [
+        "cli-tool",
+        "software-library",
+        "agent-skill",
+        "desktop-application"
+      ],
+      "licenseTerms": "Apache-2.0 covers the open repository. Hosted connector, paid Studio features, media and model providers have separate terms.",
+      "reviewedAt": "2026-11-22T08:08:30.000Z"
     },
     {
       "id": "gh-1196395757",
@@ -601,6 +817,305 @@
       "confidence": "metadata"
     },
     {
+      "id": "gh-1389011744",
+      "name": "Lemo-Opuscar",
+      "canonicalUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+      "github": "https://github.com/lemomo-ai/lemo-opuscar",
+      "website": null,
+      "description": "Create code-rendered films with an agent skill and a library of style examples.",
+      "categories": [
+        "creative-production",
+        "skills"
+      ],
+      "capabilities": [
+        "film styles",
+        "cinematic animation",
+        "video production pipeline",
+        "code-based video"
+      ],
+      "os": null,
+      "languages": [
+        "JavaScript",
+        "Python"
+      ],
+      "license": null,
+      "openSource": null,
+      "hosting": "local",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": [
+        "Node.js 20 or later",
+        "FFmpeg 7 or later",
+        "Python 3.11 or later"
+      ],
+      "permissions": null,
+      "installation": [
+        "Reviewed Claude Code plugin or manual skill installation"
+      ],
+      "integrations": [
+        "Claude Code skill"
+      ],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-20T04:32:37Z",
+      "stars": 19619,
+      "securityAdvisories": null,
+      "setup": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/README.md",
+      "tradeoff": "Review per-file terms and exclude third-party media and narration from reuse unless cleared.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar",
+          "verifiedAt": "2026-11-22T08:09:43.903Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/README.md",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/LICENSE",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T08:09:43.903Z",
+      "confidence": "curated",
+      "kinds": [
+        "agent-skill",
+        "reference-collection"
+      ],
+      "licenseTerms": "Code is MIT. Style documents are CC BY-NC 4.0 with additional permissions for film production. Licensable demo materials are CC BY 4.0, subject to listed exclusions.",
+      "reviewedAt": "2026-11-22T08:08:30.000Z"
+    },
+    {
+      "id": "gh-1390273274",
+      "name": "Awesome Opus 5.5 Videos",
+      "canonicalUrl": "https://github.com/yihui-dev/awesome-opus5-5-videos",
+      "github": "https://github.com/yihui-dev/awesome-opus5-5-videos",
+      "website": null,
+      "description": "Browse examples of AI-made videos with links to creator posts and shared prompts.",
+      "categories": [
+        "creative-production"
+      ],
+      "capabilities": [
+        "video production references",
+        "prompt examples",
+        "animation references"
+      ],
+      "os": null,
+      "languages": null,
+      "license": "MIT",
+      "openSource": true,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": [
+        "Browse the repository or linked gallery"
+      ],
+      "integrations": [],
+      "mcp": false,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-10-13T14:46:44Z",
+      "stars": 16156,
+      "securityAdvisories": null,
+      "setup": "https://github.com/yihui-dev/awesome-opus5-5-videos/blob/main/README.md",
+      "tradeoff": "Use examples for reference. Check permission before reusing a creator’s assets or prompts.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/yihui-dev/awesome-opus5-5-videos",
+          "verifiedAt": "2026-11-22T08:09:43.903Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/yihui-dev/awesome-opus5-5-videos/blob/main/README.md",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/yihui-dev/awesome-opus5-5-videos/blob/main/LICENSE",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T08:09:43.903Z",
+      "confidence": "curated",
+      "kinds": [
+        "reference-collection"
+      ],
+      "licenseTerms": "The repository declares MIT. Source videos, prompts and linked works retain their respective rights.",
+      "reviewedAt": "2026-11-22T08:08:30.000Z"
+    },
+    {
+      "id": "gh-1400136506",
+      "name": "EffectCraft",
+      "canonicalUrl": "https://github.com/storytold/effectcraft",
+      "github": "https://github.com/storytold/effectcraft",
+      "website": null,
+      "description": "Compose motion graphics, edit layered timelines and render projects from a Rust desktop app or CLI.",
+      "categories": [
+        "creative-production",
+        "mcp"
+      ],
+      "capabilities": [
+        "motion graphics",
+        "compositing",
+        "cinematic animation",
+        "local video rendering",
+        "automated video editing"
+      ],
+      "os": [
+        "macOS",
+        "Windows",
+        "Linux"
+      ],
+      "languages": [
+        "Rust"
+      ],
+      "license": "MIT OR Apache-2.0",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": true,
+      "pricing": null,
+      "dependencies": [
+        "Rust toolchain for source builds"
+      ],
+      "permissions": [
+        "Can edit project data and write rendered output"
+      ],
+      "installation": [
+        "Platform binary or Cargo source build"
+      ],
+      "integrations": [
+        "MCP stdio",
+        "CLI JSON output",
+        "JSON control channel"
+      ],
+      "mcp": true,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-22T05:17:00Z",
+      "stars": 9102,
+      "securityAdvisories": null,
+      "setup": "https://github.com/storytold/effectcraft/blob/main/README.md",
+      "tradeoff": "Headless MCP exposes supported engine commands. Desktop bridge capabilities depend on the running application.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/storytold/effectcraft",
+          "verifiedAt": "2026-11-22T08:09:43.903Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/storytold/effectcraft/blob/main/README.md",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/storytold/effectcraft/blob/main/LICENSE-APACHE",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/storytold/effectcraft/blob/main/docs/agents.md",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "supplementary evidence"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/storytold/effectcraft/blob/main/LICENSE-MIT",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "supplementary evidence"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T08:09:43.903Z",
+      "confidence": "curated",
+      "kinds": [
+        "desktop-application",
+        "cli-tool",
+        "mcp-server"
+      ],
+      "licenseTerms": "The project offers a choice of MIT or Apache-2.0. Review notices for bundled dependencies and assets.",
+      "reviewedAt": "2026-11-22T08:08:30.000Z"
+    },
+    {
       "id": "gh-1401225877",
       "name": "agent-argue-cards",
       "canonicalUrl": "https://github.com/empac666/agent-argue-cards",
@@ -658,6 +1173,198 @@
       ],
       "verifiedAt": "2026-11-21T18:53:17.848Z",
       "confidence": "metadata"
+    },
+    {
+      "id": "gh-1438661890",
+      "name": "rea-video",
+      "canonicalUrl": "https://github.com/JuneYaooo/rea-video",
+      "github": "https://github.com/JuneYaooo/rea-video",
+      "website": null,
+      "description": "Analyze video shots and export a timing and production breakdown in VIDEO.md.",
+      "categories": [
+        "creative-production",
+        "skills"
+      ],
+      "capabilities": [
+        "shot analysis",
+        "video breakdown",
+        "video production pipeline",
+        "scene timing",
+        "Codex workflow"
+      ],
+      "os": null,
+      "languages": [
+        "Python"
+      ],
+      "license": "Apache-2.0",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": true,
+      "pricing": null,
+      "dependencies": [
+        "Python 3.10 or later",
+        "FFmpeg"
+      ],
+      "permissions": null,
+      "installation": [
+        "Agent plugin or documented Python CLI setup"
+      ],
+      "integrations": [
+        "Codex plugin",
+        "Claude Code plugin",
+        "VIDEO.md"
+      ],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-22T03:38:34Z",
+      "stars": 11956,
+      "securityAdvisories": null,
+      "setup": "https://github.com/JuneYaooo/rea-video/blob/main/README.md",
+      "tradeoff": "Offline analysis is documented. Optional model-assisted analysis has separate requirements.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/JuneYaooo/rea-video",
+          "verifiedAt": "2026-11-22T08:09:43.882Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/JuneYaooo/rea-video/blob/main/README.md",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/JuneYaooo/rea-video/blob/main/LICENSE",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T08:09:43.882Z",
+      "confidence": "curated",
+      "kinds": [
+        "agent-skill",
+        "cli-tool"
+      ],
+      "licenseTerms": "Apache-2.0 for repository code. Review rights for source footage, music and likenesses before reuse.",
+      "reviewedAt": "2026-11-22T08:08:30.000Z"
+    },
+    {
+      "id": "gh-1439372976",
+      "name": "pixelfx",
+      "canonicalUrl": "https://github.com/patch-gg/pixelfx",
+      "github": "https://github.com/patch-gg/pixelfx",
+      "website": null,
+      "description": "Render procedural pixel-art effects in JavaScript or export animation sprite sheets.",
+      "categories": [
+        "creative-production",
+        "skills"
+      ],
+      "capabilities": [
+        "pixel art effects",
+        "sprite animation",
+        "sprite sheet rendering",
+        "visual effects"
+      ],
+      "os": null,
+      "languages": [
+        "JavaScript"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": true,
+      "pricing": null,
+      "dependencies": [
+        "Node.js for offline rendering"
+      ],
+      "permissions": null,
+      "installation": [
+        "Review the repository-backed npm package or use its documented source modules"
+      ],
+      "integrations": [
+        "JavaScript API",
+        "Claude Code skill"
+      ],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-13T08:43:39Z",
+      "stars": 8672,
+      "securityAdvisories": null,
+      "setup": "https://github.com/patch-gg/pixelfx/blob/main/README.md",
+      "tradeoff": "The optional Patch publishing flow requires Patch Desktop on Windows. The browser library runs independently.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/patch-gg/pixelfx",
+          "verifiedAt": "2026-11-22T08:09:44.903Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/patch-gg/pixelfx/blob/main/README.md",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/patch-gg/pixelfx/blob/main/LICENSE",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T08:09:44.903Z",
+      "confidence": "curated",
+      "kinds": [
+        "software-library",
+        "cli-tool",
+        "agent-skill"
+      ],
+      "licenseTerms": "MIT covers repository code subject to its notice requirements. Check rights for assets added to your own project.",
+      "reviewedAt": "2026-11-22T08:08:30.000Z"
     },
     {
       "id": "gh-155220641",
@@ -729,6 +1436,121 @@
       ],
       "verifiedAt": "2026-11-21T18:52:28.630Z",
       "confidence": "curated"
+    },
+    {
+      "id": "gh-1614410",
+      "name": "FFmpeg",
+      "canonicalUrl": "https://github.com/FFmpeg/FFmpeg",
+      "github": "https://github.com/FFmpeg/FFmpeg",
+      "website": null,
+      "description": "Inspect, transcode, filter and assemble video or audio using command-line tools and C libraries.",
+      "categories": [
+        "creative-production"
+      ],
+      "capabilities": [
+        "local video rendering",
+        "automated video editing",
+        "video encoding",
+        "transcoding",
+        "media inspection",
+        "video production pipeline"
+      ],
+      "os": [
+        "macOS",
+        "Windows",
+        "Linux"
+      ],
+      "languages": [
+        "C"
+      ],
+      "license": "LGPL-2.1-or-later",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": true,
+      "pricing": null,
+      "dependencies": [
+        "An FFmpeg build with the required encoders and filters"
+      ],
+      "permissions": null,
+      "installation": [
+        "Use a trusted platform package or build the required configuration from source"
+      ],
+      "integrations": [
+        "Command-line tools",
+        "C libraries"
+      ],
+      "mcp": false,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-22T05:18:06Z",
+      "stars": 67874,
+      "securityAdvisories": null,
+      "setup": "https://ffmpeg.org/download.html",
+      "tradeoff": "GitHub is the project mirror. Codec availability and redistribution obligations depend on how the binary was built.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/FFmpeg/FFmpeg",
+          "verifiedAt": "2026-11-22T08:09:45.947Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://ffmpeg.org/download.html",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/FFmpeg/FFmpeg/blob/master/LICENSE.md",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://ffmpeg.org/legal.html",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "supplementary evidence"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://ffmpeg.org/ffmpeg.html",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "supplementary evidence"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T08:09:45.947Z",
+      "confidence": "curated",
+      "kinds": [
+        "cli-tool",
+        "software-library"
+      ],
+      "licenseTerms": "The default project baseline is LGPL-2.1-or-later. Optional GPL components or external libraries can change build terms. Nonfree builds can be nonredistributable. Check codecs and patent obligations.",
+      "reviewedAt": "2026-11-22T08:08:30.000Z"
     },
     {
       "id": "gh-193215554",
@@ -1018,6 +1840,131 @@
       ],
       "verifiedAt": "2026-11-21T18:52:38.146Z",
       "confidence": "curated"
+    },
+    {
+      "id": "gh-274495425",
+      "name": "Remotion",
+      "canonicalUrl": "https://github.com/remotion-dev/remotion",
+      "github": "https://github.com/remotion-dev/remotion",
+      "website": null,
+      "description": "Create React video compositions and render them with the Remotion CLI or Node.js API.",
+      "categories": [
+        "creative-production"
+      ],
+      "capabilities": [
+        "React video",
+        "programmatic video rendering",
+        "automated video editing",
+        "cinematic animation",
+        "video production pipeline"
+      ],
+      "os": [
+        "macOS",
+        "Windows",
+        "Linux"
+      ],
+      "languages": [
+        "TypeScript",
+        "JavaScript"
+      ],
+      "license": "Remotion License",
+      "openSource": false,
+      "hosting": "hybrid",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": [
+        "Supported Node.js or Bun version",
+        "Browser runtime for rendering"
+      ],
+      "permissions": null,
+      "installation": [
+        "Create a project using the official Remotion scaffolder"
+      ],
+      "integrations": [
+        "Node.js render API",
+        "CLI",
+        "Browser WebMCP for supported browser workflows"
+      ],
+      "mcp": false,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-20T21:05:57Z",
+      "stars": 74829,
+      "securityAdvisories": null,
+      "setup": "https://www.remotion.dev/docs/",
+      "tradeoff": "The hosted documentation MCP was shut down. Team eligibility and hosted rendering costs vary.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/remotion-dev/remotion",
+          "verifiedAt": "2026-11-22T08:09:44.904Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://www.remotion.dev/docs/",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/remotion-dev/remotion/blob/main/LICENSE.md",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://www.remotion.dev/docs/ai/mcp",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "supplementary evidence"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://www.remotion.dev/docs/ai/webmcp",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "supplementary evidence"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://www.remotion.dev/license",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "supplementary evidence"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T08:09:44.904Z",
+      "confidence": "curated",
+      "kinds": [
+        "software-library",
+        "cli-tool"
+      ],
+      "licenseTerms": "Remotion grants free use to eligible individuals and companies of up to three people. Other organizations need the applicable company license. Check the terms for your version.",
+      "reviewedAt": "2026-11-22T08:08:30.000Z"
     },
     {
       "id": "gh-323591830",
@@ -1460,6 +2407,315 @@
       ],
       "verifiedAt": "2026-11-21T18:53:05.953Z",
       "confidence": "curated"
+    },
+    {
+      "id": "gh-576201",
+      "name": "three.js",
+      "canonicalUrl": "https://github.com/mrdoob/three.js",
+      "github": "https://github.com/mrdoob/three.js",
+      "website": null,
+      "description": "Build animated 3D scenes and render them in compatible browsers with JavaScript.",
+      "categories": [
+        "creative-production"
+      ],
+      "capabilities": [
+        "3D scenes",
+        "WebGL",
+        "WebGPU",
+        "cinematic animation",
+        "browser rendering"
+      ],
+      "os": null,
+      "languages": [
+        "JavaScript"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": true,
+      "pricing": null,
+      "dependencies": [
+        "WebGL or WebGPU-capable browser for the selected renderer"
+      ],
+      "permissions": null,
+      "installation": [
+        "Install the three package or use its documented browser module setup"
+      ],
+      "integrations": [
+        "JavaScript API"
+      ],
+      "mcp": false,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-21T19:39:51Z",
+      "stars": 119109,
+      "securityAdvisories": null,
+      "setup": "https://threejs.org/manual/#en/installation",
+      "tradeoff": "three.js renders scenes. A separate capture and encoding stage produces a video file.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/mrdoob/three.js",
+          "verifiedAt": "2026-11-22T08:09:45.403Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://threejs.org/manual/#en/installation",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/mrdoob/three.js/blob/dev/LICENSE",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/mrdoob/three.js/blob/dev/README.md",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "supplementary evidence"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T08:09:45.403Z",
+      "confidence": "curated",
+      "kinds": [
+        "software-library"
+      ],
+      "licenseTerms": "MIT covers the library. Review separate terms for imported 3D models, textures and fonts.",
+      "reviewedAt": "2026-11-22T08:08:30.000Z"
+    },
+    {
+      "id": "gh-589831718",
+      "name": "ComfyUI",
+      "canonicalUrl": "https://github.com/Comfy-Org/ComfyUI",
+      "github": "https://github.com/Comfy-Org/ComfyUI",
+      "website": null,
+      "description": "Run node-based generative workflows locally or through Comfy’s developer platform.",
+      "categories": [
+        "creative-production",
+        "inference"
+      ],
+      "capabilities": [
+        "node graph",
+        "video generation",
+        "image generation",
+        "diffusion models",
+        "video production pipeline"
+      ],
+      "os": [
+        "macOS",
+        "Windows",
+        "Linux"
+      ],
+      "languages": [
+        "Python"
+      ],
+      "license": "GPL-3.0",
+      "openSource": true,
+      "hosting": "hybrid",
+      "noPaidApi": true,
+      "pricing": null,
+      "dependencies": [
+        "Python and a supported inference backend for manual setup",
+        "Compatible model weights"
+      ],
+      "permissions": [
+        "Custom nodes run code with the process’s permissions"
+      ],
+      "installation": [
+        "Desktop installer on macOS or Windows, or documented manual setup"
+      ],
+      "integrations": [
+        "REST API",
+        "WebSocket events",
+        "Separate Comfy MCP integration"
+      ],
+      "mcp": true,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-22T06:05:13Z",
+      "stars": 148030,
+      "securityAdvisories": null,
+      "setup": "https://github.com/Comfy-Org/ComfyUI/blob/master/README.md",
+      "tradeoff": "Local generation depends on hardware and model support. Cloud services and partner API nodes can incur fees.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/Comfy-Org/ComfyUI",
+          "verifiedAt": "2026-11-22T08:09:44.902Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/Comfy-Org/ComfyUI/blob/master/README.md",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/Comfy-Org/ComfyUI/blob/master/LICENSE",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://docs.comfy.org/development/comfyui-server/comms_routes",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "supplementary evidence"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://www.comfy.org/mcp",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "supplementary evidence"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T08:09:44.902Z",
+      "confidence": "curated",
+      "kinds": [
+        "desktop-application"
+      ],
+      "licenseTerms": "GPL version 3 for ComfyUI. Verify separate licenses for model weights, custom nodes and hosted APIs.",
+      "reviewedAt": "2026-11-22T08:08:30.000Z"
+    },
+    {
+      "id": "gh-5905330",
+      "name": "GSAP",
+      "canonicalUrl": "https://github.com/greensock/GSAP",
+      "github": "https://github.com/greensock/GSAP",
+      "website": null,
+      "description": "Animate UI and scene properties with JavaScript timelines, easing and plugins.",
+      "categories": [
+        "creative-production"
+      ],
+      "capabilities": [
+        "animation timelines",
+        "cinematic animation",
+        "motion graphics",
+        "keyframes"
+      ],
+      "os": null,
+      "languages": [
+        "JavaScript"
+      ],
+      "license": "GSAP Standard License",
+      "openSource": false,
+      "hosting": "local",
+      "noPaidApi": true,
+      "pricing": null,
+      "dependencies": [
+        "Compatible JavaScript runtime"
+      ],
+      "permissions": null,
+      "installation": [
+        "Install the gsap npm package or use a documented script build"
+      ],
+      "integrations": [
+        "JavaScript API"
+      ],
+      "mcp": false,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-04T00:56:41Z",
+      "stars": 31043,
+      "securityAdvisories": null,
+      "setup": "https://github.com/greensock/GSAP/blob/master/README.md",
+      "tradeoff": "An animation library. Rendering and encoding final media require separate tooling.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/greensock/GSAP",
+          "verifiedAt": "2026-11-22T08:09:45.403Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/greensock/GSAP/blob/master/README.md",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://gsap.com/standard-license/",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T08:09:45.403Z",
+      "confidence": "curated",
+      "kinds": [
+        "software-library"
+      ],
+      "licenseTerms": "The GSAP Standard License permits many uses without a fee and imposes restrictions, including on certain competing products. Review the current terms before integration or redistribution.",
+      "reviewedAt": "2026-11-22T08:08:30.000Z"
     },
     {
       "id": "gh-594609262",
@@ -3391,6 +4647,108 @@
       ],
       "verifiedAt": "2026-11-21T18:53:05.953Z",
       "confidence": "curated"
+    },
+    {
+      "id": "gh-944414751",
+      "name": "MCP for Blender",
+      "canonicalUrl": "https://github.com/ahujasid/mcp-for-blender",
+      "github": "https://github.com/ahujasid/mcp-for-blender",
+      "website": null,
+      "description": "Connect an MCP client to the community Blender add-on for scene inspection and editing.",
+      "categories": [
+        "creative-production",
+        "mcp"
+      ],
+      "capabilities": [
+        "Codex workflow",
+        "Blender scene editing",
+        "3D animation",
+        "cinematic animation",
+        "local 3D production"
+      ],
+      "os": [
+        "macOS",
+        "Windows",
+        "Linux"
+      ],
+      "languages": [
+        "Python"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": true,
+      "pricing": null,
+      "dependencies": [
+        "Supported Blender installation",
+        "uv and uvx",
+        "Blender add-on"
+      ],
+      "permissions": [
+        "Can modify Blender scenes and run Python with Blender permissions"
+      ],
+      "installation": [
+        "Review and install the add-on and configure the MCP client manually"
+      ],
+      "integrations": [
+        "MCP stdio",
+        "Codex MCP configuration"
+      ],
+      "mcp": true,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-18T10:27:07Z",
+      "stars": 35289,
+      "securityAdvisories": null,
+      "setup": "https://github.com/ahujasid/mcp-for-blender/blob/main/README.md",
+      "tradeoff": "Use an isolated workspace and only grant access to intended projects. Optional asset or AI integrations require separate review.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/ahujasid/mcp-for-blender",
+          "verifiedAt": "2026-11-22T08:09:45.403Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/ahujasid/mcp-for-blender/blob/main/README.md",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/ahujasid/mcp-for-blender/blob/main/LICENSE",
+          "verifiedAt": "2026-11-22T08:08:30.000Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T08:09:45.403Z",
+      "confidence": "curated",
+      "kinds": [
+        "mcp-server"
+      ],
+      "licenseTerms": "MIT covers this community integration. Blender, imported assets and optional external services have separate terms.",
+      "reviewedAt": "2026-11-22T08:08:30.000Z"
     },
     {
       "id": "gh-946380199",

@@ -71,3 +71,20 @@ test("MCP rejects arrays before dispatching any messages", async () => {
   assert.equal(response.status, 400);
   assert.equal((await response.json()).error.code, "mcp_batch_not_supported");
 });
+
+
+test("REST exposes creative types and the reviewed AI Film Studio guide", async () => {
+  const response = await request("/api/v1/tools?category=creative-production&kind=mcp-server");
+  assert.equal(response.status, 200);
+  const list = await response.json();
+  assert.deepEqual(list.results.map((item: { tool: { name: string } }) => item.tool.name).sort(), ["EffectCraft", "MCP for Blender"]);
+  const comparison = await (await post("/api/v1/compare", { ids: ["gh-1614410", "gh-5905330"] })).json();
+  assert.deepEqual(comparison.tools.map((item: { openSource: boolean }) => item.openSource), [true, false]);
+  assert.ok(comparison.tools.every((item: { licenseTerms?: string }) => item.licenseTerms));
+  const named = await (await post("/api/v1/recommend-stack", { query: "AI Film Studio" })).json();
+  assert.deepEqual(named.curatedStack.steps.map((step: { tool: { name: string } }) => step.tool.name), ["rea-video", "ComfyUI", "HyperFrames", "FFmpeg"]);
+  assert.ok(named.curatedStack.steps.every((step: { tool: { setup: string }; notes: string }) => step.tool.setup.startsWith("https://") && step.notes));
+  const constrained = await (await post("/api/v1/recommend-stack", { query: "AI Film Studio", filters: { kind: "mcp-server" } })).json();
+  assert.equal(constrained.curatedStack, undefined);
+  assert.equal((await request("/api/v1/tools?kind=not-a-kind")).status, 400);
+});

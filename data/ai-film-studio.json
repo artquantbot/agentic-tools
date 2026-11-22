@@ -1,0 +1,33 @@
+{
+  "id": "ai-film-studio",
+  "name": "AI Film Studio",
+  "description": "Plan shots, generate or source assets, assemble a sequence, and export a finished video.",
+  "reviewedAt": "2026-11-22T08:08:30.000Z",
+  "licensing": "Clear footage, music, likenesses and model weights before reuse. Local tools can avoid hosted API charges. Hardware, licensed assets and optional cloud services may still cost money.",
+  "steps": [
+    {
+      "role": "Plan and analyze shots",
+      "toolId": "gh-1438661890",
+      "notes": "Analyze footage you have permission to use. Carry the VIDEO.md timing notes into a shot list. Start with Python and FFmpeg installed.",
+      "alternativeIds": ["gh-1390273274", "gh-1389011744"]
+    },
+    {
+      "role": "Generate or gather assets",
+      "toolId": "gh-589831718",
+      "notes": "Use a compatible local ComfyUI model if you need generated frames or footage. Match clips to the intended frame rate and verify the model and media terms.",
+      "alternativeIds": ["gh-576201", "gh-1439372976"]
+    },
+    {
+      "role": "Assemble and render the sequence",
+      "toolId": "gh-1177402105",
+      "notes": "Create HTML compositions using the shot list and locally stored assets. Local rendering uses Node.js 22+, Chrome and FFmpeg. Verify frame sizes, durations and audio sync.",
+      "alternativeIds": ["gh-1400136506", "gh-274495425"]
+    },
+    {
+      "role": "Encode and inspect deliverables",
+      "toolId": "gh-1614410",
+      "notes": "Use FFmpeg and ffprobe to verify codecs, duration, tracks and target delivery settings. Confirm the chosen FFmpeg build's redistribution terms.",
+      "alternativeIds": []
+    }
+  ]
+}
