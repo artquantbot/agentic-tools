@@ -653,5 +653,52 @@
       "https://ffmpeg.org/legal.html",
       "https://ffmpeg.org/ffmpeg.html"
     ]
+  },
+  {
+    "repository": "hsynozdamar-byte/claude-skills-edited",
+    "githubId": 1419063102,
+    "name": "Claude Code Skills and Agents (Edited)",
+    "description": "Collection of 59 adapted Claude Code skills and six subagent profiles with upstream attribution. Topics include frontend design, web quality, marketing and video production.",
+    "categories": [
+      "skills"
+    ],
+    "capabilities": [
+      "Claude Code skills",
+      "Claude Code subagents",
+      "frontend design",
+      "web accessibility",
+      "marketing workflows",
+      "video production references"
+    ],
+    "os": null,
+    "languages": null,
+    "hosting": null,
+    "noPaidApi": null,
+    "dependencies": [
+      "Claude Code"
+    ],
+    "installation": [
+      "Manual setup of selected skills or subagents via upstream instructions"
+    ],
+    "permissions": null,
+    "integrations": [
+      "Claude Code"
+    ],
+    "mcp": null,
+    "setup": "https://github.com/hsynozdamar-byte/claude-skills-edited/blob/main/README.md#install",
+    "tradeoff": "Some entries include scripts or download additional components. Review each upstream source and its permissions before enabling it.",
+    "reviewedAt": "2026-11-22T22:19:12Z",
+    "kinds": [
+      "agent-skill",
+      "reference-collection"
+    ],
+    "license": null,
+    "openSource": null,
+    "licenseTerms": "The repository reports MIT or Apache-2.0 for skills and MIT for adapted subagents. Check each item’s SOURCE.md and the third-party notices for applicable terms and attribution.",
+    "licenseSource": "https://github.com/hsynozdamar-byte/claude-skills-edited/blob/main/LICENSE",
+    "extraEvidence": [
+      "https://github.com/hsynozdamar-byte/claude-skills-edited/blob/main/THIRD-PARTY-NOTICES.md",
+      "https://github.com/hsynozdamar-byte/claude-skills-edited/blob/main/agents/SOURCE.md"
+    ]
   }
 ]

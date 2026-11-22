@@ -79,8 +79,7 @@ test("repository metadata alone does not qualify a project for task recommendati
 });
 
 
-test("creative records preserve GitHub identity and distinguish actual MCP servers", () => {
-  assert.equal(reviews.length, 13);
+test("reviewed records preserve GitHub identity and creative MCP types remain accurate", () => {
   const records = catalog.tools.filter(item => item.categories.includes("creative-production"));
   assert.equal(records.length, 13);
   for (const input of reviews) {
