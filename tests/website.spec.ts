@@ -59,3 +59,20 @@ test("creative tools can be filtered and the film studio guide links to verified
   await guide.getByRole("link", { name: "FFmpeg" }).click();
   await expect(page.getByText("Licensing restrictions")).toBeVisible();
 });
+
+test("Stack Studio builds, compares and exports a video manifest on the public surface", async ({ page }) => {
+  await page.goto("/studio");
+  await page.getByRole("button", { name: "Build stack" }).click();
+  await expect(page.getByRole("heading", { name: "AI Film Studio" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Dependency graph and installation order" })).toBeVisible();
+  await expect(page.getByText("Execution is available through the separate")).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"]).analyze()).violations).toEqual([]);
+  const download = page.waitForEvent("download");
+  await page.getByRole("button", { name: "Export manifest" }).click();
+  expect((await download).suggestedFilename()).toBe("stack-manifest.json");
+  await page.getByLabel("Tool for Compose and render").selectOption({ label: "Remotion" });
+  await expect(page.getByText("Compatibility · Requirements conflict")).toBeVisible();
+  await page.getByRole("button", { name: "Compare with defaults" }).click();
+  await expect(page.getByRole("heading", { name: "Edited plan" })).toBeVisible();
+});

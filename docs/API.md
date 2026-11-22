@@ -49,3 +49,7 @@ MCP accepts one JSON-RPC message per HTTP request. A JSON array receives HTTP 40
 `creative-production` is the Video & Creative Production category. The optional `kind` filter works on GET and POST search and MCP `search_tools`. Reviewed creative results add optional `kinds`, `mcp`, and `reviewedAt` fields. Details add licensing restrictions, installation and evidence. A project with a separate MCP integration can have `mcp: true` while its tool type remains a library, CLI or application.
 
 Request `{"query":"AI Film Studio"}` through REST recommendation or MCP `recommend_stack` to get the optional `curatedStack` guide. Explicit filters get regular constraint-aware search results. See [creative catalog evidence](CREATIVE_PRODUCTION.md).
+
+## Stack Studio
+
+Use `POST /api/v1/stacks/build`, `POST /api/v1/stacks/validate` and `POST /api/v1/stacks/compare`, or the equivalent read-only MCP tools `build_stack`, `validate_stack` and `compare_stacks`. The existing catalog tools and shortlist remain available. See [Stack Studio](STACK_STUDIO.md) for payloads, manifest semantics and the separate authenticated local runner.

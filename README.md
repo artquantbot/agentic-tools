@@ -50,3 +50,7 @@ npm run test:e2e
 Catalog observations do not establish installation success or security. Review source documentation and deployment settings before adopting a project.
 
 MIT licensed. Upstream projects and source data retain their respective terms.
+
+### Stack Studio
+
+Open `/studio` for dependency plans, requirement checks, component alternatives and JSON manifests. The hosted catalog and MCP endpoint are read-only. The separate loopback Docker runner can execute and verify a synthetic FFmpeg encoding smoke test after explicit approval. See the [Stack Studio guide](docs/STACK_STUDIO.md) for workflows, setup and limits.

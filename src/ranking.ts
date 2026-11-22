@@ -50,7 +50,7 @@ export function parseConstraints(query: string, filters: Filters = {}): Constrai
     .map(requirement => [`${requirement.field}=${String(requirement.value).toLowerCase()}`, requirement])).values()];
 }
 
-function evaluate(tool: Tool, constraint: Constraint): Assessment {
+export function assessConstraint(tool: Tool, constraint: Constraint): Assessment {
   const { field, value } = constraint;
   const observation = {
     category: tool.categories, kind: tool.kinds, os: tool.os, language: tool.languages,
@@ -110,8 +110,8 @@ export function makeRanker(tools: Tool[]) {
     const queryTokens = [...new Set([...tokens(stop), ...concepts.flatMap(([rule, terms]) => rule.test(input.query) ? tokens(terms) : [])])];
     const filterConstraints = parseConstraints("", input.filters);
     const candidates = index.flatMap(({ tool, words, length }) => {
-      const requirements = constraints.map(constraint => evaluate(tool, constraint));
-      const explicit = filterConstraints.map(constraint => evaluate(tool, constraint));
+      const requirements = constraints.map(constraint => assessConstraint(tool, constraint));
+      const explicit = filterConstraints.map(constraint => assessConstraint(tool, constraint));
       if (requirements.some(r => r.required && r.status === "conflict") || explicit.some(r => r.status !== "satisfied")) return [];
       const terms = queryTokens.filter(word => words.has(word));
       if (queryTokens.length && !terms.length) return [];

@@ -5,6 +5,7 @@ import type { SearchResult, StackResult } from "../src/catalog.ts";
 import type { Filters, Tool } from "../src/schema.ts";
 import { categoryTitle } from "../src/ranking.ts";
 import { toolKinds } from "../src/tool-kinds.ts";
+import { Studio } from "./studio.tsx";
 import "./style.css";
 
 const repo = "https://github.com/artquantbot/agentic-tools";
@@ -257,6 +258,7 @@ function Stack({ selection, toggle }: { selection: string[]; toggle: (id: string
   const request = useRequest<StackResult>(query ? "/recommend-stack" : "", JSON.stringify({ query }));
   return <><PageHeading title="Stack Builder">Shortlist components by role, then review interfaces, versions and deployment requirements.</PageHeading>
     <SearchBox stack initial={query} onSearch={setQuery}/>
+    <a className="text-link back" href="/studio">Open Stack Studio</a>
     {query !== "AI Film Studio" && <a className="text-link back" href="/stack?guide=ai-film-studio">Explore AI Film Studio</a>}
     {query && <Notice error={request.error} loading={!request.data}/>}
     {request.data && <>
@@ -287,7 +289,7 @@ function Developers() {
       <pre><code>{'curl ' + location.origin + '/api/v1/search \\\n  -H "Content-Type: application/json" \\\n  -d \'{"query":"Run an LLM locally on a Mac"}\''}</code></pre>
       <div className="action-row"><a className="button primary" href="/api/v1/openapi.json">OpenAPI document</a><a className="button" href="/api/v1/health">Health endpoint</a></div></section>
     <section className="panel"><Waypoints size={23}/><h2>Model Context Protocol</h2><p>Add the Streamable HTTP endpoint to your MCP client.</p><pre><code>{location.origin + "/mcp"}</code></pre>
-      <ul className="mono-list">{["search_tools", "compare_tools", "get_tool_details", "recommend_stack", "get_setup_guide"].map(name => <li key={name}><code>{name}</code></li>)}</ul>
+      <ul className="mono-list">{["search_tools", "compare_tools", "get_tool_details", "recommend_stack", "get_setup_guide", "build_stack", "validate_stack", "compare_stacks"].map(name => <li key={name}><code>{name}</code></li>)}</ul>
       <a href={repo + "/blob/main/docs/API.md"} className="text-link">Client configuration and examples</a></section></div>
     </>;
 }
@@ -315,6 +317,7 @@ function App() {
   else if (path === "/discover") page = <Discover directory={directory.data} {...props}/>;
   else if (path === "/categories") page = <><PageHeading title="Categories">Explore tools by role across the agent technology stack.</PageHeading>{directory.error ? <Notice error={directory.error}/> : <CategoryGrid directory={directory.data}/>}</>;
   else if (path === "/compare") page = <Compare {...props}/>;
+  else if (path === "/studio") page = <Studio/>;
   else if (path === "/stack") page = <Stack {...props}/>;
   else if (path === "/developers") page = <Developers/>;
   else if (path === "/about") page = <About/>;
