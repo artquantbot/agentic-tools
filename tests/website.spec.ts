@@ -43,3 +43,36 @@ test("home and discover pass automated accessibility and fit the viewport", asyn
   const light = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa"]).analyze();
   expect(light.violations).toEqual([]);
 });
+
+test("workflow guides lead to catalog entries and saved tools persist", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("link", { name: /Search documents locally/ }).click();
+  await expect(page.getByRole("heading", { name: "Search documents locally" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Before you connect" })).toBeVisible();
+  await page.getByRole("link", { name: "Ollama", exact: true }).click();
+  await expect(page.getByRole("heading", { name: "Ollama" })).toBeVisible();
+  await page.getByRole("button", { name: "Save Ollama" }).click();
+  await page.getByRole("link", { name: "Saved tools (1)" }).click();
+  await expect(page.getByRole("heading", { name: "Saved tools" })).toBeVisible();
+  await page.reload();
+  await expect(page.getByRole("link", { name: "Ollama", exact: true })).toBeVisible();
+  await page.getByRole("button", { name: "Remove Ollama from saved tools" }).click();
+  await expect(page.getByText("Your shelf is empty", { exact: false })).toBeVisible();
+});
+
+test("quick search accepts keyboard input without putting free text in the URL", async ({ page }) => {
+  await page.goto("/use-cases");
+  await expect(page.getByRole("button", { name: "Search", exact: true })).toBeVisible();
+  await page.keyboard.press("Control+k");
+  const dialog = page.getByRole("dialog", { name: "Quick search" });
+  await expect(dialog).toBeVisible();
+  await expect(dialog.getByRole("textbox")).toBeFocused();
+  await dialog.getByRole("textbox").fill("Run an LLM locally on a Mac");
+  await dialog.getByRole("button", { name: "Search tools" }).click();
+  await expect(page).toHaveURL(/\/discover$/);
+  await expect(page.getByRole("textbox", { name: "Describe what your agent needs" })).toHaveValue("Run an LLM locally on a Mac");
+  await expect(page.getByRole("link", { name: "Ollama", exact: true })).toBeVisible();
+  await page.goto("/");
+  await page.getByRole("link", { name: "No paid API required" }).click();
+  await expect(page.getByRole("checkbox", { name: "No paid API required" })).toBeChecked();
+});
