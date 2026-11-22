@@ -700,5 +700,820 @@
       "https://github.com/hsynozdamar-byte/claude-skills-edited/blob/main/THIRD-PARTY-NOTICES.md",
       "https://github.com/hsynozdamar-byte/claude-skills-edited/blob/main/agents/SOURCE.md"
     ]
+  },
+  {
+    "repository": "AppFlowy-IO/AppFlowy",
+    "githubId": 377496562,
+    "name": "AppFlowy",
+    "description": "Manage notes, project documents and team wikis in a shared workspace.",
+    "categories": [
+      "workflow",
+      "saas-alternatives"
+    ],
+    "capabilities": [
+      "knowledge base",
+      "team documents",
+      "wiki",
+      "Notion alternative"
+    ],
+    "os": null,
+    "languages": null,
+    "hosting": "hybrid",
+    "noPaidApi": null,
+    "dependencies": null,
+    "installation": null,
+    "permissions": null,
+    "integrations": [],
+    "mcp": null,
+    "setup": "https://github.com/AppFlowy-IO/AppFlowy/blob/main/README.md",
+    "tradeoff": null,
+    "reviewedAt": "2026-11-22T22:42:10Z",
+    "kinds": [
+      "web-application"
+    ],
+    "license": "AGPL-3.0",
+    "openSource": true,
+    "licenseTerms": "GitHub identifies the repository license as AGPL-3.0. Review the license for any separately distributed edition.",
+    "licenseSource": "https://github.com/AppFlowy-IO/AppFlowy/blob/main/LICENSE",
+    "extraEvidence": []
+  },
+  {
+    "repository": "penpot/penpot",
+    "githubId": 48769241,
+    "name": "Penpot",
+    "description": "Create interface designs, prototypes and reusable components for design teams.",
+    "categories": [
+      "infrastructure",
+      "saas-alternatives"
+    ],
+    "capabilities": [
+      "interface design",
+      "prototyping",
+      "design systems",
+      "Figma alternative"
+    ],
+    "os": null,
+    "languages": null,
+    "hosting": "hybrid",
+    "noPaidApi": null,
+    "dependencies": null,
+    "installation": null,
+    "permissions": null,
+    "integrations": [],
+    "mcp": null,
+    "setup": "https://github.com/penpot/penpot/blob/develop/README.md",
+    "tradeoff": null,
+    "reviewedAt": "2026-11-22T22:42:10Z",
+    "kinds": [
+      "web-application"
+    ],
+    "license": "MPL-2.0",
+    "openSource": true,
+    "licenseTerms": "GitHub identifies the repository license as MPL-2.0. Review the license for any separately distributed edition.",
+    "licenseSource": "https://github.com/penpot/penpot/blob/develop/LICENSE",
+    "extraEvidence": []
+  },
+  {
+    "repository": "calcom/cal.diy",
+    "githubId": 350360184,
+    "name": "Cal.diy",
+    "description": "Publish booking pages and let people select an available time.",
+    "categories": [
+      "workflow",
+      "saas-alternatives"
+    ],
+    "capabilities": [
+      "appointment scheduling",
+      "booking calendar",
+      "Calendly alternative"
+    ],
+    "os": null,
+    "languages": null,
+    "hosting": "local",
+    "noPaidApi": null,
+    "dependencies": null,
+    "installation": null,
+    "permissions": null,
+    "integrations": [],
+    "mcp": null,
+    "setup": "https://github.com/calcom/cal.diy/blob/main/README.md",
+    "tradeoff": null,
+    "reviewedAt": "2026-11-22T22:42:10Z",
+    "kinds": [
+      "web-application"
+    ],
+    "license": "MIT",
+    "openSource": true,
+    "licenseTerms": "GitHub identifies the repository license as MIT. Review the license for any separately distributed edition.",
+    "licenseSource": "https://github.com/calcom/cal.diy/blob/main/LICENSE",
+    "extraEvidence": []
+  },
+  {
+    "repository": "languagetool-org/languagetool",
+    "githubId": 11981144,
+    "name": "LanguageTool",
+    "description": "Check grammar and style in multilingual text.",
+    "categories": [
+      "infrastructure",
+      "saas-alternatives"
+    ],
+    "capabilities": [
+      "grammar checking",
+      "writing assistance",
+      "Grammarly alternative"
+    ],
+    "os": null,
+    "languages": null,
+    "hosting": "hybrid",
+    "noPaidApi": null,
+    "dependencies": null,
+    "installation": null,
+    "permissions": null,
+    "integrations": [],
+    "mcp": null,
+    "setup": "https://github.com/languagetool-org/languagetool/blob/master/README.md",
+    "tradeoff": null,
+    "reviewedAt": "2026-11-22T22:42:10Z",
+    "kinds": [
+      "software-library",
+      "cli-tool"
+    ],
+    "license": "LGPL-2.1",
+    "openSource": true,
+    "licenseTerms": "GitHub identifies the repository license as LGPL-2.1. Review the license for any separately distributed edition.",
+    "licenseSource": "https://github.com/languagetool-org/languagetool/blob/master/COPYING.txt",
+    "extraEvidence": []
+  },
+  {
+    "repository": "bitwarden/server",
+    "githubId": 46755185,
+    "name": "Bitwarden Server",
+    "description": "Run the server infrastructure used by Bitwarden password vault clients.",
+    "categories": [
+      "identity",
+      "saas-alternatives"
+    ],
+    "capabilities": [
+      "password vault",
+      "credential management",
+      "1Password alternative"
+    ],
+    "os": null,
+    "languages": null,
+    "hosting": "hybrid",
+    "noPaidApi": null,
+    "dependencies": null,
+    "installation": null,
+    "permissions": null,
+    "integrations": [],
+    "mcp": null,
+    "setup": "https://github.com/bitwarden/server/blob/main/README.md",
+    "tradeoff": null,
+    "reviewedAt": "2026-11-22T22:42:10Z",
+    "kinds": [
+      "web-application"
+    ],
+    "license": null,
+    "openSource": null,
+    "licenseTerms": "AGPL-3.0 is the default; the Bitwarden License applies to separately marked code.",
+    "licenseSource": "https://github.com/bitwarden/server/blob/main/LICENSE.txt",
+    "extraEvidence": []
+  },
+  {
+    "repository": "RocketChat/Rocket.Chat",
+    "githubId": 35866694,
+    "name": "Rocket.Chat",
+    "description": "Run team channels, direct messaging and communications integrations.",
+    "categories": [
+      "workflow",
+      "saas-alternatives"
+    ],
+    "capabilities": [
+      "team messaging",
+      "chat",
+      "Slack alternative"
+    ],
+    "os": null,
+    "languages": null,
+    "hosting": "hybrid",
+    "noPaidApi": null,
+    "dependencies": null,
+    "installation": null,
+    "permissions": null,
+    "integrations": [],
+    "mcp": null,
+    "setup": "https://github.com/RocketChat/Rocket.Chat/blob/develop/README.md",
+    "tradeoff": null,
+    "reviewedAt": "2026-11-22T22:42:10Z",
+    "kinds": [
+      "web-application"
+    ],
+    "license": null,
+    "openSource": null,
+    "licenseTerms": "Enterprise code has separate terms. Review the license for the edition being deployed.",
+    "licenseSource": "https://github.com/RocketChat/Rocket.Chat/blob/develop/LICENSE",
+    "extraEvidence": []
+  },
+  {
+    "repository": "nextcloud/server",
+    "githubId": 60243197,
+    "name": "Nextcloud Server",
+    "description": "Sync and share files with users on a server you control.",
+    "categories": [
+      "infrastructure",
+      "saas-alternatives"
+    ],
+    "capabilities": [
+      "file sharing",
+      "file synchronization",
+      "Dropbox alternative"
+    ],
+    "os": null,
+    "languages": null,
+    "hosting": "local",
+    "noPaidApi": null,
+    "dependencies": null,
+    "installation": null,
+    "permissions": null,
+    "integrations": [],
+    "mcp": null,
+    "setup": "https://github.com/nextcloud/server/blob/master/README.md",
+    "tradeoff": null,
+    "reviewedAt": "2026-11-22T22:42:10Z",
+    "kinds": [
+      "web-application"
+    ],
+    "license": "AGPL-3.0",
+    "openSource": true,
+    "licenseTerms": "GitHub identifies the repository license as AGPL-3.0. Review the license for any separately distributed edition.",
+    "licenseSource": "https://github.com/nextcloud/server/blob/master/COPYING",
+    "extraEvidence": []
+  },
+  {
+    "repository": "CapSoftware/Cap",
+    "githubId": 720209383,
+    "name": "Cap",
+    "description": "Capture screens and share recorded video for asynchronous collaboration.",
+    "categories": [
+      "workflow",
+      "saas-alternatives"
+    ],
+    "capabilities": [
+      "screen recording",
+      "video sharing",
+      "Loom alternative"
+    ],
+    "os": null,
+    "languages": null,
+    "hosting": "hybrid",
+    "noPaidApi": null,
+    "dependencies": null,
+    "installation": null,
+    "permissions": null,
+    "integrations": [],
+    "mcp": null,
+    "setup": "https://github.com/CapSoftware/Cap/blob/main/README.md",
+    "tradeoff": null,
+    "reviewedAt": "2026-11-22T22:42:10Z",
+    "kinds": [
+      "desktop-application",
+      "web-application"
+    ],
+    "license": null,
+    "openSource": null,
+    "licenseTerms": "Some crates use MIT. Other components have separately stated terms in the root notice.",
+    "licenseSource": "https://github.com/CapSoftware/Cap/blob/main/LICENSE",
+    "extraEvidence": []
+  },
+  {
+    "repository": "LinkStackOrg/LinkStack",
+    "githubId": 459095253,
+    "name": "LinkStack",
+    "description": "Publish a customizable profile page containing a collection of links.",
+    "categories": [
+      "hosting",
+      "saas-alternatives"
+    ],
+    "capabilities": [
+      "link page",
+      "profile page",
+      "Linktree alternative"
+    ],
+    "os": null,
+    "languages": null,
+    "hosting": "local",
+    "noPaidApi": null,
+    "dependencies": null,
+    "installation": null,
+    "permissions": null,
+    "integrations": [],
+    "mcp": null,
+    "setup": "https://github.com/LinkStackOrg/LinkStack/blob/main/README.md",
+    "tradeoff": null,
+    "reviewedAt": "2026-11-22T22:42:10Z",
+    "kinds": [
+      "web-application"
+    ],
+    "license": "AGPL-3.0",
+    "openSource": true,
+    "licenseTerms": "GitHub identifies the repository license as AGPL-3.0. Review the license for any separately distributed edition.",
+    "licenseSource": "https://github.com/LinkStackOrg/LinkStack/blob/main/LICENSE",
+    "extraEvidence": []
+  },
+  {
+    "repository": "coollabsio/coolify",
+    "githubId": 332880689,
+    "name": "Coolify",
+    "description": "Deploy and manage applications, databases and static sites on your infrastructure.",
+    "categories": [
+      "hosting",
+      "saas-alternatives"
+    ],
+    "capabilities": [
+      "application hosting",
+      "database deployment",
+      "Vercel alternative"
+    ],
+    "os": null,
+    "languages": null,
+    "hosting": "hybrid",
+    "noPaidApi": null,
+    "dependencies": null,
+    "installation": null,
+    "permissions": null,
+    "integrations": [],
+    "mcp": null,
+    "setup": "https://github.com/coollabsio/coolify/blob/main/README.md",
+    "tradeoff": null,
+    "reviewedAt": "2026-11-22T22:42:10Z",
+    "kinds": [
+      "web-application"
+    ],
+    "license": "Apache-2.0",
+    "openSource": true,
+    "licenseTerms": "GitHub identifies the repository license as Apache-2.0. Review the license for any separately distributed edition.",
+    "licenseSource": "https://github.com/coollabsio/coolify/blob/main/LICENSE",
+    "extraEvidence": []
+  },
+  {
+    "repository": "open-webui/open-webui",
+    "githubId": 701547123,
+    "name": "Open WebUI",
+    "description": "Connect a web interface to local models or compatible remote model APIs.",
+    "categories": [
+      "models",
+      "saas-alternatives"
+    ],
+    "capabilities": [
+      "AI chat interface",
+      "local model interface",
+      "ChatGPT Plus alternative"
+    ],
+    "os": null,
+    "languages": null,
+    "hosting": "local",
+    "noPaidApi": null,
+    "dependencies": null,
+    "installation": null,
+    "permissions": null,
+    "integrations": [],
+    "mcp": null,
+    "setup": "https://github.com/open-webui/open-webui/blob/main/README.md",
+    "tradeoff": null,
+    "reviewedAt": "2026-11-22T22:42:10Z",
+    "kinds": [
+      "web-application"
+    ],
+    "license": "Open WebUI License",
+    "openSource": false,
+    "licenseTerms": "The Open WebUI License has a branding condition. Review it before distributing a hosted edition.",
+    "licenseSource": "https://github.com/open-webui/open-webui/blob/main/LICENSE",
+    "extraEvidence": []
+  },
+  {
+    "repository": "makeplane/plane",
+    "githubId": 568098118,
+    "name": "Plane",
+    "description": "Plan projects with issues, cycles, modules and team documentation.",
+    "categories": [
+      "workflow",
+      "saas-alternatives"
+    ],
+    "capabilities": [
+      "issue tracking",
+      "project management",
+      "Jira alternative"
+    ],
+    "os": null,
+    "languages": null,
+    "hosting": "hybrid",
+    "noPaidApi": null,
+    "dependencies": null,
+    "installation": null,
+    "permissions": null,
+    "integrations": [],
+    "mcp": null,
+    "setup": "https://github.com/makeplane/plane/blob/preview/README.md",
+    "tradeoff": null,
+    "reviewedAt": "2026-11-22T22:42:10Z",
+    "kinds": [
+      "web-application"
+    ],
+    "license": "AGPL-3.0",
+    "openSource": true,
+    "licenseTerms": "GitHub identifies the repository license as AGPL-3.0. Review the license for any separately distributed edition.",
+    "licenseSource": "https://github.com/makeplane/plane/blob/preview/LICENSE.txt",
+    "extraEvidence": []
+  },
+  {
+    "repository": "nocodb/nocodb",
+    "githubId": 108761645,
+    "name": "NocoDB",
+    "description": "Build spreadsheet-style views and workflows on a shared structured data store.",
+    "categories": [
+      "workflow",
+      "saas-alternatives"
+    ],
+    "capabilities": [
+      "spreadsheet database",
+      "relational data",
+      "Airtable alternative"
+    ],
+    "os": null,
+    "languages": null,
+    "hosting": "hybrid",
+    "noPaidApi": null,
+    "dependencies": null,
+    "installation": null,
+    "permissions": null,
+    "integrations": [],
+    "mcp": null,
+    "setup": "https://github.com/nocodb/nocodb/blob/develop/README.md",
+    "tradeoff": null,
+    "reviewedAt": "2026-11-22T22:42:10Z",
+    "kinds": [
+      "web-application"
+    ],
+    "license": null,
+    "openSource": null,
+    "licenseTerms": "See the Sustainable Use License and separate terms before commercial hosting or redistribution.",
+    "licenseSource": "https://github.com/nocodb/nocodb/blob/develop/LICENSE.md",
+    "extraEvidence": []
+  },
+  {
+    "repository": "wekan/wekan",
+    "githubId": 16089035,
+    "name": "Wekan",
+    "description": "Organize tasks across collaborative Kanban boards and lists.",
+    "categories": [
+      "workflow",
+      "saas-alternatives"
+    ],
+    "capabilities": [
+      "kanban",
+      "task management",
+      "Trello alternative"
+    ],
+    "os": null,
+    "languages": null,
+    "hosting": "local",
+    "noPaidApi": null,
+    "dependencies": null,
+    "installation": null,
+    "permissions": null,
+    "integrations": [],
+    "mcp": null,
+    "setup": "https://github.com/wekan/wekan/blob/main/README.md",
+    "tradeoff": null,
+    "reviewedAt": "2026-11-22T22:42:10Z",
+    "kinds": [
+      "web-application"
+    ],
+    "license": "MIT",
+    "openSource": true,
+    "licenseTerms": "GitHub identifies the repository license as MIT. Review the license for any separately distributed edition.",
+    "licenseSource": "https://github.com/wekan/wekan/blob/main/LICENSE",
+    "extraEvidence": []
+  },
+  {
+    "repository": "n8n-io/n8n",
+    "githubId": 193215554,
+    "name": "n8n",
+    "description": "Connect services and run workflows with visual nodes.",
+    "categories": [
+      "workflow",
+      "saas-alternatives"
+    ],
+    "capabilities": [
+      "workflow automation",
+      "integrations",
+      "visual workflows",
+      "Zapier alternative"
+    ],
+    "os": null,
+    "languages": [
+      "TypeScript"
+    ],
+    "hosting": "hybrid",
+    "noPaidApi": null,
+    "dependencies": null,
+    "installation": null,
+    "permissions": null,
+    "integrations": [],
+    "mcp": null,
+    "setup": "https://docs.n8n.io/",
+    "tradeoff": null,
+    "reviewedAt": "2026-11-22T22:42:10Z",
+    "kinds": [
+      "web-application"
+    ],
+    "license": "Sustainable Use License",
+    "openSource": false,
+    "licenseTerms": "The Sustainable Use License applies to the main branch subject to exceptions including enterprise code. Review commercial hosting terms.",
+    "licenseSource": "https://github.com/n8n-io/n8n/blob/master/LICENSE.md",
+    "extraEvidence": [
+      "https://github.com/n8n-io/n8n/blob/master/README.md"
+    ]
+  },
+  {
+    "repository": "formbricks/formbricks",
+    "githubId": 500289888,
+    "name": "Formbricks",
+    "description": "Create surveys and collect feedback from customers or product users.",
+    "categories": [
+      "workflow",
+      "saas-alternatives"
+    ],
+    "capabilities": [
+      "surveys",
+      "feedback collection",
+      "Typeform alternative"
+    ],
+    "os": null,
+    "languages": null,
+    "hosting": "hybrid",
+    "noPaidApi": null,
+    "dependencies": null,
+    "installation": null,
+    "permissions": null,
+    "integrations": [],
+    "mcp": null,
+    "setup": "https://github.com/formbricks/formbricks/blob/main/README.md",
+    "tradeoff": null,
+    "reviewedAt": "2026-11-22T22:42:10Z",
+    "kinds": [
+      "web-application"
+    ],
+    "license": null,
+    "openSource": null,
+    "licenseTerms": "Enterprise features, SDKs and other components use distinct terms.",
+    "licenseSource": "https://github.com/formbricks/formbricks/blob/main/LICENSE",
+    "extraEvidence": []
+  },
+  {
+    "repository": "documenso/documenso",
+    "githubId": 613010835,
+    "name": "Documenso",
+    "description": "Request signatures, track signing status and manage signed documents.",
+    "categories": [
+      "workflow",
+      "saas-alternatives"
+    ],
+    "capabilities": [
+      "electronic signatures",
+      "document workflows",
+      "DocuSign alternative"
+    ],
+    "os": null,
+    "languages": null,
+    "hosting": "hybrid",
+    "noPaidApi": null,
+    "dependencies": null,
+    "installation": null,
+    "permissions": null,
+    "integrations": [],
+    "mcp": null,
+    "setup": "https://github.com/documenso/documenso/blob/main/README.md",
+    "tradeoff": null,
+    "reviewedAt": "2026-11-22T22:42:10Z",
+    "kinds": [
+      "web-application"
+    ],
+    "license": "AGPL-3.0",
+    "openSource": true,
+    "licenseTerms": "GitHub identifies the repository license as AGPL-3.0. Review the license for any separately distributed edition.",
+    "licenseSource": "https://github.com/documenso/documenso/blob/main/LICENSE",
+    "extraEvidence": []
+  },
+  {
+    "repository": "chatwoot/chatwoot",
+    "githubId": 202291859,
+    "name": "Chatwoot",
+    "description": "Manage customer conversations in a shared inbox across channels.",
+    "categories": [
+      "workflow",
+      "saas-alternatives"
+    ],
+    "capabilities": [
+      "customer support",
+      "shared inbox",
+      "Intercom alternative"
+    ],
+    "os": null,
+    "languages": null,
+    "hosting": "hybrid",
+    "noPaidApi": null,
+    "dependencies": null,
+    "installation": null,
+    "permissions": null,
+    "integrations": [],
+    "mcp": null,
+    "setup": "https://github.com/chatwoot/chatwoot/blob/develop/README.md",
+    "tradeoff": null,
+    "reviewedAt": "2026-11-22T22:42:10Z",
+    "kinds": [
+      "web-application"
+    ],
+    "license": null,
+    "openSource": null,
+    "licenseTerms": "Enterprise features are licensed separately. Check the scope for the selected edition.",
+    "licenseSource": "https://github.com/chatwoot/chatwoot/blob/develop/LICENSE",
+    "extraEvidence": []
+  },
+  {
+    "repository": "knadh/listmonk",
+    "githubId": 193833307,
+    "name": "Listmonk",
+    "description": "Manage mailing lists and send newsletters through configured mail providers.",
+    "categories": [
+      "workflow",
+      "saas-alternatives"
+    ],
+    "capabilities": [
+      "newsletter",
+      "mailing lists",
+      "Mailchimp alternative"
+    ],
+    "os": null,
+    "languages": null,
+    "hosting": "local",
+    "noPaidApi": null,
+    "dependencies": null,
+    "installation": null,
+    "permissions": null,
+    "integrations": [],
+    "mcp": null,
+    "setup": "https://github.com/knadh/listmonk/blob/master/README.md",
+    "tradeoff": null,
+    "reviewedAt": "2026-11-22T22:42:10Z",
+    "kinds": [
+      "web-application"
+    ],
+    "license": "AGPL-3.0",
+    "openSource": true,
+    "licenseTerms": "GitHub identifies the repository license as AGPL-3.0. Review the license for any separately distributed edition.",
+    "licenseSource": "https://github.com/knadh/listmonk/blob/master/LICENSE",
+    "extraEvidence": []
+  },
+  {
+    "repository": "PostHog/posthog",
+    "githubId": 235901813,
+    "name": "PostHog",
+    "description": "Analyze product events and use tools for feature flags, experiments and session replay.",
+    "categories": [
+      "observability",
+      "saas-alternatives"
+    ],
+    "capabilities": [
+      "product analytics",
+      "feature flags",
+      "session replay",
+      "Mixpanel alternative"
+    ],
+    "os": null,
+    "languages": null,
+    "hosting": "hybrid",
+    "noPaidApi": null,
+    "dependencies": null,
+    "installation": null,
+    "permissions": null,
+    "integrations": [],
+    "mcp": null,
+    "setup": "https://github.com/PostHog/posthog/blob/master/README.md",
+    "tradeoff": null,
+    "reviewedAt": "2026-11-22T22:42:10Z",
+    "kinds": [
+      "web-application"
+    ],
+    "license": null,
+    "openSource": null,
+    "licenseTerms": "Enterprise files are licensed separately. Review the self-hosting edition and support terms.",
+    "licenseSource": "https://github.com/PostHog/posthog/blob/master/LICENSE",
+    "extraEvidence": []
+  },
+  {
+    "repository": "gitroomhq/postiz-app",
+    "githubId": 664013991,
+    "name": "Postiz",
+    "description": "Plan and schedule content for supported social networks.",
+    "categories": [
+      "workflow",
+      "saas-alternatives"
+    ],
+    "capabilities": [
+      "social media scheduling",
+      "content publishing",
+      "Buffer alternative"
+    ],
+    "os": null,
+    "languages": null,
+    "hosting": "hybrid",
+    "noPaidApi": null,
+    "dependencies": null,
+    "installation": null,
+    "permissions": null,
+    "integrations": [],
+    "mcp": null,
+    "setup": "https://github.com/gitroomhq/postiz-app/blob/main/README.md",
+    "tradeoff": null,
+    "reviewedAt": "2026-11-22T22:42:10Z",
+    "kinds": [
+      "web-application"
+    ],
+    "license": "AGPL-3.0",
+    "openSource": true,
+    "licenseTerms": "GitHub identifies the repository license as AGPL-3.0. Review the license for any separately distributed edition.",
+    "licenseSource": "https://github.com/gitroomhq/postiz-app/blob/main/LICENSE",
+    "extraEvidence": []
+  },
+  {
+    "repository": "louislam/uptime-kuma",
+    "githubId": 382496361,
+    "name": "Uptime Kuma",
+    "description": "Check service availability and publish status pages.",
+    "categories": [
+      "observability",
+      "saas-alternatives"
+    ],
+    "capabilities": [
+      "uptime monitoring",
+      "status pages",
+      "Statuspage alternative"
+    ],
+    "os": null,
+    "languages": null,
+    "hosting": "local",
+    "noPaidApi": null,
+    "dependencies": null,
+    "installation": null,
+    "permissions": null,
+    "integrations": [],
+    "mcp": null,
+    "setup": "https://github.com/louislam/uptime-kuma/blob/master/README.md",
+    "tradeoff": null,
+    "reviewedAt": "2026-11-22T22:42:10Z",
+    "kinds": [
+      "web-application"
+    ],
+    "license": "MIT",
+    "openSource": true,
+    "licenseTerms": "GitHub identifies the repository license as MIT. Review the license for any separately distributed edition.",
+    "licenseSource": "https://github.com/louislam/uptime-kuma/blob/master/LICENSE",
+    "extraEvidence": []
+  },
+  {
+    "repository": "openreplay/openreplay",
+    "githubId": 362806180,
+    "name": "OpenReplay",
+    "description": "Record and inspect web sessions to investigate interface problems.",
+    "categories": [
+      "observability",
+      "saas-alternatives"
+    ],
+    "capabilities": [
+      "session replay",
+      "product analytics",
+      "Hotjar alternative"
+    ],
+    "os": null,
+    "languages": null,
+    "hosting": "hybrid",
+    "noPaidApi": null,
+    "dependencies": null,
+    "installation": null,
+    "permissions": null,
+    "integrations": [],
+    "mcp": null,
+    "setup": "https://github.com/openreplay/openreplay/blob/main/README.md",
+    "tradeoff": null,
+    "reviewedAt": "2026-11-22T22:42:10Z",
+    "kinds": [
+      "web-application"
+    ],
+    "license": null,
+    "openSource": null,
+    "licenseTerms": "Enterprise components and third-party dependencies have separate license terms.",
+    "licenseSource": "https://github.com/openreplay/openreplay/blob/main/LICENSE",
+    "extraEvidence": []
   }
 ]

@@ -76,3 +76,20 @@ test("Stack Studio builds, compares and exports a video manifest on the public s
   await page.getByRole("button", { name: "Compare with defaults" }).click();
   await expect(page.getByRole("heading", { name: "Edited plan" })).toBeVisible();
 });
+
+test("SaaS directory filters by task and remembers a local shortlist", async ({ page }) => {
+  await page.goto("/alternatives");
+  await expect(page.getByText("23 repositories shown")).toBeVisible();
+  await page.getByLabel("Area of work").selectOption("collaboration");
+  await expect(page.getByText("4 repositories shown")).toBeVisible();
+  await page.getByLabel("Find by tool or task").fill("Slack");
+  await expect(page.getByText("1 repository shown")).toBeVisible();
+  await page.getByRole("button", { name: "Save Rocket.Chat" }).click();
+  await page.reload();
+  await page.getByLabel("Show saved only").check();
+  await expect(page.getByRole("link", { name: "Rocket.Chat", exact: true })).toBeVisible();
+  await page.getByRole("button", { name: "Compare Rocket.Chat" }).click();
+  await expect(page.getByRole("link", { name: "Compare tools", exact: true })).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"]).analyze()).violations).toEqual([]);
+});

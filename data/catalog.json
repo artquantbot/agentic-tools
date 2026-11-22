@@ -1,6 +1,91 @@
 {
-  "generatedAt": "2026-11-22T22:19:25.005Z",
+  "generatedAt": "2026-11-22T22:42:10.926Z",
   "tools": [
+    {
+      "id": "gh-108761645",
+      "name": "NocoDB",
+      "canonicalUrl": "https://github.com/nocodb/nocodb",
+      "github": "https://github.com/nocodb/nocodb",
+      "website": null,
+      "description": "Build spreadsheet-style views and workflows on a shared structured data store.",
+      "categories": [
+        "workflow",
+        "saas-alternatives"
+      ],
+      "capabilities": [
+        "spreadsheet database",
+        "relational data",
+        "Airtable alternative"
+      ],
+      "os": null,
+      "languages": [
+        "TypeScript"
+      ],
+      "license": null,
+      "openSource": null,
+      "hosting": "hybrid",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-22T19:46:37Z",
+      "stars": 65600,
+      "securityAdvisories": null,
+      "setup": "https://github.com/nocodb/nocodb/blob/develop/README.md",
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/nocodb/nocodb",
+          "verifiedAt": "2026-11-22T22:42:13.021Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/nocodb/nocodb/blob/develop/README.md",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/nocodb/nocodb/blob/develop/LICENSE.md",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T22:42:13.021Z",
+      "confidence": "curated",
+      "kinds": [
+        "web-application"
+      ],
+      "licenseTerms": "See the Sustainable Use License and separate terms before commercial hosting or redistribution.",
+      "reviewedAt": "2026-11-22T22:42:10Z"
+    },
     {
       "id": "gh-1134543109",
       "name": "Skills CLI",
@@ -579,6 +664,92 @@
       ],
       "verifiedAt": "2026-11-21T18:53:17.406Z",
       "confidence": "metadata"
+    },
+    {
+      "id": "gh-11981144",
+      "name": "LanguageTool",
+      "canonicalUrl": "https://github.com/languagetool-org/languagetool",
+      "github": "https://github.com/languagetool-org/languagetool",
+      "website": null,
+      "description": "Check grammar and style in multilingual text.",
+      "categories": [
+        "infrastructure",
+        "saas-alternatives"
+      ],
+      "capabilities": [
+        "grammar checking",
+        "writing assistance",
+        "Grammarly alternative"
+      ],
+      "os": null,
+      "languages": [
+        "Java"
+      ],
+      "license": "LGPL-2.1",
+      "openSource": true,
+      "hosting": "hybrid",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-22T12:04:37Z",
+      "stars": 15290,
+      "securityAdvisories": null,
+      "setup": "https://github.com/languagetool-org/languagetool/blob/master/README.md",
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/languagetool-org/languagetool",
+          "verifiedAt": "2026-11-22T22:42:12.024Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/languagetool-org/languagetool/blob/master/README.md",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/languagetool-org/languagetool/blob/master/COPYING.txt",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T22:42:12.024Z",
+      "confidence": "curated",
+      "kinds": [
+        "software-library",
+        "cli-tool"
+      ],
+      "licenseTerms": "GitHub identifies the repository license as LGPL-2.1. Review the license for any separately distributed edition.",
+      "reviewedAt": "2026-11-22T22:42:10Z"
     },
     {
       "id": "gh-1198984771",
@@ -1548,6 +1719,91 @@
       "confidence": "curated"
     },
     {
+      "id": "gh-16089035",
+      "name": "Wekan",
+      "canonicalUrl": "https://github.com/wekan/wekan",
+      "github": "https://github.com/wekan/wekan",
+      "website": null,
+      "description": "Organize tasks across collaborative Kanban boards and lists.",
+      "categories": [
+        "workflow",
+        "saas-alternatives"
+      ],
+      "capabilities": [
+        "kanban",
+        "task management",
+        "Trello alternative"
+      ],
+      "os": null,
+      "languages": [
+        "JavaScript"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-22T21:27:05Z",
+      "stars": 21175,
+      "securityAdvisories": null,
+      "setup": "https://github.com/wekan/wekan/blob/main/README.md",
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/wekan/wekan",
+          "verifiedAt": "2026-11-22T22:42:13.020Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/wekan/wekan/blob/main/README.md",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/wekan/wekan/blob/main/LICENSE",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T22:42:13.020Z",
+      "confidence": "curated",
+      "kinds": [
+        "web-application"
+      ],
+      "licenseTerms": "GitHub identifies the repository license as MIT. Review the license for any separately distributed edition.",
+      "reviewedAt": "2026-11-22T22:42:10Z"
+    },
+    {
       "id": "gh-1614410",
       "name": "FFmpeg",
       "canonicalUrl": "https://github.com/FFmpeg/FFmpeg",
@@ -1670,16 +1926,196 @@
       "website": null,
       "description": "Connect services and run workflows with visual nodes.",
       "categories": [
-        "workflow"
+        "workflow",
+        "saas-alternatives"
       ],
       "capabilities": [
         "workflow automation",
         "integrations",
-        "visual workflows"
+        "visual workflows",
+        "Zapier alternative"
       ],
       "os": null,
       "languages": [
         "TypeScript"
+      ],
+      "license": "Sustainable Use License",
+      "openSource": false,
+      "hosting": "hybrid",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-22T22:11:27Z",
+      "stars": 211833,
+      "securityAdvisories": null,
+      "setup": "https://docs.n8n.io/",
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/n8n-io/n8n",
+          "verifiedAt": "2026-11-22T22:42:13.588Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://docs.n8n.io/",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/n8n-io/n8n/blob/master/LICENSE.md",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/n8n-io/n8n/blob/master/README.md",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "supplementary evidence"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T22:42:13.588Z",
+      "confidence": "curated",
+      "kinds": [
+        "web-application"
+      ],
+      "licenseTerms": "The Sustainable Use License applies to the main branch subject to exceptions including enterprise code. Review commercial hosting terms.",
+      "reviewedAt": "2026-11-22T22:42:10Z"
+    },
+    {
+      "id": "gh-193833307",
+      "name": "Listmonk",
+      "canonicalUrl": "https://github.com/knadh/listmonk",
+      "github": "https://github.com/knadh/listmonk",
+      "website": null,
+      "description": "Manage mailing lists and send newsletters through configured mail providers.",
+      "categories": [
+        "workflow",
+        "saas-alternatives"
+      ],
+      "capabilities": [
+        "newsletter",
+        "mailing lists",
+        "Mailchimp alternative"
+      ],
+      "os": null,
+      "languages": [
+        "Go"
+      ],
+      "license": "AGPL-3.0",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-22T17:52:32Z",
+      "stars": 24421,
+      "securityAdvisories": null,
+      "setup": "https://github.com/knadh/listmonk/blob/master/README.md",
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/knadh/listmonk",
+          "verifiedAt": "2026-11-22T22:42:14.435Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/knadh/listmonk/blob/master/README.md",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/knadh/listmonk/blob/master/LICENSE",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T22:42:14.435Z",
+      "confidence": "curated",
+      "kinds": [
+        "web-application"
+      ],
+      "licenseTerms": "GitHub identifies the repository license as AGPL-3.0. Review the license for any separately distributed edition.",
+      "reviewedAt": "2026-11-22T22:42:10Z"
+    },
+    {
+      "id": "gh-202291859",
+      "name": "Chatwoot",
+      "canonicalUrl": "https://github.com/chatwoot/chatwoot",
+      "github": "https://github.com/chatwoot/chatwoot",
+      "website": null,
+      "description": "Manage customer conversations in a shared inbox across channels.",
+      "categories": [
+        "workflow",
+        "saas-alternatives"
+      ],
+      "capabilities": [
+        "customer support",
+        "shared inbox",
+        "Intercom alternative"
+      ],
+      "os": null,
+      "languages": [
+        "Ruby"
       ],
       "license": null,
       "openSource": null,
@@ -1693,17 +2129,17 @@
       "mcp": null,
       "maintenance": "repository-active",
       "latestRelease": null,
-      "lastActivity": "2026-11-21T18:52:14Z",
-      "stars": 211620,
+      "lastActivity": "2026-11-20T20:01:50Z",
+      "stars": 40354,
       "securityAdvisories": null,
-      "setup": "https://docs.n8n.io/",
-      "tradeoff": "Review the Sustainable Use License before commercial redistribution.",
+      "setup": "https://github.com/chatwoot/chatwoot/blob/develop/README.md",
+      "tradeoff": null,
       "publisherIds": [],
       "sources": [
         {
           "kind": "github",
-          "url": "https://github.com/n8n-io/n8n",
-          "verifiedAt": "2026-11-21T18:52:40.298Z",
+          "url": "https://github.com/chatwoot/chatwoot",
+          "verifiedAt": "2026-11-22T22:42:13.588Z",
           "fields": [
             "identity",
             "license",
@@ -1715,21 +2151,36 @@
         },
         {
           "kind": "documentation",
-          "url": "https://docs.n8n.io/",
-          "verifiedAt": "2026-11-21T00:00:00.000Z",
+          "url": "https://github.com/chatwoot/chatwoot/blob/develop/README.md",
+          "verifiedAt": "2026-11-22T22:42:10Z",
           "fields": [
-            "description",
-            "categories",
+            "installation",
+            "dependencies",
             "capabilities",
-            "hosting",
-            "setup",
-            "tradeoff",
-            "languages"
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/chatwoot/chatwoot/blob/develop/LICENSE",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
           ]
         }
       ],
-      "verifiedAt": "2026-11-21T18:52:40.298Z",
-      "confidence": "curated"
+      "verifiedAt": "2026-11-22T22:42:13.588Z",
+      "confidence": "curated",
+      "kinds": [
+        "web-application"
+      ],
+      "licenseTerms": "Enterprise features are licensed separately. Check the scope for the selected edition.",
+      "reviewedAt": "2026-11-22T22:42:10Z"
     },
     {
       "id": "gh-221981891",
@@ -1879,6 +2330,92 @@
       ],
       "verifiedAt": "2026-11-21T19:00:54.289Z",
       "confidence": "curated"
+    },
+    {
+      "id": "gh-235901813",
+      "name": "PostHog",
+      "canonicalUrl": "https://github.com/PostHog/posthog",
+      "github": "https://github.com/PostHog/posthog",
+      "website": null,
+      "description": "Analyze product events and use tools for feature flags, experiments and session replay.",
+      "categories": [
+        "observability",
+        "saas-alternatives"
+      ],
+      "capabilities": [
+        "product analytics",
+        "feature flags",
+        "session replay",
+        "Mixpanel alternative"
+      ],
+      "os": null,
+      "languages": [
+        "Python"
+      ],
+      "license": null,
+      "openSource": null,
+      "hosting": "hybrid",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-22T22:42:10Z",
+      "stars": 41024,
+      "securityAdvisories": null,
+      "setup": "https://github.com/PostHog/posthog/blob/master/README.md",
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/PostHog/posthog",
+          "verifiedAt": "2026-11-22T22:42:14.433Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/PostHog/posthog/blob/master/README.md",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/PostHog/posthog/blob/master/LICENSE",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T22:42:14.433Z",
+      "confidence": "curated",
+      "kinds": [
+        "web-application"
+      ],
+      "licenseTerms": "Enterprise files are licensed separately. Review the self-hosting edition and support terms.",
+      "reviewedAt": "2026-11-22T22:42:10Z"
     },
     {
       "id": "gh-268163609",
@@ -2147,6 +2684,176 @@
       "confidence": "curated"
     },
     {
+      "id": "gh-332880689",
+      "name": "Coolify",
+      "canonicalUrl": "https://github.com/coollabsio/coolify",
+      "github": "https://github.com/coollabsio/coolify",
+      "website": null,
+      "description": "Deploy and manage applications, databases and static sites on your infrastructure.",
+      "categories": [
+        "hosting",
+        "saas-alternatives"
+      ],
+      "capabilities": [
+        "application hosting",
+        "database deployment",
+        "Vercel alternative"
+      ],
+      "os": null,
+      "languages": [
+        "PHP"
+      ],
+      "license": "Apache-2.0",
+      "openSource": true,
+      "hosting": "hybrid",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-22T22:06:42Z",
+      "stars": 66371,
+      "securityAdvisories": null,
+      "setup": "https://github.com/coollabsio/coolify/blob/main/README.md",
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/coollabsio/coolify",
+          "verifiedAt": "2026-11-22T22:42:12.527Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/coollabsio/coolify/blob/main/README.md",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/coollabsio/coolify/blob/main/LICENSE",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T22:42:12.527Z",
+      "confidence": "curated",
+      "kinds": [
+        "web-application"
+      ],
+      "licenseTerms": "GitHub identifies the repository license as Apache-2.0. Review the license for any separately distributed edition.",
+      "reviewedAt": "2026-11-22T22:42:10Z"
+    },
+    {
+      "id": "gh-350360184",
+      "name": "Cal.diy",
+      "canonicalUrl": "https://github.com/calcom/cal.diy",
+      "github": "https://github.com/calcom/cal.diy",
+      "website": null,
+      "description": "Publish booking pages and let people select an available time.",
+      "categories": [
+        "workflow",
+        "saas-alternatives"
+      ],
+      "capabilities": [
+        "appointment scheduling",
+        "booking calendar",
+        "Calendly alternative"
+      ],
+      "os": null,
+      "languages": [
+        "TypeScript"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-13T19:35:07Z",
+      "stars": 50313,
+      "securityAdvisories": null,
+      "setup": "https://github.com/calcom/cal.diy/blob/main/README.md",
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/calcom/cal.diy",
+          "verifiedAt": "2026-11-22T22:42:12.021Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/calcom/cal.diy/blob/main/README.md",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/calcom/cal.diy/blob/main/LICENSE",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T22:42:12.021Z",
+      "confidence": "curated",
+      "kinds": [
+        "web-application"
+      ],
+      "licenseTerms": "GitHub identifies the repository license as MIT. Review the license for any separately distributed edition.",
+      "reviewedAt": "2026-11-22T22:42:10Z"
+    },
+    {
       "id": "gh-357241735",
       "name": "SearXNG",
       "canonicalUrl": "https://github.com/searxng/searxng",
@@ -2214,6 +2921,688 @@
       ],
       "verifiedAt": "2026-11-21T18:52:39.221Z",
       "confidence": "curated"
+    },
+    {
+      "id": "gh-35866694",
+      "name": "Rocket.Chat",
+      "canonicalUrl": "https://github.com/RocketChat/Rocket.Chat",
+      "github": "https://github.com/RocketChat/Rocket.Chat",
+      "website": null,
+      "description": "Run team channels, direct messaging and communications integrations.",
+      "categories": [
+        "workflow",
+        "saas-alternatives"
+      ],
+      "capabilities": [
+        "team messaging",
+        "chat",
+        "Slack alternative"
+      ],
+      "os": null,
+      "languages": [
+        "TypeScript"
+      ],
+      "license": null,
+      "openSource": null,
+      "hosting": "hybrid",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-22T21:35:01Z",
+      "stars": 46584,
+      "securityAdvisories": null,
+      "setup": "https://github.com/RocketChat/Rocket.Chat/blob/develop/README.md",
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/RocketChat/Rocket.Chat",
+          "verifiedAt": "2026-11-22T22:42:12.023Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/RocketChat/Rocket.Chat/blob/develop/README.md",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/RocketChat/Rocket.Chat/blob/develop/LICENSE",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T22:42:12.023Z",
+      "confidence": "curated",
+      "kinds": [
+        "web-application"
+      ],
+      "licenseTerms": "Enterprise code has separate terms. Review the license for the edition being deployed.",
+      "reviewedAt": "2026-11-22T22:42:10Z"
+    },
+    {
+      "id": "gh-362806180",
+      "name": "OpenReplay",
+      "canonicalUrl": "https://github.com/openreplay/openreplay",
+      "github": "https://github.com/openreplay/openreplay",
+      "website": null,
+      "description": "Record and inspect web sessions to investigate interface problems.",
+      "categories": [
+        "observability",
+        "saas-alternatives"
+      ],
+      "capabilities": [
+        "session replay",
+        "product analytics",
+        "Hotjar alternative"
+      ],
+      "os": null,
+      "languages": [
+        "TypeScript"
+      ],
+      "license": null,
+      "openSource": null,
+      "hosting": "hybrid",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-21T05:41:41Z",
+      "stars": 13173,
+      "securityAdvisories": null,
+      "setup": "https://github.com/openreplay/openreplay/blob/main/README.md",
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/openreplay/openreplay",
+          "verifiedAt": "2026-11-22T22:42:14.934Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/openreplay/openreplay/blob/main/README.md",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/openreplay/openreplay/blob/main/LICENSE",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T22:42:14.934Z",
+      "confidence": "curated",
+      "kinds": [
+        "web-application"
+      ],
+      "licenseTerms": "Enterprise components and third-party dependencies have separate license terms.",
+      "reviewedAt": "2026-11-22T22:42:10Z"
+    },
+    {
+      "id": "gh-377496562",
+      "name": "AppFlowy",
+      "canonicalUrl": "https://github.com/AppFlowy-IO/AppFlowy",
+      "github": "https://github.com/AppFlowy-IO/AppFlowy",
+      "website": null,
+      "description": "Manage notes, project documents and team wikis in a shared workspace.",
+      "categories": [
+        "workflow",
+        "saas-alternatives"
+      ],
+      "capabilities": [
+        "knowledge base",
+        "team documents",
+        "wiki",
+        "Notion alternative"
+      ],
+      "os": null,
+      "languages": [
+        "Dart"
+      ],
+      "license": "AGPL-3.0",
+      "openSource": true,
+      "hosting": "hybrid",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-15T11:08:51Z",
+      "stars": 79379,
+      "securityAdvisories": null,
+      "setup": "https://github.com/AppFlowy-IO/AppFlowy/blob/main/README.md",
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/AppFlowy-IO/AppFlowy",
+          "verifiedAt": "2026-11-22T22:42:10.939Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/AppFlowy-IO/AppFlowy/blob/main/README.md",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/AppFlowy-IO/AppFlowy/blob/main/LICENSE",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T22:42:10Z",
+      "confidence": "curated",
+      "kinds": [
+        "web-application"
+      ],
+      "licenseTerms": "GitHub identifies the repository license as AGPL-3.0. Review the license for any separately distributed edition.",
+      "reviewedAt": "2026-11-22T22:42:10Z"
+    },
+    {
+      "id": "gh-382496361",
+      "name": "Uptime Kuma",
+      "canonicalUrl": "https://github.com/louislam/uptime-kuma",
+      "github": "https://github.com/louislam/uptime-kuma",
+      "website": null,
+      "description": "Check service availability and publish status pages.",
+      "categories": [
+        "observability",
+        "saas-alternatives"
+      ],
+      "capabilities": [
+        "uptime monitoring",
+        "status pages",
+        "Statuspage alternative"
+      ],
+      "os": null,
+      "languages": [
+        "JavaScript"
+      ],
+      "license": "MIT",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-22T07:50:56Z",
+      "stars": 94773,
+      "securityAdvisories": null,
+      "setup": "https://github.com/louislam/uptime-kuma/blob/master/README.md",
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/louislam/uptime-kuma",
+          "verifiedAt": "2026-11-22T22:42:14.435Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/louislam/uptime-kuma/blob/master/README.md",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/louislam/uptime-kuma/blob/master/LICENSE",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T22:42:14.435Z",
+      "confidence": "curated",
+      "kinds": [
+        "web-application"
+      ],
+      "licenseTerms": "GitHub identifies the repository license as MIT. Review the license for any separately distributed edition.",
+      "reviewedAt": "2026-11-22T22:42:10Z"
+    },
+    {
+      "id": "gh-459095253",
+      "name": "LinkStack",
+      "canonicalUrl": "https://github.com/LinkStackOrg/LinkStack",
+      "github": "https://github.com/LinkStackOrg/LinkStack",
+      "website": null,
+      "description": "Publish a customizable profile page containing a collection of links.",
+      "categories": [
+        "hosting",
+        "saas-alternatives"
+      ],
+      "capabilities": [
+        "link page",
+        "profile page",
+        "Linktree alternative"
+      ],
+      "os": null,
+      "languages": [
+        "PHP"
+      ],
+      "license": "AGPL-3.0",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-10-26T11:40:29Z",
+      "stars": 3960,
+      "securityAdvisories": null,
+      "setup": "https://github.com/LinkStackOrg/LinkStack/blob/main/README.md",
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/LinkStackOrg/LinkStack",
+          "verifiedAt": "2026-11-22T22:42:12.527Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/LinkStackOrg/LinkStack/blob/main/README.md",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/LinkStackOrg/LinkStack/blob/main/LICENSE",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T22:42:12.527Z",
+      "confidence": "curated",
+      "kinds": [
+        "web-application"
+      ],
+      "licenseTerms": "GitHub identifies the repository license as AGPL-3.0. Review the license for any separately distributed edition.",
+      "reviewedAt": "2026-11-22T22:42:10Z"
+    },
+    {
+      "id": "gh-46755185",
+      "name": "Bitwarden Server",
+      "canonicalUrl": "https://github.com/bitwarden/server",
+      "github": "https://github.com/bitwarden/server",
+      "website": null,
+      "description": "Run the server infrastructure used by Bitwarden password vault clients.",
+      "categories": [
+        "identity",
+        "saas-alternatives"
+      ],
+      "capabilities": [
+        "password vault",
+        "credential management",
+        "1Password alternative"
+      ],
+      "os": null,
+      "languages": [
+        "C#"
+      ],
+      "license": null,
+      "openSource": null,
+      "hosting": "hybrid",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-21T01:19:34Z",
+      "stars": 20706,
+      "securityAdvisories": null,
+      "setup": "https://github.com/bitwarden/server/blob/main/README.md",
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/bitwarden/server",
+          "verifiedAt": "2026-11-22T22:42:12.022Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/bitwarden/server/blob/main/README.md",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/bitwarden/server/blob/main/LICENSE.txt",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T22:42:12.022Z",
+      "confidence": "curated",
+      "kinds": [
+        "web-application"
+      ],
+      "licenseTerms": "AGPL-3.0 is the default; the Bitwarden License applies to separately marked code.",
+      "reviewedAt": "2026-11-22T22:42:10Z"
+    },
+    {
+      "id": "gh-48769241",
+      "name": "Penpot",
+      "canonicalUrl": "https://github.com/penpot/penpot",
+      "github": "https://github.com/penpot/penpot",
+      "website": null,
+      "description": "Create interface designs, prototypes and reusable components for design teams.",
+      "categories": [
+        "infrastructure",
+        "saas-alternatives"
+      ],
+      "capabilities": [
+        "interface design",
+        "prototyping",
+        "design systems",
+        "Figma alternative"
+      ],
+      "os": null,
+      "languages": [
+        "Clojure"
+      ],
+      "license": "MPL-2.0",
+      "openSource": true,
+      "hosting": "hybrid",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-22T09:49:57Z",
+      "stars": 62645,
+      "securityAdvisories": null,
+      "setup": "https://github.com/penpot/penpot/blob/develop/README.md",
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/penpot/penpot",
+          "verifiedAt": "2026-11-22T22:42:11.002Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/penpot/penpot/blob/develop/README.md",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/penpot/penpot/blob/develop/LICENSE",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T22:42:11.002Z",
+      "confidence": "curated",
+      "kinds": [
+        "web-application"
+      ],
+      "licenseTerms": "GitHub identifies the repository license as MPL-2.0. Review the license for any separately distributed edition.",
+      "reviewedAt": "2026-11-22T22:42:10Z"
+    },
+    {
+      "id": "gh-500289888",
+      "name": "Formbricks",
+      "canonicalUrl": "https://github.com/formbricks/formbricks",
+      "github": "https://github.com/formbricks/formbricks",
+      "website": null,
+      "description": "Create surveys and collect feedback from customers or product users.",
+      "categories": [
+        "workflow",
+        "saas-alternatives"
+      ],
+      "capabilities": [
+        "surveys",
+        "feedback collection",
+        "Typeform alternative"
+      ],
+      "os": null,
+      "languages": [
+        "TypeScript"
+      ],
+      "license": null,
+      "openSource": null,
+      "hosting": "hybrid",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-20T19:19:09Z",
+      "stars": 13286,
+      "securityAdvisories": null,
+      "setup": "https://github.com/formbricks/formbricks/blob/main/README.md",
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/formbricks/formbricks",
+          "verifiedAt": "2026-11-22T22:42:13.588Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/formbricks/formbricks/blob/main/README.md",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/formbricks/formbricks/blob/main/LICENSE",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T22:42:13.588Z",
+      "confidence": "curated",
+      "kinds": [
+        "web-application"
+      ],
+      "licenseTerms": "Enterprise features, SDKs and other components use distinct terms.",
+      "reviewedAt": "2026-11-22T22:42:10Z"
     },
     {
       "id": "gh-541269386",
@@ -2517,6 +3906,91 @@
       ],
       "verifiedAt": "2026-11-21T18:53:05.953Z",
       "confidence": "curated"
+    },
+    {
+      "id": "gh-568098118",
+      "name": "Plane",
+      "canonicalUrl": "https://github.com/makeplane/plane",
+      "github": "https://github.com/makeplane/plane",
+      "website": null,
+      "description": "Plan projects with issues, cycles, modules and team documentation.",
+      "categories": [
+        "workflow",
+        "saas-alternatives"
+      ],
+      "capabilities": [
+        "issue tracking",
+        "project management",
+        "Jira alternative"
+      ],
+      "os": null,
+      "languages": [
+        "TypeScript"
+      ],
+      "license": "AGPL-3.0",
+      "openSource": true,
+      "hosting": "hybrid",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-20T13:14:22Z",
+      "stars": 62981,
+      "securityAdvisories": null,
+      "setup": "https://github.com/makeplane/plane/blob/preview/README.md",
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/makeplane/plane",
+          "verifiedAt": "2026-11-22T22:42:13.020Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/makeplane/plane/blob/preview/README.md",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/makeplane/plane/blob/preview/LICENSE.txt",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T22:42:13.020Z",
+      "confidence": "curated",
+      "kinds": [
+        "web-application"
+      ],
+      "licenseTerms": "GitHub identifies the repository license as AGPL-3.0. Review the license for any separately distributed edition.",
+      "reviewedAt": "2026-11-22T22:42:10Z"
     },
     {
       "id": "gh-576201",
@@ -2905,6 +4379,91 @@
       "confidence": "curated"
     },
     {
+      "id": "gh-60243197",
+      "name": "Nextcloud Server",
+      "canonicalUrl": "https://github.com/nextcloud/server",
+      "github": "https://github.com/nextcloud/server",
+      "website": null,
+      "description": "Sync and share files with users on a server you control.",
+      "categories": [
+        "infrastructure",
+        "saas-alternatives"
+      ],
+      "capabilities": [
+        "file sharing",
+        "file synchronization",
+        "Dropbox alternative"
+      ],
+      "os": null,
+      "languages": [
+        "PHP"
+      ],
+      "license": "AGPL-3.0",
+      "openSource": true,
+      "hosting": "local",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-22T20:25:53Z",
+      "stars": 37607,
+      "securityAdvisories": null,
+      "setup": "https://github.com/nextcloud/server/blob/master/README.md",
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/nextcloud/server",
+          "verifiedAt": "2026-11-22T22:42:12.525Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/nextcloud/server/blob/master/README.md",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/nextcloud/server/blob/master/COPYING",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T22:42:12.525Z",
+      "confidence": "curated",
+      "kinds": [
+        "web-application"
+      ],
+      "licenseTerms": "GitHub identifies the repository license as AGPL-3.0. Review the license for any separately distributed edition.",
+      "reviewedAt": "2026-11-22T22:42:10Z"
+    },
+    {
       "id": "gh-609539715",
       "name": "E2B",
       "canonicalUrl": "https://github.com/e2b-dev/E2B",
@@ -3057,6 +4616,91 @@
       ],
       "verifiedAt": "2026-11-21T18:53:16.917Z",
       "confidence": "curated"
+    },
+    {
+      "id": "gh-613010835",
+      "name": "Documenso",
+      "canonicalUrl": "https://github.com/documenso/documenso",
+      "github": "https://github.com/documenso/documenso",
+      "website": null,
+      "description": "Request signatures, track signing status and manage signed documents.",
+      "categories": [
+        "workflow",
+        "saas-alternatives"
+      ],
+      "capabilities": [
+        "electronic signatures",
+        "document workflows",
+        "DocuSign alternative"
+      ],
+      "os": null,
+      "languages": [
+        "TypeScript"
+      ],
+      "license": "AGPL-3.0",
+      "openSource": true,
+      "hosting": "hybrid",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-22T05:57:49Z",
+      "stars": 15873,
+      "securityAdvisories": null,
+      "setup": "https://github.com/documenso/documenso/blob/main/README.md",
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/documenso/documenso",
+          "verifiedAt": "2026-11-22T22:42:13.587Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/documenso/documenso/blob/main/README.md",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/documenso/documenso/blob/main/LICENSE",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T22:42:13.587Z",
+      "confidence": "curated",
+      "kinds": [
+        "web-application"
+      ],
+      "licenseTerms": "GitHub identifies the repository license as AGPL-3.0. Review the license for any separately distributed edition.",
+      "reviewedAt": "2026-11-22T22:42:10Z"
     },
     {
       "id": "gh-633927609",
@@ -3445,6 +5089,91 @@
       "confidence": "curated"
     },
     {
+      "id": "gh-664013991",
+      "name": "Postiz",
+      "canonicalUrl": "https://github.com/gitroomhq/postiz-app",
+      "github": "https://github.com/gitroomhq/postiz-app",
+      "website": null,
+      "description": "Plan and schedule content for supported social networks.",
+      "categories": [
+        "workflow",
+        "saas-alternatives"
+      ],
+      "capabilities": [
+        "social media scheduling",
+        "content publishing",
+        "Buffer alternative"
+      ],
+      "os": null,
+      "languages": [
+        "TypeScript"
+      ],
+      "license": "AGPL-3.0",
+      "openSource": true,
+      "hosting": "hybrid",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-20T10:33:03Z",
+      "stars": 42172,
+      "securityAdvisories": null,
+      "setup": "https://github.com/gitroomhq/postiz-app/blob/main/README.md",
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/gitroomhq/postiz-app",
+          "verifiedAt": "2026-11-22T22:42:14.435Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/gitroomhq/postiz-app/blob/main/README.md",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/gitroomhq/postiz-app/blob/main/LICENSE",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T22:42:14.435Z",
+      "confidence": "curated",
+      "kinds": [
+        "web-application"
+      ],
+      "licenseTerms": "GitHub identifies the repository license as AGPL-3.0. Review the license for any separately distributed edition.",
+      "reviewedAt": "2026-11-22T22:42:10Z"
+    },
+    {
       "id": "gh-671269505",
       "name": "LiteLLM",
       "canonicalUrl": "https://github.com/BerriAI/litellm",
@@ -3677,6 +5406,91 @@
       ],
       "verifiedAt": "2026-11-21T18:53:05.953Z",
       "confidence": "curated"
+    },
+    {
+      "id": "gh-701547123",
+      "name": "Open WebUI",
+      "canonicalUrl": "https://github.com/open-webui/open-webui",
+      "github": "https://github.com/open-webui/open-webui",
+      "website": null,
+      "description": "Connect a web interface to local models or compatible remote model APIs.",
+      "categories": [
+        "models",
+        "saas-alternatives"
+      ],
+      "capabilities": [
+        "AI chat interface",
+        "local model interface",
+        "ChatGPT Plus alternative"
+      ],
+      "os": null,
+      "languages": [
+        "Svelte"
+      ],
+      "license": "Open WebUI License",
+      "openSource": false,
+      "hosting": "local",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-22T22:26:56Z",
+      "stars": 159283,
+      "securityAdvisories": null,
+      "setup": "https://github.com/open-webui/open-webui/blob/main/README.md",
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/open-webui/open-webui",
+          "verifiedAt": "2026-11-22T22:42:13.019Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/open-webui/open-webui/blob/main/README.md",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/open-webui/open-webui/blob/main/LICENSE",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T22:42:13.019Z",
+      "confidence": "curated",
+      "kinds": [
+        "web-application"
+      ],
+      "licenseTerms": "The Open WebUI License has a branding condition. Review it before distributing a hosted edition.",
+      "reviewedAt": "2026-11-22T22:42:10Z"
     },
     {
       "id": "gh-703411624",
@@ -3972,6 +5786,92 @@
       ],
       "verifiedAt": "2026-11-21T18:53:17.406Z",
       "confidence": "metadata"
+    },
+    {
+      "id": "gh-720209383",
+      "name": "Cap",
+      "canonicalUrl": "https://github.com/CapSoftware/Cap",
+      "github": "https://github.com/CapSoftware/Cap",
+      "website": null,
+      "description": "Capture screens and share recorded video for asynchronous collaboration.",
+      "categories": [
+        "workflow",
+        "saas-alternatives"
+      ],
+      "capabilities": [
+        "screen recording",
+        "video sharing",
+        "Loom alternative"
+      ],
+      "os": null,
+      "languages": [
+        "Rust"
+      ],
+      "license": null,
+      "openSource": null,
+      "hosting": "hybrid",
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": null,
+      "permissions": null,
+      "installation": null,
+      "integrations": [],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-11-22T22:10:02Z",
+      "stars": 25434,
+      "securityAdvisories": null,
+      "setup": "https://github.com/CapSoftware/Cap/blob/main/README.md",
+      "tradeoff": null,
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/CapSoftware/Cap",
+          "verifiedAt": "2026-11-22T22:42:12.526Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/CapSoftware/Cap/blob/main/README.md",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/CapSoftware/Cap/blob/main/LICENSE",
+          "verifiedAt": "2026-11-22T22:42:10Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T22:42:12.526Z",
+      "confidence": "curated",
+      "kinds": [
+        "desktop-application",
+        "web-application"
+      ],
+      "licenseTerms": "Some crates use MIT. Other components have separately stated terms in the root notice.",
+      "reviewedAt": "2026-11-22T22:42:10Z"
     },
     {
       "id": "gh-724854743",

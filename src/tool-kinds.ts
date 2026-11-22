@@ -4,5 +4,6 @@ export const toolKinds = {
   "cli-tool": "CLI Tool",
   "software-library": "Software Library",
   "desktop-application": "Desktop Application",
+  "web-application": "Web Application",
   "reference-collection": "Reference Collection"
 } as const;
