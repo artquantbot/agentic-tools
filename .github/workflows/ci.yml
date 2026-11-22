@@ -22,13 +22,13 @@ jobs:
       - run: npm test
       - run: npm run evaluate
       - run: npm run build
+      - run: npx playwright install --with-deps chromium
       - name: Run approved synthetic FFmpeg fixture in Docker
         run: |
           IMAGE="$(node --experimental-strip-types --input-type=module -e 'import { videoSmoke } from "./src/studio.ts"; console.log(videoSmoke.image)')"
           docker pull "$IMAGE"
           node --experimental-strip-types scripts/test-docker.ts
           test -z "$(docker ps -aq --filter label=org.agentic-tools.scope=video-smoke)"
-      - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
       - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
         if: failure()
