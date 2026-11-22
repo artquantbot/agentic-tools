@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T08:09:43.871Z",
+  "generatedAt": "2026-11-22T22:19:25.005Z",
   "tools": [
     {
       "id": "gh-1134543109",
@@ -112,7 +112,7 @@
       "maintenance": "repository-active",
       "latestRelease": null,
       "lastActivity": "2026-11-18T10:18:33Z",
-      "stars": 7754,
+      "stars": 7802,
       "securityAdvisories": null,
       "setup": "https://www.remotion.dev/docs/ai/skills",
       "tradeoff": "The skills guide a coding agent. Running and licensing the renderer requires a separate Remotion setup.",
@@ -121,7 +121,7 @@
         {
           "kind": "github",
           "url": "https://github.com/remotion-dev/skills",
-          "verifiedAt": "2026-11-22T08:09:44.903Z",
+          "verifiedAt": "2026-11-22T22:19:34.900Z",
           "fields": [
             "identity",
             "license",
@@ -164,7 +164,7 @@
           ]
         }
       ],
-      "verifiedAt": "2026-11-22T08:09:44.903Z",
+      "verifiedAt": "2026-11-22T22:19:34.900Z",
       "confidence": "curated",
       "kinds": [
         "agent-skill"
@@ -398,8 +398,8 @@
       "mcp": true,
       "maintenance": "repository-active",
       "latestRelease": null,
-      "lastActivity": "2026-11-22T08:08:55Z",
-      "stars": 87954,
+      "lastActivity": "2026-11-22T22:18:25Z",
+      "stars": 88246,
       "securityAdvisories": null,
       "setup": "https://github.com/heygen-com/hyperframes/blob/main/README.md",
       "tradeoff": "The local renderer has a no-paid-API path. The hosted connector requires eligible accounts and has separate costs.",
@@ -408,7 +408,7 @@
         {
           "kind": "github",
           "url": "https://github.com/heygen-com/hyperframes",
-          "verifiedAt": "2026-11-22T08:09:45.402Z",
+          "verifiedAt": "2026-11-22T22:19:35.409Z",
           "fields": [
             "identity",
             "license",
@@ -451,7 +451,7 @@
           ]
         }
       ],
-      "verifiedAt": "2026-11-22T08:09:45.402Z",
+      "verifiedAt": "2026-11-22T22:19:35.409Z",
       "confidence": "curated",
       "kinds": [
         "cli-tool",
@@ -859,7 +859,7 @@
       "maintenance": "repository-active",
       "latestRelease": null,
       "lastActivity": "2026-11-20T04:32:37Z",
-      "stars": 19619,
+      "stars": 19883,
       "securityAdvisories": null,
       "setup": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/README.md",
       "tradeoff": "Review per-file terms and exclude third-party media and narration from reuse unless cleared.",
@@ -868,7 +868,7 @@
         {
           "kind": "github",
           "url": "https://github.com/lemomo-ai/lemo-opuscar",
-          "verifiedAt": "2026-11-22T08:09:43.903Z",
+          "verifiedAt": "2026-11-22T22:19:25.026Z",
           "fields": [
             "identity",
             "license",
@@ -903,7 +903,7 @@
           ]
         }
       ],
-      "verifiedAt": "2026-11-22T08:09:43.903Z",
+      "verifiedAt": "2026-11-22T22:19:25.026Z",
       "confidence": "curated",
       "kinds": [
         "agent-skill",
@@ -944,7 +944,7 @@
       "maintenance": "repository-active",
       "latestRelease": null,
       "lastActivity": "2026-10-13T14:46:44Z",
-      "stars": 16156,
+      "stars": 16219,
       "securityAdvisories": null,
       "setup": "https://github.com/yihui-dev/awesome-opus5-5-videos/blob/main/README.md",
       "tradeoff": "Use examples for reference. Check permission before reusing a creator’s assets or prompts.",
@@ -953,7 +953,7 @@
         {
           "kind": "github",
           "url": "https://github.com/yihui-dev/awesome-opus5-5-videos",
-          "verifiedAt": "2026-11-22T08:09:43.903Z",
+          "verifiedAt": "2026-11-22T22:19:25.011Z",
           "fields": [
             "identity",
             "license",
@@ -988,7 +988,7 @@
           ]
         }
       ],
-      "verifiedAt": "2026-11-22T08:09:43.903Z",
+      "verifiedAt": "2026-11-22T22:19:25.011Z",
       "confidence": "curated",
       "kinds": [
         "reference-collection"
@@ -1044,8 +1044,8 @@
       "mcp": true,
       "maintenance": "repository-active",
       "latestRelease": null,
-      "lastActivity": "2026-11-22T05:17:00Z",
-      "stars": 9102,
+      "lastActivity": "2026-11-22T20:58:13Z",
+      "stars": 9132,
       "securityAdvisories": null,
       "setup": "https://github.com/storytold/effectcraft/blob/main/README.md",
       "tradeoff": "Headless MCP exposes supported engine commands. Desktop bridge capabilities depend on the running application.",
@@ -1054,7 +1054,7 @@
         {
           "kind": "github",
           "url": "https://github.com/storytold/effectcraft",
-          "verifiedAt": "2026-11-22T08:09:43.903Z",
+          "verifiedAt": "2026-11-22T22:19:25.026Z",
           "fields": [
             "identity",
             "license",
@@ -1105,7 +1105,7 @@
           ]
         }
       ],
-      "verifiedAt": "2026-11-22T08:09:43.903Z",
+      "verifiedAt": "2026-11-22T22:19:25.026Z",
       "confidence": "curated",
       "kinds": [
         "desktop-application",
@@ -1175,6 +1175,116 @@
       "confidence": "metadata"
     },
     {
+      "id": "gh-1419063102",
+      "name": "Claude Code Skills and Agents (Edited)",
+      "canonicalUrl": "https://github.com/hsynozdamar-byte/claude-skills-edited",
+      "github": "https://github.com/hsynozdamar-byte/claude-skills-edited",
+      "website": null,
+      "description": "Collection of 59 adapted Claude Code skills and six subagent profiles with upstream attribution. Topics include frontend design, web quality, marketing and video production.",
+      "categories": [
+        "skills"
+      ],
+      "capabilities": [
+        "Claude Code skills",
+        "Claude Code subagents",
+        "frontend design",
+        "web accessibility",
+        "marketing workflows",
+        "video production references"
+      ],
+      "os": null,
+      "languages": [
+        "JavaScript"
+      ],
+      "license": null,
+      "openSource": null,
+      "hosting": null,
+      "noPaidApi": null,
+      "pricing": null,
+      "dependencies": [
+        "Claude Code"
+      ],
+      "permissions": null,
+      "installation": [
+        "Manual setup of selected skills or subagents via upstream instructions"
+      ],
+      "integrations": [
+        "Claude Code"
+      ],
+      "mcp": null,
+      "maintenance": "repository-active",
+      "latestRelease": null,
+      "lastActivity": "2026-10-14T13:58:55Z",
+      "stars": 14,
+      "securityAdvisories": null,
+      "setup": "https://github.com/hsynozdamar-byte/claude-skills-edited/blob/main/README.md#install",
+      "tradeoff": "Some entries include scripts or download additional components. Review each upstream source and its permissions before enabling it.",
+      "publisherIds": [],
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/hsynozdamar-byte/claude-skills-edited",
+          "verifiedAt": "2026-11-22T22:19:35.905Z",
+          "fields": [
+            "identity",
+            "license",
+            "stars",
+            "lastActivity",
+            "maintenance",
+            "primaryLanguage"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/hsynozdamar-byte/claude-skills-edited/blob/main/README.md#install",
+          "verifiedAt": "2026-11-22T22:19:12Z",
+          "fields": [
+            "installation",
+            "dependencies",
+            "capabilities",
+            "os",
+            "integrations",
+            "mcp",
+            "kinds"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/hsynozdamar-byte/claude-skills-edited/blob/main/LICENSE",
+          "verifiedAt": "2026-11-22T22:19:12Z",
+          "fields": [
+            "license",
+            "licenseTerms",
+            "openSource"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/hsynozdamar-byte/claude-skills-edited/blob/main/THIRD-PARTY-NOTICES.md",
+          "verifiedAt": "2026-11-22T22:19:12Z",
+          "fields": [
+            "supplementary evidence"
+          ]
+        },
+        {
+          "kind": "documentation",
+          "url": "https://github.com/hsynozdamar-byte/claude-skills-edited/blob/main/agents/SOURCE.md",
+          "verifiedAt": "2026-11-22T22:19:12Z",
+          "fields": [
+            "supplementary evidence"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-22T22:19:35.905Z",
+      "confidence": "curated",
+      "kinds": [
+        "agent-skill",
+        "reference-collection"
+      ],
+      "licenseTerms": "The repository reports MIT or Apache-2.0 for skills and MIT for adapted subagents. Check each item’s SOURCE.md and the third-party notices for applicable terms and attribution.",
+      "reviewedAt": "2026-11-22T22:19:12Z"
+    },
+    {
       "id": "gh-1438661890",
       "name": "rea-video",
       "canonicalUrl": "https://github.com/JuneYaooo/rea-video",
@@ -1217,8 +1327,8 @@
       "mcp": null,
       "maintenance": "repository-active",
       "latestRelease": null,
-      "lastActivity": "2026-11-22T03:38:34Z",
-      "stars": 11956,
+      "lastActivity": "2026-11-22T14:52:34Z",
+      "stars": 12212,
       "securityAdvisories": null,
       "setup": "https://github.com/JuneYaooo/rea-video/blob/main/README.md",
       "tradeoff": "Offline analysis is documented. Optional model-assisted analysis has separate requirements.",
@@ -1227,7 +1337,7 @@
         {
           "kind": "github",
           "url": "https://github.com/JuneYaooo/rea-video",
-          "verifiedAt": "2026-11-22T08:09:43.882Z",
+          "verifiedAt": "2026-11-22T22:19:25.026Z",
           "fields": [
             "identity",
             "license",
@@ -1262,7 +1372,7 @@
           ]
         }
       ],
-      "verifiedAt": "2026-11-22T08:09:43.882Z",
+      "verifiedAt": "2026-11-22T22:19:25.026Z",
       "confidence": "curated",
       "kinds": [
         "agent-skill",
@@ -1312,7 +1422,7 @@
       "maintenance": "repository-active",
       "latestRelease": null,
       "lastActivity": "2026-11-13T08:43:39Z",
-      "stars": 8672,
+      "stars": 8749,
       "securityAdvisories": null,
       "setup": "https://github.com/patch-gg/pixelfx/blob/main/README.md",
       "tradeoff": "The optional Patch publishing flow requires Patch Desktop on Windows. The browser library runs independently.",
@@ -1321,7 +1431,7 @@
         {
           "kind": "github",
           "url": "https://github.com/patch-gg/pixelfx",
-          "verifiedAt": "2026-11-22T08:09:44.903Z",
+          "verifiedAt": "2026-11-22T22:19:34.897Z",
           "fields": [
             "identity",
             "license",
@@ -1356,7 +1466,7 @@
           ]
         }
       ],
-      "verifiedAt": "2026-11-22T08:09:44.903Z",
+      "verifiedAt": "2026-11-22T22:19:34.897Z",
       "confidence": "curated",
       "kinds": [
         "software-library",
@@ -1482,8 +1592,8 @@
       "mcp": false,
       "maintenance": "repository-active",
       "latestRelease": null,
-      "lastActivity": "2026-11-22T05:18:06Z",
-      "stars": 67874,
+      "lastActivity": "2026-11-22T16:39:35Z",
+      "stars": 67978,
       "securityAdvisories": null,
       "setup": "https://ffmpeg.org/download.html",
       "tradeoff": "GitHub is the project mirror. Codec availability and redistribution obligations depend on how the binary was built.",
@@ -1492,7 +1602,7 @@
         {
           "kind": "github",
           "url": "https://github.com/FFmpeg/FFmpeg",
-          "verifiedAt": "2026-11-22T08:09:45.947Z",
+          "verifiedAt": "2026-11-22T22:19:35.906Z",
           "fields": [
             "identity",
             "license",
@@ -1543,7 +1653,7 @@
           ]
         }
       ],
-      "verifiedAt": "2026-11-22T08:09:45.947Z",
+      "verifiedAt": "2026-11-22T22:19:35.906Z",
       "confidence": "curated",
       "kinds": [
         "cli-tool",
@@ -1888,8 +1998,8 @@
       "mcp": false,
       "maintenance": "repository-active",
       "latestRelease": null,
-      "lastActivity": "2026-11-20T21:05:57Z",
-      "stars": 74829,
+      "lastActivity": "2026-11-22T19:11:08Z",
+      "stars": 74953,
       "securityAdvisories": null,
       "setup": "https://www.remotion.dev/docs/",
       "tradeoff": "The hosted documentation MCP was shut down. Team eligibility and hosted rendering costs vary.",
@@ -1898,7 +2008,7 @@
         {
           "kind": "github",
           "url": "https://github.com/remotion-dev/remotion",
-          "verifiedAt": "2026-11-22T08:09:44.904Z",
+          "verifiedAt": "2026-11-22T22:19:34.899Z",
           "fields": [
             "identity",
             "license",
@@ -1957,7 +2067,7 @@
           ]
         }
       ],
-      "verifiedAt": "2026-11-22T08:09:44.904Z",
+      "verifiedAt": "2026-11-22T22:19:34.899Z",
       "confidence": "curated",
       "kinds": [
         "software-library",
@@ -2447,8 +2557,8 @@
       "mcp": false,
       "maintenance": "repository-active",
       "latestRelease": null,
-      "lastActivity": "2026-11-21T19:39:51Z",
-      "stars": 119109,
+      "lastActivity": "2026-11-22T15:35:17Z",
+      "stars": 119163,
       "securityAdvisories": null,
       "setup": "https://threejs.org/manual/#en/installation",
       "tradeoff": "three.js renders scenes. A separate capture and encoding stage produces a video file.",
@@ -2457,7 +2567,7 @@
         {
           "kind": "github",
           "url": "https://github.com/mrdoob/three.js",
-          "verifiedAt": "2026-11-22T08:09:45.403Z",
+          "verifiedAt": "2026-11-22T22:19:35.408Z",
           "fields": [
             "identity",
             "license",
@@ -2500,7 +2610,7 @@
           ]
         }
       ],
-      "verifiedAt": "2026-11-22T08:09:45.403Z",
+      "verifiedAt": "2026-11-22T22:19:35.408Z",
       "confidence": "curated",
       "kinds": [
         "software-library"
@@ -2557,8 +2667,8 @@
       "mcp": true,
       "maintenance": "repository-active",
       "latestRelease": null,
-      "lastActivity": "2026-11-22T06:05:13Z",
-      "stars": 148030,
+      "lastActivity": "2026-11-22T22:19:01Z",
+      "stars": 148140,
       "securityAdvisories": null,
       "setup": "https://github.com/Comfy-Org/ComfyUI/blob/master/README.md",
       "tradeoff": "Local generation depends on hardware and model support. Cloud services and partner API nodes can incur fees.",
@@ -2567,7 +2677,7 @@
         {
           "kind": "github",
           "url": "https://github.com/Comfy-Org/ComfyUI",
-          "verifiedAt": "2026-11-22T08:09:44.902Z",
+          "verifiedAt": "2026-11-22T22:19:34.901Z",
           "fields": [
             "identity",
             "license",
@@ -2618,7 +2728,7 @@
           ]
         }
       ],
-      "verifiedAt": "2026-11-22T08:09:44.902Z",
+      "verifiedAt": "2026-11-22T22:19:34.901Z",
       "confidence": "curated",
       "kinds": [
         "desktop-application"
@@ -2665,7 +2775,7 @@
       "maintenance": "repository-active",
       "latestRelease": null,
       "lastActivity": "2026-11-04T00:56:41Z",
-      "stars": 31043,
+      "stars": 31075,
       "securityAdvisories": null,
       "setup": "https://github.com/greensock/GSAP/blob/master/README.md",
       "tradeoff": "An animation library. Rendering and encoding final media require separate tooling.",
@@ -2674,7 +2784,7 @@
         {
           "kind": "github",
           "url": "https://github.com/greensock/GSAP",
-          "verifiedAt": "2026-11-22T08:09:45.403Z",
+          "verifiedAt": "2026-11-22T22:19:35.410Z",
           "fields": [
             "identity",
             "license",
@@ -2709,7 +2819,7 @@
           ]
         }
       ],
-      "verifiedAt": "2026-11-22T08:09:45.403Z",
+      "verifiedAt": "2026-11-22T22:19:35.410Z",
       "confidence": "curated",
       "kinds": [
         "software-library"
@@ -4698,7 +4808,7 @@
       "maintenance": "repository-active",
       "latestRelease": null,
       "lastActivity": "2026-11-18T10:27:07Z",
-      "stars": 35289,
+      "stars": 35375,
       "securityAdvisories": null,
       "setup": "https://github.com/ahujasid/mcp-for-blender/blob/main/README.md",
       "tradeoff": "Use an isolated workspace and only grant access to intended projects. Optional asset or AI integrations require separate review.",
@@ -4707,7 +4817,7 @@
         {
           "kind": "github",
           "url": "https://github.com/ahujasid/mcp-for-blender",
-          "verifiedAt": "2026-11-22T08:09:45.403Z",
+          "verifiedAt": "2026-11-22T22:19:35.410Z",
           "fields": [
             "identity",
             "license",
@@ -4742,7 +4852,7 @@
           ]
         }
       ],
-      "verifiedAt": "2026-11-22T08:09:45.403Z",
+      "verifiedAt": "2026-11-22T22:19:35.410Z",
       "confidence": "curated",
       "kinds": [
         "mcp-server"
